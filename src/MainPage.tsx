@@ -71,7 +71,7 @@ export const MainPage = () => {
           placeholder="フリーワード"
           value={state.freeWord}
         />
-        <RangeSlider
+        <StyledRangeSlider
           min={0}
           max={grids.length - 1}
           stepSize={1}
@@ -184,6 +184,10 @@ const StyledControls = styled.div`
   }
 `;
 
+const StyledRangeSlider = styled(RangeSlider)`
+  margin-right: 16px;
+`;
+
 const StyledRangeSliderLabel = styled.span`
   white-space: nowrap;
 `;
@@ -204,7 +208,7 @@ const StyledStickyTr = styled.tr`
   top: 0;
   background: white;
   & th {
-    width: 10%;
+    width: calc(9% - ${mainPadding*2}px);
   }
 `;
 
