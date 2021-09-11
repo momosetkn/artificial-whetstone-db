@@ -44,7 +44,7 @@ export const MainPage = () => {
   const [state, update] = useState<State>(initialState);
 
   const selectedGridRangesValues: [number, number] = useMemo(() => [gridValues[state.gridRange[0]], gridValues[state.gridRange[1]]], [state.gridRange]);
-  const filteredProducts = useMemo(() => products.filter(product => {
+  const filteredProductId = useMemo(() => products.filter(product => {
     const isTargetGird = (value: Product["grid"]) => {
       // TODO: 番手情報が無いものは、とりあえず無条件に出しておく
       if (!value) return true;
@@ -59,7 +59,7 @@ export const MainPage = () => {
     }
     return (!state.freeWord || product.freeWords.search(state.freeWord) !== -1)
       && isTargetGird(product.grid);
-  }), [state, selectedGridRangesValues])
+  }).map(x => x.id), [state, selectedGridRangesValues])
 
   return (
     <Main>
@@ -75,17 +75,18 @@ export const MainPage = () => {
           min={0}
           max={grids.length - 1}
           stepSize={1}
-          labelRenderer={(value, opts) => gridLabels[value]}
+          labelRenderer={(value, opts) => <StyledRangeSliderLabel>{gridLabels[value]}</StyledRangeSliderLabel>}
           onChange={(e) => update(prev => ({...prev, gridRange: e}))}
           value={state.gridRange}
         />
       </StyledControls>
-      <DataTables items={filteredProducts} />
+      <DataTables items={products} filterIds={filteredProductId}/>
     </Main>
   );
 };
 
-const DataTables = ({items}: { items: Product[] }) => {
+const DataTables = ({items, filterIds}: { items: Product[]; filterIds: number[]}) => {
+  const filterIdsSet = useMemo(() => new Set(filterIds), [filterIds]);
   return (
     <StyledTableContainer>
       <StyledHTMLTable striped>
@@ -105,7 +106,7 @@ const DataTables = ({items}: { items: Product[] }) => {
         </StyledStickyTr>
         </thead>
         <tbody>
-          {items.map(item => <Row key={item.id}  item={item}/>)}
+          {items.map(item => <Row key={item.id} item={item} hidden={!filterIdsSet.has(item.id)}/>)}
         </tbody>
         <tfoot>
         <tr>
@@ -118,14 +119,14 @@ const DataTables = ({items}: { items: Product[] }) => {
   )
 };
 
-const Row = ({item}: { item: Product }) => {
-  const remarks = [item.remarks, item.remarks2].filter(x => x).join("\n");
-  const volume = (() => {
+const Row = ({item, hidden}: { item: Product, hidden: boolean }) => {
+  const remarks = useMemo(() => [item.remarks, item.remarks2].filter(x => x).join("\n"), [item.remarks, item.remarks2]);
+  const volume = useMemo(() => {
     const [x1, x2, x3] = item.size.split(/\D+/);
     return (Number(x1) || 0) * (Number(x2) || 0) * (Number(x3) || 0);
-  })();
+  }, [item.size]);
   return (
-    <tr>
+    <tr hidden={hidden}>
       <StyledTd><a href={companiesMap[item.company].url} target="_blank"
                    rel="noreferrer"> {item.company}</a></StyledTd>
       <StyledTd>{item.productNumber}</StyledTd>
@@ -171,7 +172,7 @@ const mainPadding = 24;
 const dataTablesMarginTop = 16;
 
 const Main = styled.div`
-  padding: 64px;
+  padding: 24px;
 `;
 
 const StyledControls = styled.div`
@@ -181,6 +182,10 @@ const StyledControls = styled.div`
   & > * + * {
     margin-left: 24px;
   }
+`;
+
+const StyledRangeSliderLabel = styled.span`
+  white-space: nowrap;
 `;
 
 const StyledTableContainer = styled.div`
