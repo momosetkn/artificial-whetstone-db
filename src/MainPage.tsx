@@ -1,9 +1,9 @@
 import React, {ChangeEvent, useMemo} from 'react';
-import {HTMLTable, InputGroup, NumberRange, RangeSlider} from "@blueprintjs/core";
+import {Card, HTMLTable, InputGroup, NumberRange, RangeSlider} from "@blueprintjs/core";
 import styled from "styled-components";
 import {Product, products} from "./data/products";
 import {companies, Company} from "./data/companies";
-import {Tooltip2} from "@blueprintjs/popover2";
+import {Popover2} from "@blueprintjs/popover2";
 import {useHistory, useLocation} from "react-router-dom";
 import queryString from "querystring";
 
@@ -119,16 +119,9 @@ const DataTables = ({items}: { items: Product[]}) => {
         <thead>
         <StyledStickyTr>
           <th>会社名</th>
-          <th>品番</th>
-          <th>商品名</th>
+          <th>商品</th>
           <th>番手</th>
-          <th>製法</th>
-          <th>砥粒</th>
-          <th>サイズ</th>
-          <th>容積</th>
-          <th>金額</th>
-          <th>製品URL</th>
-          <th>備考</th>
+          <th>寸法(容積)</th>
         </StyledStickyTr>
         </thead>
         <tbody>
@@ -148,7 +141,6 @@ const Row = React.memo(({item}: { item: Product }) => {
   return (
     <tr>
       <StyledTd>
-        <Tooltip2 content={item.company}>
           <a
             href={companiesMap[item.company].url}
             target="_blank"
@@ -156,41 +148,35 @@ const Row = React.memo(({item}: { item: Product }) => {
           >
             {item.company}
           </a>
-        </Tooltip2>
       </StyledTd>
-      <StyledTd>{item.productNumber}</StyledTd>
       <StyledTd>
-        <Tooltip2 content={item.productName}>
+        <Popover2 interactionKind="hover" hoverOpenDelay={0} content={
+          <Card>
+            {
+              [
+                [item.productNumber, item.productName].join(" "),
+                item.manufacturingMethod,
+                (item.price && `￥${item.price.toLocaleString()}`),
+                item.abrasiveGrains,
+              ].map(x => <div>{x}</div>)
+            }
+            <div>
+              <pre>
+                <code>
+                  {remarks}
+                </code>
+              </pre>
+            </div>
+          </Card>
+        }>
+          <a href={item.url} target="_blank" rel="noreferrer">
           {item.productName}
-        </Tooltip2>
+          </a>
+        </Popover2>
       </StyledTd>
       <StyledTd>{typeof item.grid === 'number' ? `#${item.grid.toLocaleString()}` : item.grid}</StyledTd>
       <StyledTd>
-        <Tooltip2 content={item.manufacturingMethod}>
-          {item.manufacturingMethod}
-        </Tooltip2>
-      </StyledTd>
-      <StyledTd>
-        <Tooltip2 content={item.abrasiveGrains}>
-         {item.abrasiveGrains}
-        </Tooltip2>
-      </StyledTd>
-      <StyledTd>{item.size}</StyledTd>
-      <StyledTd>{volume ? `${volume.toLocaleString()}mm³` : ""}</StyledTd>
-      <StyledTd>{item.price && `￥${item.price.toLocaleString()}`}</StyledTd>
-      <StyledTd>
-        <Tooltip2 content={item.url}>
-          <a href={item.url} target="_blank" rel="noreferrer">{item.url}</a>
-        </Tooltip2>
-      </StyledTd>
-      <StyledTd>
-        <Tooltip2 content={remarks}>
-          <pre>
-            <code>
-              {remarks}
-            </code>
-          </pre>
-        </Tooltip2>
+        {volume ? `${item.size} (${volume.toLocaleString()}mm³)` : ""}
       </StyledTd>
     </tr>
   );
