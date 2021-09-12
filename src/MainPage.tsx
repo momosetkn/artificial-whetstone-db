@@ -94,7 +94,7 @@ export const MainPage = () => {
           asyncControl={true}
           leftIcon="filter"
           onChange={handleChangeFreeWord}
-          placeholder="フリーワード"
+          placeholder="フリーワード検索"
           value={query.freeWord}
         />
         <StyledRangeSlider
