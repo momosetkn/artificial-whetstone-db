@@ -9,9 +9,11 @@ import '@blueprintjs/icons/lib/css/blueprint-icons.css';
 import '@blueprintjs/core/lib/css/blueprint.css';
 import '@blueprintjs/popover2/lib/css/blueprint-popover2.css';
 
+const ROUTER_BASENAME = window.location.pathname.match(/^(\/[^/]+)/)?.[1] || "/";
+
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={ROUTER_BASENAME}>
       <Switch>
         <Route exact path="/">
           <MainPage/>
