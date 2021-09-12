@@ -63,6 +63,10 @@ export const MainPage = () => {
     const isTargetGird = (value: Product["grid"]) => {
       // TODO: 番手情報が無いものは、とりあえず無条件に出しておく
       if (!value) return true;
+      if (selectedGridRangesValues[0] === Number.MAX_VALUE && selectedGridRangesValues[1] === Number.MAX_VALUE) {
+        // from-toどっちもMAXの場合、最後から2番目よりも上を条件とする
+        if (typeof value === "number" && grids.slice(-2)[0].value < value && value <= Number.MAX_VALUE) return true;
+      }
       if (typeof value === "number" && selectedGridRangesValues[0] <= value && value <= selectedGridRangesValues[1]) return true;
       if (typeof value === "string") {
         const matchGroups = value.match(/(\d+)/g);
@@ -116,7 +120,7 @@ const DataTables = ({items}: { items: Product[]}) => {
           <th>会社名</th>
           <th>品番</th>
           <th>商品名</th>
-          <th>粒度</th>
+          <th>番手</th>
           <th>製法</th>
           <th>砥粒</th>
           <th>サイズ</th>
