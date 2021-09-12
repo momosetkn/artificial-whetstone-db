@@ -22,6 +22,7 @@ const grids = [
   {label: "#600", value: 600},
   {label: "#800", value: 800},
   {label: "#1,000", value: 1_000},
+  {label: "#1,500", value: 1_500},
   {label: "#2,000", value: 2_000},
   {label: "#3,000", value: 3_000},
   {label: "#6,000", value: 6_000},
