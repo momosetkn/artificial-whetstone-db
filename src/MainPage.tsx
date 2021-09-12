@@ -135,13 +135,13 @@ const Row = React.memo(({item}: { item: Product }) => {
   return (
     <tr>
       <StyledTd>
-          <a
-            href={companiesMap[item.company].url}
-            target="_blank"
-           rel="noreferrer"
-          >
-            {item.company}
-          </a>
+        <a
+          href={companiesMap[item.company].url}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {item.company}
+        </a>
       </StyledTd>
       <StyledTd>
         <Popover2 interactionKind="hover" hoverOpenDelay={0} content={
@@ -155,16 +155,12 @@ const Row = React.memo(({item}: { item: Product }) => {
               ].map(x => <div>{x}</div>)
             }
             <div>
-              <pre>
-                <code>
-                  {remarks}
-                </code>
-              </pre>
+              <pre><code>{remarks}</code></pre>
             </div>
           </Card>
         }>
           <a href={item.url} target="_blank" rel="noreferrer">
-          {item.productName}
+            {item.productName}
           </a>
         </Popover2>
       </StyledTd>
