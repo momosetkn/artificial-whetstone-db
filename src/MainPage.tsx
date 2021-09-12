@@ -108,12 +108,6 @@ const DataTables = ({items, filterIds}: { items: Product[]; filterIds: number[]}
         <tbody>
           {items.map(item => <Row key={item.id} item={item} hidden={!filterIdsSet.has(item.id)}/>)}
         </tbody>
-        <tfoot>
-        <tr>
-          <td>Total</td>
-          <td>{items.length}</td>
-        </tr>
-        </tfoot>
       </StyledHTMLTable>
     </StyledTableContainer>
   )
