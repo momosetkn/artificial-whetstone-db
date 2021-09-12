@@ -61,24 +61,18 @@ export const MainPage = () => {
 
   const selectedGridRangesValues: [number, number] = useMemo(() => [gridValues[query.gridRange[0]], gridValues[query.gridRange[1]]], [query.gridRange]);
   const filteredProducts = useMemo(() => products.filter(product => {
-    const isTargetGird = (value: Product["grid"]) => {
+    const isTargetGird = (value: Product["grid"][number]) => {
       // TODO: 番手情報が無いものは、とりあえず無条件に出しておく
       if (!value) return true;
       if (selectedGridRangesValues[0] === Number.MAX_VALUE && selectedGridRangesValues[1] === Number.MAX_VALUE) {
         // from-toどっちもMAXの場合、最後から2番目よりも上を条件とする
-        if (typeof value === "number" && grids.slice(-2)[0].value < value && value <= Number.MAX_VALUE) return true;
+        if (grids.slice(-2)[0].value < value && value <= Number.MAX_VALUE) return true;
       }
-      if (typeof value === "number" && selectedGridRangesValues[0] <= value && value <= selectedGridRangesValues[1]) return true;
-      if (typeof value === "string") {
-        const matchGroups = value.match(/(\d+)/g);
-        for (const m in matchGroups) {
-          const n = Number(m);
-          if (selectedGridRangesValues[0] <= n && n <= selectedGridRangesValues[1]) return true;
-        }
-      }
+      return selectedGridRangesValues[0] <= value && value <= selectedGridRangesValues[1];
+
     }
     return (!query.freeWord || product.freeWords.search(query.freeWord) !== -1)
-      && isTargetGird(product.grid);
+      && product.grid.some(isTargetGird);
   }), [query, selectedGridRangesValues])
 
   const handleChangeFreeWord = (e: ChangeEvent<HTMLInputElement>) => {
@@ -174,7 +168,7 @@ const Row = React.memo(({item}: { item: Product }) => {
           </a>
         </Popover2>
       </StyledTd>
-      <StyledTd>{typeof item.grid === 'number' ? `#${item.grid.toLocaleString()}` : item.grid}</StyledTd>
+      <StyledTd>{item.grid.map(x => `#${x.toLocaleString()}`).join("/")}</StyledTd>
       <StyledTd>
         {volume ? `${item.size} (${volume.toLocaleString()}mm³)` : ""}
       </StyledTd>
