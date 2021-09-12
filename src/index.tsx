@@ -16,6 +16,9 @@ ReactDOM.render(
         <Route exact path="/">
           <MainPage/>
         </Route>
+        <Route>
+          not found
+        </Route>
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,
