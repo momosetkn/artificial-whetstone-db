@@ -8,7 +8,7 @@ export type Product = {
   manufacturingMethod: string,
   abrasiveGrains: string,
   size: string,
-  price?: string,
+  price?: number,
   url: string,
   remarks?: string,
   remarks2?: string,
@@ -26,7 +26,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "主にアルミナや炭化ケイ素など（公式サイトQ&A）",
     size: "210×70×15",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -39,7 +39,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "主にアルミナや炭化ケイ素など（公式サイトQ&A）",
     size: "210×70×15",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -52,7 +52,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "主にアルミナや炭化ケイ素など（公式サイトQ&A）",
     size: "210×70×15",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -65,7 +65,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "主にアルミナや炭化ケイ素など（公式サイトQ&A）",
     size: "210×70×15",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -78,7 +78,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "主にアルミナや炭化ケイ素など（公式サイトQ&A）",
     size: "210×70×15",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -91,7 +91,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "主にアルミナや炭化ケイ素など（公式サイトQ&A）",
     size: "210×70×15",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -104,7 +104,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "主にアルミナや炭化ケイ素など（公式サイトQ&A）",
     size: "210×70×15",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -117,7 +117,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "主にアルミナや炭化ケイ素など（公式サイトQ&A）",
     size: "210×70×15",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -130,7 +130,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "主にアルミナや炭化ケイ素など（公式サイトQ&A）",
     size: "210×70×15",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -143,7 +143,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "主にアルミナや炭化ケイ素など（公式サイトQ&A）",
     size: "210×70×15",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -156,7 +156,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -169,7 +169,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -182,7 +182,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -195,7 +195,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -208,7 +208,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -221,7 +221,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -234,7 +234,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -247,7 +247,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -260,7 +260,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -273,7 +273,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -286,7 +286,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -299,7 +299,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -312,7 +312,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "",
+    price: undefined,
     url: "https://shapton.co.jp/",
     remarks: "",
     remarks2: ""
@@ -325,7 +325,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "210x70x15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -338,7 +338,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "210x70x15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -351,7 +351,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "210x70x15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -364,7 +364,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "210x70x15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -377,7 +377,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "210x70x15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -390,7 +390,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "210x70x15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -403,7 +403,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "210x70x15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -416,7 +416,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "210x70x15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -429,7 +429,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "210x70x10",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -442,7 +442,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "210x70x10",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "#400 / #1000のツイン(NW-0410)有り",
     remarks2: ""
@@ -455,7 +455,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "210x70x10",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -468,7 +468,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "210x70x10",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "#400 / #1000のツイン(NW-0410)有り、#1000 / #3000のツイン(NW-1030)有り",
     remarks2: ""
@@ -481,7 +481,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "210x70x10",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -494,7 +494,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "210x70x10",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "#1000 / #3000のツイン(NW-1030)有り、#3000 / #5000のツイン(NW-3050)有り",
     remarks2: ""
@@ -507,7 +507,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "210x70x10",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "#3000 / #5000のツイン(NW-3050)有り、#5000 / #8000(NW-5080)のツイン有り、#5000 / #12000のツイン(NW-5120)有り",
     remarks2: ""
@@ -520,7 +520,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "210x70x10",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "#5000 / #8000のツイン(NW-5080)有り",
     remarks2: ""
@@ -533,7 +533,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "210x70x10",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -546,7 +546,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "210x70x10",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "#5000 / #12000のツイン(NW-5120)有り",
     remarks2: ""
@@ -559,7 +559,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "210x70x20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -572,7 +572,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "210x70x20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -585,7 +585,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "210x70x20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -598,7 +598,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "210x70x20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -611,7 +611,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "210x70x20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -624,7 +624,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "210x70x20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -637,7 +637,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "210x70x20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -650,7 +650,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "210x70x20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -663,7 +663,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "210x70x20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -676,7 +676,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "210x70x20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/nigata-naniwa/products/goukenseries.html",
     remarks: "",
     remarks2: ""
@@ -689,7 +689,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "アルミナ系？",
     size: "210×65×30",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/gouken/",
     remarks: "",
     remarks2: ""
@@ -702,7 +702,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "アルミナ系？",
     size: "210×65×30",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/gouken/",
     remarks: "",
     remarks2: ""
@@ -715,7 +715,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "アルミナ系？",
     size: "210×65×30",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/gouken/",
     remarks: "",
     remarks2: ""
@@ -728,7 +728,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×75×30",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/gouken/",
     remarks: "硬口版もあり（硬口はやや高価）",
     remarks2: ""
@@ -741,7 +741,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "PA（RA）",
     size: "205×75×50",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/gouken/",
     remarks: "",
     remarks2: ""
@@ -754,7 +754,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/gouken/",
     remarks: "",
     remarks2: ""
@@ -767,7 +767,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/gouken/",
     remarks: "",
     remarks2: ""
@@ -780,7 +780,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/gouken/",
     remarks: "",
     remarks2: ""
@@ -793,7 +793,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/gouken/",
     remarks: "",
     remarks2: ""
@@ -806,7 +806,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/gouken/",
     remarks: "",
     remarks2: ""
@@ -819,7 +819,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/gouken/",
     remarks: "",
     remarks2: ""
@@ -832,7 +832,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "133×28×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/gouken/",
     remarks: "",
     remarks2: ""
@@ -845,7 +845,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "133×28×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/gouken/",
     remarks: "",
     remarks2: ""
@@ -858,7 +858,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "133×28×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/gouken/",
     remarks: "",
     remarks2: ""
@@ -871,7 +871,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "",
     size: "210×70×10",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/super/",
     remarks: "",
     remarks2: ""
@@ -884,7 +884,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "",
     size: "210×70×10",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/super/",
     remarks: "",
     remarks2: ""
@@ -897,7 +897,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "",
     size: "210×70×10",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/super/",
     remarks: "",
     remarks2: ""
@@ -910,7 +910,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "",
     size: "210×70×10",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/super/",
     remarks: "",
     remarks2: ""
@@ -923,7 +923,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "",
     size: "210×70×10",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/super/",
     remarks: "",
     remarks2: ""
@@ -936,7 +936,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "",
     size: "210×70×10",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/super/",
     remarks: "",
     remarks2: ""
@@ -949,7 +949,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "",
     size: "210×70×10",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/super/",
     remarks: "",
     remarks2: ""
@@ -962,7 +962,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "",
     size: "210×70×10",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/super/",
     remarks: "",
     remarks2: ""
@@ -975,7 +975,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "",
     size: "210×70×10",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/super/",
     remarks: "",
     remarks2: ""
@@ -988,7 +988,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/super/",
     remarks: "",
     remarks2: ""
@@ -1001,7 +1001,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/super/",
     remarks: "",
     remarks2: ""
@@ -1014,7 +1014,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/super/",
     remarks: "",
     remarks2: ""
@@ -1027,7 +1027,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/super/",
     remarks: "",
     remarks2: ""
@@ -1040,7 +1040,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/super/",
     remarks: "",
     remarks2: ""
@@ -1053,7 +1053,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/super/",
     remarks: "",
     remarks2: ""
@@ -1066,7 +1066,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/super/",
     remarks: "",
     remarks2: ""
@@ -1079,7 +1079,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/super/",
     remarks: "",
     remarks2: ""
@@ -1092,7 +1092,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/super/",
     remarks: "",
     remarks2: ""
@@ -1105,7 +1105,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "210×70×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/chosera/",
     remarks: "",
     remarks2: ""
@@ -1118,7 +1118,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "210×70×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/chosera/",
     remarks: "",
     remarks2: ""
@@ -1131,7 +1131,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "210×70×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/chosera/",
     remarks: "",
     remarks2: ""
@@ -1144,7 +1144,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "210×70×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/chosera/",
     remarks: "",
     remarks2: ""
@@ -1157,7 +1157,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "210×70×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/chosera/",
     remarks: "",
     remarks2: ""
@@ -1170,7 +1170,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "210×70×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/chosera/",
     remarks: "",
     remarks2: ""
@@ -1183,7 +1183,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "210×70×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/chosera/",
     remarks: "",
     remarks2: ""
@@ -1196,7 +1196,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×30",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/chosera/",
     remarks: "",
     remarks2: ""
@@ -1209,7 +1209,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1222,7 +1222,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×75×50",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1235,7 +1235,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×65×32",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1248,7 +1248,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×60",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1261,7 +1261,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1274,7 +1274,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×20（台付）",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1287,7 +1287,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "135×45×15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "超セラの小さい版",
     remarks2: ""
@@ -1300,7 +1300,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "135×45×15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1313,7 +1313,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "135×45×15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1326,7 +1326,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "135×45×15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1339,7 +1339,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "135×45×15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1352,7 +1352,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "135×45×15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1365,7 +1365,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "135×45×15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1378,7 +1378,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "150×50×22",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1391,7 +1391,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×65×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1404,7 +1404,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×65×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1417,7 +1417,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×65×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1430,7 +1430,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1443,7 +1443,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1456,7 +1456,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1469,7 +1469,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×75×50",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1482,7 +1482,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×65×32",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1495,7 +1495,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×60",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1508,7 +1508,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1521,7 +1521,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/otherseries/",
     remarks: "",
     remarks2: ""
@@ -1534,7 +1534,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "φ220×27",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/kitchen_knife/",
     remarks: "超セラの大きい版？",
     remarks2: ""
@@ -1547,7 +1547,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "φ220×27",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/kitchen_knife/",
     remarks: "",
     remarks2: ""
@@ -1560,7 +1560,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "φ220×24",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/kitchen_knife/",
     remarks: "",
     remarks2: ""
@@ -1573,7 +1573,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×65×15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/economical/",
     remarks: "",
     remarks2: ""
@@ -1586,7 +1586,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×65×15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/economical/",
     remarks: "",
     remarks2: ""
@@ -1599,7 +1599,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×65×15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/economical/",
     remarks: "",
     remarks2: ""
@@ -1612,7 +1612,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×65×15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/economical/",
     remarks: "",
     remarks2: ""
@@ -1625,7 +1625,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×65×15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/economical/",
     remarks: "",
     remarks2: ""
@@ -1638,7 +1638,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "175×55×16(砥石)192×70×32(ケース)",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/economical/",
     remarks: "",
     remarks2: ""
@@ -1651,7 +1651,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "175×55×35",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/economical/",
     remarks: "",
     remarks2: ""
@@ -1664,7 +1664,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×65×15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/economical/",
     remarks: "",
     remarks2: ""
@@ -1677,7 +1677,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×65×15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/economical/",
     remarks: "",
     remarks2: ""
@@ -1690,7 +1690,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×65×15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/economical/",
     remarks: "",
     remarks2: ""
@@ -1703,7 +1703,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "175×55×16",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/economical/",
     remarks: "",
     remarks2: ""
@@ -1716,7 +1716,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "A",
     size: "175×55×16",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/economical/",
     remarks: "",
     remarks2: ""
@@ -1729,7 +1729,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "A",
     size: "175×55×16",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/economical/",
     remarks: "",
     remarks2: ""
@@ -1742,7 +1742,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "WA",
     size: "176×52×15",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/economical/",
     remarks: "",
     remarks2: ""
@@ -1755,7 +1755,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "195×53×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/economical/",
     remarks: "",
     remarks2: ""
@@ -1768,7 +1768,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×45×19",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/economical/",
     remarks: "",
     remarks2: ""
@@ -1781,7 +1781,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "195×53×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/economical/",
     remarks: "",
     remarks2: ""
@@ -1794,7 +1794,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "ダイヤ",
     size: "210×75×16",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/diamond/",
     remarks: "",
     remarks2: ""
@@ -1807,7 +1807,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "ダイヤ",
     size: "210×75×16",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/diamond/",
     remarks: "",
     remarks2: ""
@@ -1820,7 +1820,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "ダイヤ",
     size: "210×75×16",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/diamond/",
     remarks: "",
     remarks2: ""
@@ -1833,7 +1833,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "ダイヤ",
     size: "210×75×16",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/diamond/",
     remarks: "",
     remarks2: ""
@@ -1846,7 +1846,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "ダイヤ",
     size: "210×75×16",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/diamond/",
     remarks: "",
     remarks2: ""
@@ -1859,7 +1859,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "ダイヤ",
     size: "210×75×16",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/diamond/",
     remarks: "",
     remarks2: ""
@@ -1872,7 +1872,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "ダイヤ",
     size: "135×75×6",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/diamond/",
     remarks: "",
     remarks2: ""
@@ -1885,7 +1885,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "ダイヤ",
     size: "135×75×6",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/diamond/",
     remarks: "",
     remarks2: ""
@@ -1898,7 +1898,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "ダイヤ",
     size: "135×75×6",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/diamond/",
     remarks: "",
     remarks2: ""
@@ -1911,7 +1911,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "ダイヤ",
     size: "135×75×6",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/diamond/",
     remarks: "",
     remarks2: ""
@@ -1924,7 +1924,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "ダイヤ",
     size: "135×75×6",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/diamond/",
     remarks: "",
     remarks2: ""
@@ -1937,7 +1937,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "ダイヤ",
     size: "135×75×6",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/diamond/",
     remarks: "",
     remarks2: ""
@@ -1950,7 +1950,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-c/",
     remarks: "",
     remarks2: ""
@@ -1963,7 +1963,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-c/",
     remarks: "赤エビは、青エビよりも高級",
     remarks2: ""
@@ -1976,7 +1976,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-c/",
     remarks: "",
     remarks2: ""
@@ -1989,7 +1989,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-c/",
     remarks: "",
     remarks2: ""
@@ -2002,7 +2002,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-c/",
     remarks: "",
     remarks2: ""
@@ -2015,7 +2015,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "205×50×50",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-c/",
     remarks: "",
     remarks2: ""
@@ -2028,7 +2028,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "205×50×50",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-c/",
     remarks: "",
     remarks2: ""
@@ -2041,7 +2041,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "205×50×50",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-c/",
     remarks: "",
     remarks2: ""
@@ -2054,7 +2054,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "205×75×50",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-c/",
     remarks: "",
     remarks2: ""
@@ -2067,7 +2067,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "210×65×32",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-c/",
     remarks: "",
     remarks2: ""
@@ -2080,7 +2080,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-c/",
     remarks: "",
     remarks2: ""
@@ -2093,7 +2093,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "205×50×50",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-c/",
     remarks: "",
     remarks2: ""
@@ -2106,7 +2106,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "205×75×50",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-c/",
     remarks: "",
     remarks2: ""
@@ -2119,7 +2119,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-c/",
     remarks: "",
     remarks2: ""
@@ -2132,7 +2132,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-c/",
     remarks: "",
     remarks2: ""
@@ -2145,7 +2145,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-c/",
     remarks: "",
     remarks2: ""
@@ -2158,7 +2158,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-c/",
     remarks: "",
     remarks2: ""
@@ -2171,7 +2171,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-c/",
     remarks: "",
     remarks2: ""
@@ -2184,7 +2184,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-gc/",
     remarks: "",
     remarks2: ""
@@ -2197,7 +2197,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-gc/",
     remarks: "",
     remarks2: ""
@@ -2210,7 +2210,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-gc/",
     remarks: "",
     remarks2: ""
@@ -2223,7 +2223,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-gc/",
     remarks: "",
     remarks2: ""
@@ -2236,7 +2236,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "205×50×50",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-gc/",
     remarks: "",
     remarks2: ""
@@ -2249,7 +2249,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "205×75×50",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-gc/",
     remarks: "",
     remarks2: ""
@@ -2262,7 +2262,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "230×90×60",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-gc/",
     remarks: "",
     remarks2: ""
@@ -2275,7 +2275,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-gc/",
     remarks: "",
     remarks2: ""
@@ -2288,7 +2288,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "205×50×50",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-gc/",
     remarks: "",
     remarks2: ""
@@ -2301,7 +2301,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "205×75×50",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-gc/",
     remarks: "",
     remarks2: ""
@@ -2314,7 +2314,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "230×90×60",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-gc/",
     remarks: "",
     remarks2: ""
@@ -2327,7 +2327,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-gc/",
     remarks: "",
     remarks2: ""
@@ -2340,7 +2340,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-gc/",
     remarks: "",
     remarks2: ""
@@ -2353,7 +2353,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "210×55×55",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/coarse-gc/",
     remarks: "",
     remarks2: ""
@@ -2366,7 +2366,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC/C",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/combination-gc_c/",
     remarks: "",
     remarks2: ""
@@ -2379,7 +2379,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC/C",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/combination-gc_c/",
     remarks: "",
     remarks2: ""
@@ -2392,7 +2392,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC/C",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/combination-gc_c/",
     remarks: "",
     remarks2: ""
@@ -2405,7 +2405,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/deluxe/",
     remarks: "",
     remarks2: ""
@@ -2418,7 +2418,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×65×32",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/deluxe/",
     remarks: "",
     remarks2: ""
@@ -2431,7 +2431,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×65×32",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/deluxe/",
     remarks: "",
     remarks2: ""
@@ -2444,7 +2444,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×65×32",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/deluxe/",
     remarks: "",
     remarks2: ""
@@ -2457,7 +2457,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×65×32",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/deluxe/",
     remarks: "",
     remarks2: ""
@@ -2470,7 +2470,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×60",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/deluxe/",
     remarks: "",
     remarks2: ""
@@ -2483,7 +2483,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×60",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/deluxe/",
     remarks: "",
     remarks2: ""
@@ -2496,7 +2496,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×60",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/deluxe/",
     remarks: "",
     remarks2: ""
@@ -2509,7 +2509,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×60",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/deluxe/",
     remarks: "",
     remarks2: ""
@@ -2522,7 +2522,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "230×100×80",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/deluxe/",
     remarks: "",
     remarks2: ""
@@ -2535,7 +2535,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×65×32",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/deluxe/",
     remarks: "",
     remarks2: ""
@@ -2548,7 +2548,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×60",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/deluxe/",
     remarks: "",
     remarks2: ""
@@ -2561,7 +2561,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "230×100×70",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/deluxe/",
     remarks: "",
     remarks2: ""
@@ -2574,7 +2574,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×75×65",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/biryu/",
     remarks: "",
     remarks2: ""
@@ -2587,7 +2587,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "230×100×80",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/biryu/",
     remarks: "",
     remarks2: ""
@@ -2600,7 +2600,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/finishing/",
     remarks: "",
     remarks2: ""
@@ -2613,7 +2613,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/finishing/",
     remarks: "",
     remarks2: ""
@@ -2626,7 +2626,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "235×90×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/finishing/",
     remarks: "",
     remarks2: ""
@@ -2639,7 +2639,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×22",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/finishing/",
     remarks: "",
     remarks2: ""
@@ -2652,7 +2652,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/finishing/",
     remarks: "",
     remarks2: ""
@@ -2665,7 +2665,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/finishing/",
     remarks: "",
     remarks2: ""
@@ -2678,7 +2678,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/finishing/",
     remarks: "",
     remarks2: ""
@@ -2691,7 +2691,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×65×32（小型）",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2704,7 +2704,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×75×50（中型）",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2717,7 +2717,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "230×90×60（大型）",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2730,7 +2730,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×65×32（小型）",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2743,7 +2743,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×60（中型）",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2756,7 +2756,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "230×100×70（大型）",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2769,7 +2769,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×65×25（小型）",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2782,7 +2782,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×22（中型）",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2795,7 +2795,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "235×90×25（大型）",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2808,7 +2808,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2821,7 +2821,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2834,7 +2834,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2847,7 +2847,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×65×32",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2860,7 +2860,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×65×32",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2873,7 +2873,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×65×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2886,7 +2886,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×65×33",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2899,7 +2899,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×65×33",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2912,7 +2912,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "175×55×16",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2925,7 +2925,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "175×55×16",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2938,7 +2938,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "175×55×16",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2951,7 +2951,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "175×55×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2964,7 +2964,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "175×55×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2977,7 +2977,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×45×16",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -2990,7 +2990,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×45×16",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -3003,7 +3003,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×45×13",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -3016,7 +3016,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×45×18",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -3029,7 +3029,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "150×38×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -3042,7 +3042,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "125×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -3055,7 +3055,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "133×40×28",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -3068,7 +3068,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "133×40×28",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -3081,7 +3081,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "150×38×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "黒",
     remarks2: ""
@@ -3094,7 +3094,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "150×38×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "ピンク",
     remarks2: ""
@@ -3107,7 +3107,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "150×38×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "緑",
     remarks2: ""
@@ -3120,7 +3120,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "133×40×28",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -3133,7 +3133,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -3146,7 +3146,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -3159,7 +3159,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -3172,7 +3172,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "170×55×30",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/with_case/",
     remarks: "",
     remarks2: ""
@@ -3185,7 +3185,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×70×55",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/natural/",
     remarks: "",
     remarks2: ""
@@ -3198,7 +3198,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×78×55（15型）",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/natural/",
     remarks: "",
     remarks2: ""
@@ -3211,7 +3211,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "216×59×28（30型）",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/natural/",
     remarks: "",
     remarks2: ""
@@ -3224,7 +3224,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "133×40×25（鎌型）",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/natural/",
     remarks: "",
     remarks2: ""
@@ -3237,7 +3237,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "中型125×38×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3250,7 +3250,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "大型150×38×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3263,7 +3263,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "大型150×40×23",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3276,7 +3276,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "中型125×38×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3289,7 +3289,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "大型150×38×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3302,7 +3302,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "C",
     size: "特大型125×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3315,7 +3315,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "中型125×38×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3328,7 +3328,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "大型150×38×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3341,7 +3341,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "特大型125×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3354,7 +3354,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "大型150×40×23",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3367,7 +3367,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "133×40×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3380,7 +3380,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "大型150×38×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3393,7 +3393,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "中型128×38×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3406,7 +3406,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "中型128×38×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3419,7 +3419,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "133×40×28",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3432,7 +3432,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "133×40×28",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3445,7 +3445,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "150×38×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3458,7 +3458,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "150×38×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3471,7 +3471,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "150×38×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3484,7 +3484,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "132×40×28",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3497,7 +3497,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "132×40×28",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/sickle/",
     remarks: "",
     remarks2: ""
@@ -3510,7 +3510,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "60✕30✕20",
-    price: "",
+    price: undefined,
     url: "",
     remarks: "剛研 輝の端材？？",
     remarks2: ""
@@ -3523,7 +3523,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "60✕30✕20",
-    price: "",
+    price: undefined,
     url: "",
     remarks: "剛研 輝の端材？？",
     remarks2: ""
@@ -3536,7 +3536,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "60✕30✕20",
-    price: "",
+    price: undefined,
     url: "",
     remarks: "剛研 輝の端材？？",
     remarks2: ""
@@ -3549,7 +3549,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "60✕30✕20",
-    price: "",
+    price: undefined,
     url: "",
     remarks: "剛研 輝の端材？？",
     remarks2: ""
@@ -3562,7 +3562,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "60✕30✕20",
-    price: "",
+    price: undefined,
     url: "",
     remarks: "剛研 輝の端材？？",
     remarks2: ""
@@ -3575,7 +3575,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "60✕30✕20",
-    price: "",
+    price: undefined,
     url: "",
     remarks: "剛研 輝の端材？？",
     remarks2: ""
@@ -3588,7 +3588,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "60✕30✕20",
-    price: "",
+    price: undefined,
     url: "",
     remarks: "剛研 輝の端材？？",
     remarks2: ""
@@ -3601,7 +3601,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "60✕30✕20",
-    price: "",
+    price: undefined,
     url: "",
     remarks: "剛研 輝の端材？？",
     remarks2: ""
@@ -3614,7 +3614,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "60✕30✕20",
-    price: "",
+    price: undefined,
     url: "",
     remarks: "剛研 輝の端材？？",
     remarks2: ""
@@ -3627,7 +3627,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "60✕30✕20",
-    price: "",
+    price: undefined,
     url: "",
     remarks: "剛研 輝の端材？？",
     remarks2: ""
@@ -3640,7 +3640,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "",
     remarks: "",
     remarks2: ""
@@ -3653,7 +3653,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "",
     remarks: "",
     remarks2: ""
@@ -3666,7 +3666,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "",
     remarks: "",
     remarks2: ""
@@ -3679,7 +3679,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "",
     size: "210×70×20",
-    price: "",
+    price: undefined,
     url: "",
     remarks: "",
     remarks2: ""
@@ -3692,7 +3692,7 @@ export const products: Product[] = [
     manufacturingMethod: "100",
     abrasiveGrains: "-",
     size: "100× 6",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3705,7 +3705,7 @@ export const products: Product[] = [
     manufacturingMethod: "100",
     abrasiveGrains: "-",
     size: "100× 9",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3718,7 +3718,7 @@ export const products: Product[] = [
     manufacturingMethod: "100",
     abrasiveGrains: "-",
     size: "100×13",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3731,7 +3731,7 @@ export const products: Product[] = [
     manufacturingMethod: "100",
     abrasiveGrains: "-",
     size: "100×16",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3744,7 +3744,7 @@ export const products: Product[] = [
     manufacturingMethod: "100",
     abrasiveGrains: "-",
     size: "100× 6",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3757,7 +3757,7 @@ export const products: Product[] = [
     manufacturingMethod: "100",
     abrasiveGrains: "-",
     size: "100× 9",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3770,7 +3770,7 @@ export const products: Product[] = [
     manufacturingMethod: "100",
     abrasiveGrains: "-",
     size: "100×13",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3783,7 +3783,7 @@ export const products: Product[] = [
     manufacturingMethod: "100",
     abrasiveGrains: "-",
     size: "100×16",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3796,7 +3796,7 @@ export const products: Product[] = [
     manufacturingMethod: "100",
     abrasiveGrains: "-",
     size: "100× 6",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3809,7 +3809,7 @@ export const products: Product[] = [
     manufacturingMethod: "100",
     abrasiveGrains: "-",
     size: "100× 9",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3822,7 +3822,7 @@ export const products: Product[] = [
     manufacturingMethod: "100",
     abrasiveGrains: "-",
     size: "100×13",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3835,7 +3835,7 @@ export const products: Product[] = [
     manufacturingMethod: "100",
     abrasiveGrains: "-",
     size: "100×16",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3848,7 +3848,7 @@ export const products: Product[] = [
     manufacturingMethod: "100",
     abrasiveGrains: "-",
     size: "100× 6",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3861,7 +3861,7 @@ export const products: Product[] = [
     manufacturingMethod: "100",
     abrasiveGrains: "-",
     size: "100× 9",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3874,7 +3874,7 @@ export const products: Product[] = [
     manufacturingMethod: "100",
     abrasiveGrains: "-",
     size: "100×13",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3887,7 +3887,7 @@ export const products: Product[] = [
     manufacturingMethod: "100",
     abrasiveGrains: "-",
     size: "100×16",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3900,7 +3900,7 @@ export const products: Product[] = [
     manufacturingMethod: "50",
     abrasiveGrains: "-",
     size: "75×25× 9",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3913,7 +3913,7 @@ export const products: Product[] = [
     manufacturingMethod: "50",
     abrasiveGrains: "-",
     size: "100×25×13",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3926,7 +3926,7 @@ export const products: Product[] = [
     manufacturingMethod: "50",
     abrasiveGrains: "-",
     size: "115×38×16",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3939,7 +3939,7 @@ export const products: Product[] = [
     manufacturingMethod: "50",
     abrasiveGrains: "-",
     size: "150×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3952,7 +3952,7 @@ export const products: Product[] = [
     manufacturingMethod: "30",
     abrasiveGrains: "-",
     size: "200×50×25",
-    price: "",
+    price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/oil/",
     remarks: "",
     remarks2: ""
@@ -3965,7 +3965,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "210×75×12",
-    price: "",
+    price: undefined,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=24",
     remarks: "本体と換刃、別々に買うことも可",
     remarks2: ""
@@ -3978,7 +3978,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "210×75×12",
-    price: "",
+    price: undefined,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=24",
     remarks: "本体と換刃、別々に買うことも可",
     remarks2: ""
@@ -3991,7 +3991,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "210×75×12",
-    price: "",
+    price: undefined,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=24",
     remarks: "本体と換刃、別々に買うことも可",
     remarks2: ""
@@ -4004,7 +4004,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "210×75×12",
-    price: "",
+    price: undefined,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=24",
     remarks: "本体と換刃、別々に買うことも可",
     remarks2: ""
@@ -4017,7 +4017,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "10*100",
-    price: "1800",
+    price: 1800,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4030,7 +4030,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "10*100",
-    price: "1800",
+    price: 1800,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4043,7 +4043,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "10*100",
-    price: "1800",
+    price: 1800,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4056,7 +4056,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "10*100",
-    price: "1800",
+    price: 1800,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4069,7 +4069,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "10*100",
-    price: "1800",
+    price: 1800,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4082,7 +4082,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "50*100",
-    price: "4200",
+    price: 4200,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4095,7 +4095,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "50*100",
-    price: "4200",
+    price: 4200,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4108,7 +4108,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "50*100",
-    price: "4200",
+    price: 4200,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4121,7 +4121,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "50*100",
-    price: "4200",
+    price: 4200,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4134,7 +4134,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "50*100",
-    price: "4200",
+    price: 4200,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4147,7 +4147,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "100*100",
-    price: "7500",
+    price: 7500,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4160,7 +4160,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "100*100",
-    price: "7500",
+    price: 7500,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4173,7 +4173,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "100*100",
-    price: "7500",
+    price: 7500,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4186,7 +4186,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "100*100",
-    price: "7500",
+    price: 7500,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4199,7 +4199,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "100*100",
-    price: "7500",
+    price: 7500,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4212,7 +4212,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "200*100",
-    price: "14000",
+    price: 14000,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4225,7 +4225,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "200*100",
-    price: "14000",
+    price: 14000,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4238,7 +4238,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "200*100",
-    price: "14000",
+    price: 14000,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4251,7 +4251,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "200*100",
-    price: "14000",
+    price: 14000,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4264,7 +4264,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "200*100",
-    price: "14000",
+    price: 14000,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4277,7 +4277,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "200*200",
-    price: "27000",
+    price: 27000,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4290,7 +4290,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "200*200",
-    price: "27000",
+    price: 27000,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4303,7 +4303,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "200*200",
-    price: "27000",
+    price: 27000,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4316,7 +4316,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "200*200",
-    price: "27000",
+    price: 27000,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4329,7 +4329,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "200*200",
-    price: "27000",
+    price: 27000,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4342,7 +4342,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "37.5*117*32",
-    price: "3900",
+    price: 3900,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4355,7 +4355,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "37.5*117*32",
-    price: "3500",
+    price: 3500,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4368,7 +4368,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "37.5*117*32",
-    price: "3500",
+    price: 3500,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4381,7 +4381,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "37.5*117*32",
-    price: "3500",
+    price: 3500,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4394,7 +4394,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "37.5*117*32",
-    price: "4200",
+    price: 4200,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4407,7 +4407,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "37.5*117*32",
-    price: "3800",
+    price: 3800,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4420,7 +4420,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "37.5*117*32",
-    price: "3800",
+    price: 3800,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4433,7 +4433,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "37.5*117*32",
-    price: "3800",
+    price: 3800,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4446,7 +4446,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "37.5*105*1",
-    price: "3100",
+    price: 3100,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4459,7 +4459,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "37.5*105*1",
-    price: "2700",
+    price: 2700,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4472,7 +4472,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "37.5*105*1",
-    price: "2700",
+    price: 2700,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4485,7 +4485,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "37.5*105*1",
-    price: "2700",
+    price: 2700,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4498,7 +4498,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "37.5*105*1",
-    price: "3200",
+    price: 3200,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4511,7 +4511,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "37.5*105*1",
-    price: "2800",
+    price: 2800,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4524,7 +4524,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "37.5*105*1",
-    price: "2800",
+    price: 2800,
     url: "https://tsuboman.com/catalog/?cNo=31032&param=MV8zXzc=&pNo=22",
     remarks: "",
     remarks2: ""
@@ -4537,7 +4537,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "37.5*105*1",
-    price: "2800",
+    price: 2800,
     url: "",
     remarks: "",
     remarks2: ""
@@ -4550,7 +4550,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "205×75×25",
-    price: "10000",
+    price: 10000,
     url: "https://tsukiyama.buyshop.jp/items/19993785",
     remarks: "",
     remarks2: ""
@@ -4563,7 +4563,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "205×75×25",
-    price: "8700",
+    price: 8700,
     url: "https://tsukiyama.buyshop.jp/items/19993776",
     remarks: "",
     remarks2: ""
@@ -4576,7 +4576,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "205×75×25",
-    price: "7700",
+    price: 7700,
     url: "https://tsukiyama.buyshop.jp/items/19993763",
     remarks: "",
     remarks2: ""
@@ -4589,7 +4589,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "205×75×25",
-    price: "7000",
+    price: 7000,
     url: "https://tsukiyama.buyshop.jp/items/19993720",
     remarks: "",
     remarks2: ""
@@ -4602,7 +4602,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "205×75×25",
-    price: "5200",
+    price: 5200,
     url: "https://tsukiyama.buyshop.jp/items/19983974",
     remarks: "",
     remarks2: ""
@@ -4615,7 +4615,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "205×75×25",
-    price: "5200",
+    price: 5200,
     url: "https://tsukiyama.buyshop.jp/items/31684427",
     remarks: "",
     remarks2: ""
@@ -4628,7 +4628,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "205×75×25",
-    price: "8700",
+    price: 8700,
     url: "https://tsukiyama.buyshop.jp/items/11118385",
     remarks: "",
     remarks2: ""
@@ -4641,7 +4641,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "205×75×25",
-    price: "7700",
+    price: 7700,
     url: "https://tsukiyama.buyshop.jp/items/11118184",
     remarks: "",
     remarks2: ""
@@ -4654,7 +4654,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "205×75×25",
-    price: "6700",
+    price: 6700,
     url: "https://tsukiyama.buyshop.jp/items/11118136",
     remarks: "",
     remarks2: ""
@@ -4667,7 +4667,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "",
     size: "205×75×25",
-    price: "6200",
+    price: 6200,
     url: "https://tsukiyama.buyshop.jp/items/11118055",
     remarks: "",
     remarks2: ""
@@ -4680,7 +4680,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "",
     size: "205×75×25",
-    price: "7000",
+    price: 7000,
     url: "https://tsukiyama.buyshop.jp/items/11117834",
     remarks: "",
     remarks2: ""
@@ -4693,7 +4693,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "",
     size: "205×75×25",
-    price: "6000",
+    price: 6000,
     url: "https://tsukiyama.buyshop.jp/items/43834914",
     remarks: "",
     remarks2: ""
@@ -4706,7 +4706,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "",
     size: "205×75×25",
-    price: "4800",
+    price: 4800,
     url: "https://tsukiyama.buyshop.jp/items/11153627",
     remarks: "",
     remarks2: ""
@@ -4719,7 +4719,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "",
     size: "205×75×25",
-    price: "4300",
+    price: 4300,
     url: "https://tsukiyama.buyshop.jp/items/11117658",
     remarks: "",
     remarks2: ""
@@ -4732,7 +4732,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "",
     size: "205×75×25",
-    price: "3800",
+    price: 3800,
     url: "https://tsukiyama.buyshop.jp/items/11116884",
     remarks: "",
     remarks2: ""
@@ -4745,7 +4745,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "",
     size: "205×75×50",
-    price: "6500",
+    price: 6500,
     url: "https://tsukiyama.buyshop.jp/items/27917721",
     remarks: "",
     remarks2: ""
@@ -4758,7 +4758,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "",
-    price: "2000",
+    price: 2000,
     url: "https://tsukiyama.buyshop.jp/categories/1031615",
     remarks: "",
     remarks2: ""
@@ -4771,7 +4771,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "",
-    price: "1800",
+    price: 1800,
     url: "https://tsukiyama.buyshop.jp/categories/1031615",
     remarks: "",
     remarks2: ""
@@ -4784,7 +4784,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "",
-    price: "1700",
+    price: 1700,
     url: "https://tsukiyama.buyshop.jp/categories/1031615",
     remarks: "",
     remarks2: ""
@@ -4797,7 +4797,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "",
-    price: "1500",
+    price: 1500,
     url: "https://tsukiyama.buyshop.jp/categories/1031615",
     remarks: "",
     remarks2: ""
@@ -4810,7 +4810,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "210×75×15",
-    price: "14400",
+    price: 14400,
     url: "https://tsukiyama.buyshop.jp/categories/1031610",
     remarks: "片面張りもあり",
     remarks2: ""
@@ -4823,7 +4823,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "210×75×15",
-    price: "14400",
+    price: 14400,
     url: "https://tsukiyama.buyshop.jp/categories/1031610",
     remarks: "片面張りもあり",
     remarks2: ""
@@ -4836,7 +4836,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "207×66×34mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -4849,7 +4849,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "207×66×34mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -4862,7 +4862,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "207×66×34mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -4875,7 +4875,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "209×70×60mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -4888,7 +4888,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "230×100×80mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -4901,7 +4901,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×75×36mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -4914,7 +4914,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "207×66×34mm,220×80×70",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -4927,7 +4927,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "220×80×70mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -4940,7 +4940,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×70×34ｍｍ",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -4953,7 +4953,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×70×34mm",
-    price: "",
+    price: undefined,
     url: "公式サイトに見当たらない…",
     remarks: "",
     remarks2: ""
@@ -4966,7 +4966,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "207×66×34mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -4979,7 +4979,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "176×52×15mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -4992,7 +4992,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×62×15mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -5005,7 +5005,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×63×20mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -5018,7 +5018,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -5031,7 +5031,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "150×50×25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -5044,7 +5044,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "207×66×36mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -5057,7 +5057,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "215×70×15×1mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -5070,7 +5070,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×62×25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -5083,7 +5083,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×73×25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -5096,7 +5096,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "220×80×70mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -5109,7 +5109,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×62×25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -5122,7 +5122,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "#250 / #800",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -5135,7 +5135,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "129×39×26mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -5148,7 +5148,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "140×45×34mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -5161,7 +5161,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "135×30×30mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -5174,7 +5174,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "特殊形状",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-dx/",
     remarks: "",
     remarks2: ""
@@ -5187,7 +5187,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×73×22mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/hyper-finish/",
     remarks: "",
     remarks2: ""
@@ -5200,7 +5200,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "190×70×20mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/hyper-finish/",
     remarks: "",
     remarks2: ""
@@ -5213,7 +5213,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×62×15mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/hyper-finish/",
     remarks: "",
     remarks2: ""
@@ -5226,7 +5226,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×62×15mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/hyper-finish/",
     remarks: "",
     remarks2: ""
@@ -5239,7 +5239,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×73×22mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/hyper-finish/",
     remarks: "",
     remarks2: ""
@@ -5252,7 +5252,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "176×52×15mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/45series/",
     remarks: "",
     remarks2: ""
@@ -5265,7 +5265,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "176×52×15mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/45series/",
     remarks: "",
     remarks2: ""
@@ -5278,7 +5278,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "176×52×15mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/45series/",
     remarks: "",
     remarks2: ""
@@ -5291,7 +5291,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "176×52×15mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/45series/",
     remarks: "",
     remarks2: ""
@@ -5304,7 +5304,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "176×52×15mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/45series/",
     remarks: "",
     remarks2: ""
@@ -5317,7 +5317,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "176×52×15mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/45series/",
     remarks: "",
     remarks2: ""
@@ -5330,7 +5330,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "176×52×15mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/45series/",
     remarks: "",
     remarks2: ""
@@ -5343,7 +5343,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×62×15mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/55series/",
     remarks: "",
     remarks2: ""
@@ -5356,7 +5356,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×62×15mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/55series/",
     remarks: "",
     remarks2: ""
@@ -5369,7 +5369,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×62×15mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/65series/",
     remarks: "",
     remarks2: ""
@@ -5382,7 +5382,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×63×20mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/65series/",
     remarks: "",
     remarks2: ""
@@ -5395,7 +5395,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×63×20mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/65series/",
     remarks: "",
     remarks2: ""
@@ -5408,7 +5408,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×63×20mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/65series/",
     remarks: "",
     remarks2: ""
@@ -5421,7 +5421,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×63×25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/65series/",
     remarks: "",
     remarks2: ""
@@ -5434,7 +5434,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×63×25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/65series/",
     remarks: "",
     remarks2: ""
@@ -5447,7 +5447,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×63×25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-of-grindstone/",
     remarks: "",
     remarks2: ""
@@ -5460,7 +5460,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×63×25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-of-grindstone/",
     remarks: "",
     remarks2: ""
@@ -5473,7 +5473,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×63×20mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-of-grindstone/",
     remarks: "",
     remarks2: ""
@@ -5486,7 +5486,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×63×25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-of-grindstone/",
     remarks: "",
     remarks2: ""
@@ -5499,7 +5499,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×63×25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-of-grindstone/",
     remarks: "",
     remarks2: ""
@@ -5512,7 +5512,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "75×25×9mm,100×25×13,115×38×16,150×50×25,205×50×25",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-of-grindstone/",
     remarks: "",
     remarks2: ""
@@ -5525,7 +5525,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "75×25×9mm,100×25×13,115×38×16,150×50×25,205×50×26",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-of-grindstone/",
     remarks: "",
     remarks2: ""
@@ -5538,7 +5538,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "75×25×9mm,100×25×13,115×38×16,150×50×25,205×50×27",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-of-grindstone/",
     remarks: "",
     remarks2: ""
@@ -5551,7 +5551,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "75×25×9mm,100×25×13,115×38×16,150×50×25,205×50×28",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/king/king-of-grindstone/",
     remarks: "",
     remarks2: ""
@@ -5564,7 +5564,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "75×25×9mm,100×25×13,115×38×16,150×50×25,205×50×25",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/%e6%b2%b9%e7%a0%a5%e7%9f%b3/",
     remarks: "",
     remarks2: ""
@@ -5577,7 +5577,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "100x25x12mm,150x50x25,205x50x25",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/%e6%b2%b9%e7%a0%a5%e7%9f%b3/",
     remarks: "",
     remarks2: ""
@@ -5590,7 +5590,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "100x4.5mm,,100x6.4,,100x9.5,,100x13,,100x16",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/%e6%b2%b9%e7%a0%a5%e7%9f%b3/",
     remarks: "",
     remarks2: ""
@@ -5603,7 +5603,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "100x25x6x2mm,115x38x13x5,150x50x13x3",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/%e6%b2%b9%e7%a0%a5%e7%9f%b3/",
     remarks: "",
     remarks2: ""
@@ -5616,7 +5616,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "150x50x25mm,205x50x25",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/%e6%b2%b9%e7%a0%a5%e7%9f%b3/",
     remarks: "",
     remarks2: ""
@@ -5629,7 +5629,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/adamantine/",
     remarks: "",
     remarks2: ""
@@ -5642,7 +5642,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/adamantine/",
     remarks: "",
     remarks2: ""
@@ -5655,7 +5655,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/adamantine/",
     remarks: "",
     remarks2: ""
@@ -5668,7 +5668,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/adamantine/",
     remarks: "",
     remarks2: ""
@@ -5681,7 +5681,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×50mm (2丁掛け)",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/adamantine/",
     remarks: "",
     remarks2: ""
@@ -5694,7 +5694,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/adamantine/",
     remarks: "",
     remarks2: ""
@@ -5707,7 +5707,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×50mm (2丁掛け)",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/adamantine/",
     remarks: "",
     remarks2: ""
@@ -5720,7 +5720,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/adamantine/",
     remarks: "",
     remarks2: ""
@@ -5733,7 +5733,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/adamantine/",
     remarks: "",
     remarks2: ""
@@ -5746,7 +5746,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/adamantine/",
     remarks: "",
     remarks2: ""
@@ -5759,7 +5759,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/adamantine/",
     remarks: "",
     remarks2: ""
@@ -5772,7 +5772,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×50mm (2丁掛け)",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/adamantine/",
     remarks: "",
     remarks2: ""
@@ -5785,7 +5785,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "150x50x25mm",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/natuer-other/",
     remarks: "",
     remarks2: ""
@@ -5798,7 +5798,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "125×50×25",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/natuer-other/",
     remarks: "",
     remarks2: ""
@@ -5811,7 +5811,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/natuer-other/",
     remarks: "",
     remarks2: ""
@@ -5824,7 +5824,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/natuer-other/",
     remarks: "",
     remarks2: ""
@@ -5837,7 +5837,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "",
+    price: undefined,
     url: "http://matsunaga-corp.co.jp/products/products-cat/vajra-grindstone/natuer-other/",
     remarks: "",
     remarks2: ""
@@ -5850,7 +5850,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×25㎜",
-    price: "2500",
+    price: 2500,
     url: "http://www.saicom.info/cgi-bin/saicom/siteup.cgi?&category=4&page=0&view=1&cart=detail&no=59",
     remarks: "",
     remarks2: ""
@@ -5863,7 +5863,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "200×75×25㎜",
-    price: "5500",
+    price: 5500,
     url: "http://www.saicom.info/cgi-bin/saicom/siteup.cgi?&category=4&page=0&view=1&cart=detail&no=60",
     remarks: "",
     remarks2: ""
@@ -5876,7 +5876,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "200×75×25㎜",
-    price: "5500",
+    price: 5500,
     url: "http://www.saicom.info/cgi-bin/saicom/siteup.cgi?&category=4&page=0&view=1&cart=detail&no=61",
     remarks: "",
     remarks2: ""
@@ -5889,7 +5889,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "200×75×25㎜",
-    price: "7300",
+    price: 7300,
     url: "http://www.saicom.info/cgi-bin/saicom/siteup.cgi?&category=4&page=0&view=1&cart=detail&no=62",
     remarks: "",
     remarks2: ""
@@ -5902,7 +5902,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×74×23㎜",
-    price: "9800",
+    price: 9800,
     url: "http://www.saicom.info/cgi-bin/saicom/siteup.cgi?&category=4&page=0&view=1&cart=detail&no=63",
     remarks: "",
     remarks2: ""
@@ -5915,7 +5915,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×25㎜",
-    price: "2600",
+    price: 2600,
     url: "http://www.saicom.info/cgi-bin/saicom/siteup.cgi?&category=4&page=0&view=1&cart=detail&no=64",
     remarks: "",
     remarks2: ""
@@ -5928,7 +5928,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "60×50×25㎜",
-    price: "3700",
+    price: 3700,
     url: "http://www.saicom.info/cgi-bin/saicom/siteup.cgi?&category=4&page=0&view=1&cart=detail&no=57",
     remarks: "",
     remarks2: ""
@@ -5941,7 +5941,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "60×50×25㎜",
-    price: "4000",
+    price: 4000,
     url: "http://www.saicom.info/cgi-bin/saicom/siteup.cgi?&category=4&page=0&view=1&cart=detail&no=56",
     remarks: "",
     remarks2: ""
@@ -5954,7 +5954,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "60×50×25㎜",
-    price: "4500",
+    price: 4500,
     url: "http://www.saicom.info/cgi-bin/saicom/siteup.cgi?&category=4&page=0&view=11&cart=detail&no=58",
     remarks: "",
     remarks2: ""
@@ -5967,7 +5967,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×78×25㎜",
-    price: "5100",
+    price: 5100,
     url: "http://www.saicom.info/cgi-bin/saicom/siteup.cgi?&category=4&page=0&view=11&cart=detail&no=42",
     remarks: "",
     remarks2: ""
@@ -5980,7 +5980,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×75×25㎜",
-    price: "6300",
+    price: 6300,
     url: "http://www.saicom.info/cgi-bin/saicom/siteup.cgi?&category=4&page=0&view=11&cart=detail&no=43",
     remarks: "",
     remarks2: ""
@@ -5993,7 +5993,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "202×77×30㎜",
-    price: "7100",
+    price: 7100,
     url: "http://www.saicom.info/cgi-bin/saicom/siteup.cgi?&category=4&page=0&view=11&cart=detail&no=44",
     remarks: "",
     remarks2: ""
@@ -6006,7 +6006,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×75×30㎜",
-    price: "7600",
+    price: 7600,
     url: "http://www.saicom.info/cgi-bin/saicom/siteup.cgi?&category=4&page=0&view=11&cart=detail&no=46",
     remarks: "",
     remarks2: ""
@@ -6019,7 +6019,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×75×25㎜",
-    price: "9800",
+    price: 9800,
     url: "http://www.saicom.info/cgi-bin/saicom/siteup.cgi?&category=4&page=0&view=11&cart=detail&no=47",
     remarks: "",
     remarks2: ""
@@ -6032,7 +6032,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×75×25㎜",
-    price: "12000",
+    price: 12000,
     url: "http://www.saicom.info/cgi-bin/saicom/siteup.cgi?&category=4&page=0&view=11&cart=detail&no=48",
     remarks: "",
     remarks2: ""
@@ -6045,7 +6045,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×75×25㎜",
-    price: "13500",
+    price: 13500,
     url: "http://www.saicom.info/cgi-bin/saicom/siteup.cgi?&category=4&page=0&view=11&cart=detail&no=49",
     remarks: "",
     remarks2: ""
@@ -6058,7 +6058,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×75×50㎜",
-    price: "7400",
+    price: 7400,
     url: "http://www.saicom.info/cgi-bin/saicom/siteup.cgi?&category=4&page=0&view=11&cart=detail&no=21",
     remarks: "",
     remarks2: ""
@@ -6071,7 +6071,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "207×73×23mm",
-    price: "18000",
+    price: 18000,
     url: "https://www.suehiro-toishi.com/kouseki/srk-10000/",
     remarks: "",
     remarks2: ""
@@ -6084,7 +6084,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "229×92mm",
-    price: "10000",
+    price: 10000,
     url: "https://www.suehiro-toishi.com/kouseki/kmr-188-s/",
     remarks: "",
     remarks2: ""
@@ -6097,7 +6097,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "1500",
+    price: 1500,
     url: "https://www.suehiro-toishi.com/kouseki/gsr-600/",
     remarks: "",
     remarks2: ""
@@ -6110,7 +6110,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "1000",
+    price: 1000,
     url: "https://www.suehiro-toishi.com/kouseki/gsr-320/",
     remarks: "",
     remarks2: ""
@@ -6123,7 +6123,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×72×10mm",
-    price: "12000",
+    price: 12000,
     url: "https://www.suehiro-toishi.com/gokumyo/gs-1500-ww/",
     remarks: "",
     remarks2: ""
@@ -6136,7 +6136,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×72×10mm",
-    price: "11500",
+    price: 11500,
     url: "https://www.suehiro-toishi.com/gokumyo/gs-1000-bu/",
     remarks: "",
     remarks2: ""
@@ -6149,7 +6149,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×72×10mm",
-    price: "11000",
+    price: 11000,
     url: "https://www.suehiro-toishi.com/gokumyo/gs-600-or/",
     remarks: "",
     remarks2: ""
@@ -6162,7 +6162,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×72×10mm",
-    price: "8000",
+    price: 8000,
     url: "https://www.suehiro-toishi.com/gokumyo/gs-300-gr/",
     remarks: "",
     remarks2: ""
@@ -6175,7 +6175,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×72×10mm",
-    price: "7500",
+    price: 7500,
     url: "https://www.suehiro-toishi.com/gokumyo/gs-240-wh/",
     remarks: "",
     remarks2: ""
@@ -6188,7 +6188,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "250×84×28mm",
-    price: "1500",
+    price: 1500,
     url: "https://www.suehiro-toishi.com/gokumyo/gs-bgs/",
     remarks: "",
     remarks2: ""
@@ -6201,7 +6201,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "200×70×50mm",
-    price: "5000",
+    price: 5000,
     url: "https://www.suehiro-toishi.com/gokumyo/hdk-8s/",
     remarks: "",
     remarks2: ""
@@ -6214,7 +6214,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×73×19~21mm",
-    price: "30000",
+    price: 30000,
     url: "https://www.suehiro-toishi.com/gokumyo/gmn200/",
     remarks: "",
     remarks2: ""
@@ -6227,7 +6227,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×73×19~21mm",
-    price: "25000",
+    price: 25000,
     url: "https://www.suehiro-toishi.com/gokumyo/gmn150/",
     remarks: "",
     remarks2: ""
@@ -6240,7 +6240,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×73×19~21mm",
-    price: "20000",
+    price: 20000,
     url: "https://www.suehiro-toishi.com/gokumyo/gmn100/",
     remarks: "",
     remarks2: ""
@@ -6253,7 +6253,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "225×90×28（厚）／5～6（薄）mm",
-    price: "25000",
+    price: 25000,
     url: "https://www.suehiro-toishi.com/gokumyo/dgl-440/",
     remarks: "",
     remarks2: ""
@@ -6266,7 +6266,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "225×90×40（厚）／5～6（薄）mm",
-    price: "20000",
+    price: 20000,
     url: "https://www.suehiro-toishi.com/gokumyo/dgl-120/",
     remarks: "",
     remarks2: ""
@@ -6279,7 +6279,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×73×10～13mm",
-    price: "18000",
+    price: 18000,
     url: "https://www.suehiro-toishi.com/gokumyo/ta-16/",
     remarks: "",
     remarks2: ""
@@ -6292,7 +6292,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×73×10～13mm",
-    price: "16000",
+    price: 16000,
     url: "https://www.suehiro-toishi.com/gokumyo/ta-12/",
     remarks: "",
     remarks2: ""
@@ -6305,7 +6305,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×73×10～13mm",
-    price: "15000",
+    price: 15000,
     url: "https://www.suehiro-toishi.com/gokumyo/ta-9/",
     remarks: "",
     remarks2: ""
@@ -6318,7 +6318,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×73×10～13mm",
-    price: "14000",
+    price: 14000,
     url: "https://www.suehiro-toishi.com/gokumyo/ta-7/",
     remarks: "",
     remarks2: ""
@@ -6331,7 +6331,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×73×4～5／20～22mm",
-    price: "16000",
+    price: 16000,
     url: "https://www.suehiro-toishi.com/gokumyo/my-16/",
     remarks: "",
     remarks2: ""
@@ -6344,7 +6344,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×73×4～5／20～22mm",
-    price: "15500",
+    price: 15500,
     url: "https://www.suehiro-toishi.com/gokumyo/my-13/",
     remarks: "",
     remarks2: ""
@@ -6357,7 +6357,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×73×4～5／20～22mm",
-    price: "15000",
+    price: 15000,
     url: "https://www.suehiro-toishi.com/gokumyo/my-11/",
     remarks: "",
     remarks2: ""
@@ -6370,7 +6370,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×73×4～5／20～22mm",
-    price: "14000",
+    price: 14000,
     url: "https://www.suehiro-toishi.com/gokumyo/my-6/",
     remarks: "",
     remarks2: ""
@@ -6383,7 +6383,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "115x10x6mm（スティック）　100x25x6（2）mm（クシ型［中］）",
-    price: "3500",
+    price: 3500,
     url: "https://www.suehiro-toishi.com/dualstone2/dualstone_kushi/ds-1a/",
     remarks: "",
     remarks2: ""
@@ -6396,7 +6396,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "115x38x9（3）mm",
-    price: "4500",
+    price: 4500,
     url: "https://www.suehiro-toishi.com/dualstone2/dualstone_kushi/ds4000k/",
     remarks: "",
     remarks2: ""
@@ -6409,7 +6409,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "115x38x9（3）mm",
-    price: "3500",
+    price: 3500,
     url: "https://www.suehiro-toishi.com/dualstone2/dualstone_kushi/ds1000k/",
     remarks: "",
     remarks2: ""
@@ -6422,7 +6422,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "115x38x9（3）mm",
-    price: "3000",
+    price: 3000,
     url: "https://www.suehiro-toishi.com/dualstone2/dualstone_kushi/ds600k/",
     remarks: "",
     remarks2: ""
@@ -6435,7 +6435,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "115x38x9（3）mm",
-    price: "2800",
+    price: 2800,
     url: "https://www.suehiro-toishi.com/dualstone2/dualstone_kushi/ds300k/",
     remarks: "",
     remarks2: ""
@@ -6448,7 +6448,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "98×64×15mm",
-    price: "9000",
+    price: 9000,
     url: "https://www.suehiro-toishi.com/dualstone2/gds-66w/",
     remarks: "",
     remarks2: ""
@@ -6461,7 +6461,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "160×65×59mm",
-    price: "5000",
+    price: 5000,
     url: "https://www.suehiro-toishi.com/dualstone2/ktw-6gs/",
     remarks: "",
     remarks2: ""
@@ -6474,7 +6474,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "130×40×5mm",
-    price: "2300",
+    price: 2300,
     url: "https://www.suehiro-toishi.com/dualstone2/kd-6s/",
     remarks: "",
     remarks2: ""
@@ -6487,7 +6487,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "130×40×5mm",
-    price: "1800",
+    price: 1800,
     url: "https://www.suehiro-toishi.com/dualstone2/kd-1s/",
     remarks: "",
     remarks2: ""
@@ -6500,7 +6500,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "130×40×1.5mm",
-    price: "1800",
+    price: 1800,
     url: "https://www.suehiro-toishi.com/dualstone2/ktd-10/",
     remarks: "",
     remarks2: ""
@@ -6513,7 +6513,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "130×40×1.5mm",
-    price: "1500",
+    price: 1500,
     url: "https://www.suehiro-toishi.com/dualstone2/ktd-5/",
     remarks: "",
     remarks2: ""
@@ -6526,7 +6526,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "102×27×31mm",
-    price: "2500",
+    price: 2500,
     url: "https://www.suehiro-toishi.com/syusei/dia500cl/",
     remarks: "",
     remarks2: ""
@@ -6539,7 +6539,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "102×27×39mm",
-    price: "2000",
+    price: 2000,
     url: "https://www.suehiro-toishi.com/syusei/cem400cl/",
     remarks: "",
     remarks2: ""
@@ -6552,7 +6552,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×73×23mm",
-    price: "10000",
+    price: 10000,
     url: "https://www.suehiro-toishi.com/debadoseries/ld-601-dn/",
     remarks: "",
     remarks2: ""
@@ -6565,7 +6565,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×73×29mm",
-    price: "6500",
+    price: 6500,
     url: "https://www.suehiro-toishi.com/debadoseries/ld-101-dn/",
     remarks: "",
     remarks2: ""
@@ -6578,7 +6578,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×73×29mm",
-    price: "6000",
+    price: 6000,
     url: "https://www.suehiro-toishi.com/debadoseries/ld-21-dn/",
     remarks: "",
     remarks2: ""
@@ -6591,7 +6591,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×73×23mm",
-    price: "10000",
+    price: 10000,
     url: "https://www.suehiro-toishi.com/debadoseries/no-8000-sne/",
     remarks: "",
     remarks2: ""
@@ -6604,7 +6604,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×73×23mm",
-    price: "9000",
+    price: 9000,
     url: "https://www.suehiro-toishi.com/debadoseries/no-4000-sne/",
     remarks: "",
     remarks2: ""
@@ -6617,7 +6617,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×73×23mm",
-    price: "8000",
+    price: 8000,
     url: "https://www.suehiro-toishi.com/debadoseries/no-2000-sne/",
     remarks: "",
     remarks2: ""
@@ -6630,7 +6630,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×73×23mm",
-    price: "7000",
+    price: 7000,
     url: "https://www.suehiro-toishi.com/debadoseries/no-1200-sne/",
     remarks: "",
     remarks2: ""
@@ -6643,7 +6643,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×73×23mm",
-    price: "6500",
+    price: 6500,
     url: "https://www.suehiro-toishi.com/debadoseries/no-800-sne/",
     remarks: "",
     remarks2: ""
@@ -6656,7 +6656,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×73×23mm",
-    price: "6000",
+    price: 6000,
     url: "https://www.suehiro-toishi.com/debadoseries/no-400-sne/",
     remarks: "",
     remarks2: ""
@@ -6669,7 +6669,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×73×23mm",
-    price: "12000",
+    price: 12000,
     url: "https://www.suehiro-toishi.com/debadoseries/debado-ld-601/",
     remarks: "",
     remarks2: ""
@@ -6682,7 +6682,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×73×29mm",
-    price: "8000",
+    price: 8000,
     url: "https://www.suehiro-toishi.com/debadoseries/debado-ld-101/",
     remarks: "",
     remarks2: ""
@@ -6695,7 +6695,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×73×29mm",
-    price: "7500",
+    price: 7500,
     url: "https://www.suehiro-toishi.com/debadoseries/debado-ld-21/",
     remarks: "",
     remarks2: ""
@@ -6708,7 +6708,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "225×90×24〜25mm",
-    price: "16000",
+    price: 16000,
     url: "https://www.suehiro-toishi.com/debadoseries/debado-md-400/",
     remarks: "",
     remarks2: ""
@@ -6721,7 +6721,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "225×90×27〜28mm",
-    price: "9000",
+    price: 9000,
     url: "https://www.suehiro-toishi.com/debadoseries/debado-md-100/",
     remarks: "",
     remarks2: ""
@@ -6734,7 +6734,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "225×90×27〜28mm",
-    price: "8500",
+    price: 8500,
     url: "https://www.suehiro-toishi.com/debadoseries/debado-md-20/",
     remarks: "",
     remarks2: ""
@@ -6747,7 +6747,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "WA",
     size: "206×73×23mm",
-    price: "7000",
+    price: 7000,
     url: "https://www.suehiro-toishi.com/ceraxseries/newcerax/cr-6000-w-re/",
     remarks: "",
     remarks2: ""
@@ -6760,7 +6760,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "WA",
     size: "206×73×23mm",
-    price: "5500",
+    price: 5500,
     url: "https://www.suehiro-toishi.com/ceraxseries/newcerax/cr-3000-y-re/",
     remarks: "",
     remarks2: ""
@@ -6773,7 +6773,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "WA",
     size: "206×73×23mm",
-    price: "5000",
+    price: 5000,
     url: "https://www.suehiro-toishi.com/ceraxseries/newcerax/cr-1000-b-re/",
     remarks: "",
     remarks2: ""
@@ -6786,7 +6786,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "A/WA",
     size: "206×73×23mm",
-    price: "3500",
+    price: 3500,
     url: "https://www.suehiro-toishi.com/ceraxseries/newcerax/cr-800-r-re/",
     remarks: "",
     remarks2: ""
@@ -6799,7 +6799,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "WA",
     size: "206×73×23mm",
-    price: "3200",
+    price: 3200,
     url: "https://www.suehiro-toishi.com/ceraxseries/newcerax/cr-400-g-re/",
     remarks: "",
     remarks2: ""
@@ -6812,7 +6812,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "WA",
     size: "183×63×20mm",
-    price: "9500",
+    price: 9500,
     url: "https://www.suehiro-toishi.com/ceraxseries/newcerax/cr-10003-w/",
     remarks: "※不吸水性",
     remarks2: ""
@@ -6825,7 +6825,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "WA",
     size: "183×63×20mm",
-    price: "7000",
+    price: 7000,
     url: "https://www.suehiro-toishi.com/ceraxseries/newcerax/cr-8003-w/",
     remarks: "",
     remarks2: ""
@@ -6838,7 +6838,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "WA",
     size: "183×63×20mm",
-    price: "4200",
+    price: 4200,
     url: "https://www.suehiro-toishi.com/ceraxseries/newcerax/cr-5003-b/",
     remarks: "",
     remarks2: ""
@@ -6851,7 +6851,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "WA",
     size: "183×63×20mm",
-    price: "3500",
+    price: 3500,
     url: "https://www.suehiro-toishi.com/ceraxseries/newcerax/cr-3003-y-re/",
     remarks: "",
     remarks2: ""
@@ -6864,7 +6864,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "WA",
     size: "183×63×20mm",
-    price: "2800",
+    price: 2800,
     url: "https://www.suehiro-toishi.com/ceraxseries/newcerax/cr-1503-w-re/",
     remarks: "",
     remarks2: ""
@@ -6877,7 +6877,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "A/WA",
     size: "183×63×20mm",
-    price: "2600",
+    price: 2600,
     url: "https://www.suehiro-toishi.com/ceraxseries/newcerax/cr-803-r-re/",
     remarks: "",
     remarks2: ""
@@ -6890,7 +6890,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "WA",
     size: "183×63×20mm",
-    price: "2500",
+    price: 2500,
     url: "https://www.suehiro-toishi.com/ceraxseries/newcerax/cr-403-g-re/",
     remarks: "",
     remarks2: ""
@@ -6903,7 +6903,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "WA",
     size: "183×63×20mm",
-    price: "2300",
+    price: 2300,
     url: "https://www.suehiro-toishi.com/ceraxseries/newcerax/cr-280-or-re/",
     remarks: "",
     remarks2: ""
@@ -6916,7 +6916,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "183×63×20mm",
-    price: "2400",
+    price: 2400,
     url: "https://www.suehiro-toishi.com/ceraxseries/newcerax/cr-180-gc/",
     remarks: "",
     remarks2: ""
@@ -6929,7 +6929,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "183×63×13 ／ 183×63×15mm",
-    price: "6000",
+    price: 6000,
     url: "https://www.suehiro-toishi.com/ceraxseries/newcerax/cr-4800-re/",
     remarks: "",
     remarks2: ""
@@ -6942,7 +6942,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "183×63×13 ／ 183×63×15mm",
-    price: "5000",
+    price: 5000,
     url: "https://www.suehiro-toishi.com/ceraxseries/newcerax/cr-3800-re/",
     remarks: "",
     remarks2: ""
@@ -6955,7 +6955,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "183×63×13 ／ 183×63×15mm",
-    price: "4500",
+    price: 4500,
     url: "https://www.suehiro-toishi.com/ceraxseries/newcerax/cr-2800-re/",
     remarks: "",
     remarks2: ""
@@ -6968,7 +6968,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "183×63×13 ／ 183×63×15mm",
-    price: "4000",
+    price: 4000,
     url: "https://www.suehiro-toishi.com/ceraxseries/newcerax/cr-1800-re/",
     remarks: "",
     remarks2: ""
@@ -6981,7 +6981,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "WA",
     size: "205×73×23mm",
-    price: "9800",
+    price: 9800,
     url: "https://www.suehiro-toishi.com/ceraxseries/cerax/8080-re/",
     remarks: "",
     remarks2: ""
@@ -6994,7 +6994,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "WA",
     size: "205×73×23mm",
-    price: "7000",
+    price: 7000,
     url: "https://www.suehiro-toishi.com/ceraxseries/cerax/6060-re/",
     remarks: "",
     remarks2: ""
@@ -7007,7 +7007,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×73×23mm",
-    price: "9000",
+    price: 9000,
     url: "https://www.suehiro-toishi.com/gyomu/w-8/",
     remarks: "",
     remarks2: ""
@@ -7020,7 +7020,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×73×23mm",
-    price: "9000",
+    price: 9000,
     url: "https://www.suehiro-toishi.com/gyomu/g-8/",
     remarks: "",
     remarks2: ""
@@ -7033,7 +7033,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×73×23mm",
-    price: "6000",
+    price: 6000,
     url: "https://www.suehiro-toishi.com/gyomu/6000/",
     remarks: "",
     remarks2: ""
@@ -7046,7 +7046,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×73×23mm",
-    price: "5000",
+    price: 5000,
     url: "https://www.suehiro-toishi.com/gyomu/5000/",
     remarks: "",
     remarks2: ""
@@ -7059,7 +7059,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×73×23mm",
-    price: "4500",
+    price: 4500,
     url: "https://www.suehiro-toishi.com/gyomu/3000/",
     remarks: "",
     remarks2: ""
@@ -7072,7 +7072,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×73×23mm",
-    price: "8700",
+    price: 8700,
     url: "https://www.suehiro-toishi.com/gyomu/%e8%b6%85%e4%bb%95%e4%b8%8a%e7%a0%a5%e7%9f%b3%e3%80%80w-8-dn%ef%bc%88%e5%8f%b0%e3%81%aa%e3%81%97%ef%bc%89/",
     remarks: "",
     remarks2: ""
@@ -7085,7 +7085,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×73×23mm",
-    price: "8700",
+    price: 8700,
     url: "https://www.suehiro-toishi.com/gyomu/%e8%b6%85%e4%bb%95%e4%b8%8a%e7%a0%a5%e7%9f%b3%e3%80%80g-8-dn%ef%bc%88%e5%8f%b0%e3%81%aa%e3%81%97%ef%bc%89/",
     remarks: "",
     remarks2: ""
@@ -7098,7 +7098,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×73×23mm",
-    price: "5700",
+    price: 5700,
     url: "https://www.suehiro-toishi.com/gyomu/%e4%bb%95%e4%b8%8a%e7%a0%a5%e7%9f%b3%e3%80%80%e7%99%bd%e5%b3%b0%e3%80%806000-dn%ef%bc%88%e5%8f%b0%e3%81%aa%e3%81%97%ef%bc%89/",
     remarks: "",
     remarks2: ""
@@ -7111,7 +7111,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×73×23mm",
-    price: "4700",
+    price: 4700,
     url: "https://www.suehiro-toishi.com/gyomu/%e4%bb%95%e4%b8%8a%e7%a0%a5%e7%9f%b3%e3%80%80%e7%90%86%e8%8f%af%e3%80%805000-dn%ef%bc%88%e5%8f%b0%e3%81%aa%e3%81%97%ef%bc%89/",
     remarks: "",
     remarks2: ""
@@ -7124,7 +7124,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×73×23mm",
-    price: "4200",
+    price: 4200,
     url: "https://www.suehiro-toishi.com/gyomu/%e4%bb%95%e4%b8%8a%e7%a0%a5%e7%9f%b3%e3%80%80%e9%bb%84%e8%8f%af%e3%80%803000-dn%ef%bc%88%e5%8f%b0%e3%81%aa%e3%81%97%ef%bc%89/",
     remarks: "",
     remarks2: ""
@@ -7137,7 +7137,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "230×100×70mm（4丁掛）",
-    price: "9000",
+    price: 9000,
     url: "https://www.suehiro-toishi.com/gyomu/kr-4/",
     remarks: "",
     remarks2: ""
@@ -7150,7 +7150,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "225×90×60mm（3丁掛）",
-    price: "5200",
+    price: 5200,
     url: "https://www.suehiro-toishi.com/gyomu/kr-3/",
     remarks: "",
     remarks2: ""
@@ -7163,7 +7163,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×73×50mm（2丁掛）",
-    price: "4000",
+    price: 4000,
     url: "https://www.suehiro-toishi.com/gyomu/kr-2/",
     remarks: "",
     remarks2: ""
@@ -7176,7 +7176,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×66×33mm（1丁掛）",
-    price: "2700",
+    price: 2700,
     url: "https://www.suehiro-toishi.com/gyomu/kr-1/",
     remarks: "",
     remarks2: ""
@@ -7189,7 +7189,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "230×100×70mm（4丁掛）",
-    price: "8800",
+    price: 8800,
     url: "https://www.suehiro-toishi.com/gyomu/r-4/",
     remarks: "",
     remarks2: ""
@@ -7202,7 +7202,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "225×90×60mm（3丁掛）",
-    price: "5000",
+    price: 5000,
     url: "https://www.suehiro-toishi.com/gyomu/r-3/",
     remarks: "",
     remarks2: ""
@@ -7215,7 +7215,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×73×50mm（2丁掛）",
-    price: "3800",
+    price: 3800,
     url: "https://www.suehiro-toishi.com/gyomu/r-2/",
     remarks: "",
     remarks2: ""
@@ -7228,7 +7228,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×66×33mm（1丁掛）",
-    price: "2500",
+    price: 2500,
     url: "https://www.suehiro-toishi.com/gyomu/r-1/",
     remarks: "",
     remarks2: ""
@@ -7241,7 +7241,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×66×33mm",
-    price: "2600",
+    price: 2600,
     url: "https://www.suehiro-toishi.com/gyomu/sp-12/",
     remarks: "",
     remarks2: ""
@@ -7254,7 +7254,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "206×66×33mm",
-    price: "2500",
+    price: 2500,
     url: "https://www.suehiro-toishi.com/gyomu/sp-10/",
     remarks: "",
     remarks2: ""
@@ -7267,7 +7267,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "125×50×25mm",
-    price: "900",
+    price: 900,
     url: "https://www.suehiro-toishi.com/garden/521-c/",
     remarks: "",
     remarks2: ""
@@ -7280,7 +7280,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "134×40×30mm",
-    price: "1000",
+    price: 1000,
     url: "https://www.suehiro-toishi.com/garden/100-k/",
     remarks: "",
     remarks2: ""
@@ -7293,7 +7293,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "134×40×30mm",
-    price: "1200",
+    price: 1200,
     url: "https://www.suehiro-toishi.com/garden/50/",
     remarks: "",
     remarks2: ""
@@ -7306,7 +7306,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "134×40×30mm",
-    price: "900",
+    price: 900,
     url: "https://www.suehiro-toishi.com/garden/10/",
     remarks: "",
     remarks2: ""
@@ -7319,7 +7319,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "134×40×30mm",
-    price: "1000",
+    price: 1000,
     url: "https://www.suehiro-toishi.com/garden/rk-110/",
     remarks: "",
     remarks2: ""
@@ -7332,7 +7332,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "134×40×30mm",
-    price: "950",
+    price: 950,
     url: "https://www.suehiro-toishi.com/garden/wk-80/",
     remarks: "",
     remarks2: ""
@@ -7345,7 +7345,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "134×40×30mm",
-    price: "950",
+    price: 950,
     url: "https://www.suehiro-toishi.com/garden/gk-23/",
     remarks: "",
     remarks2: ""
@@ -7358,7 +7358,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "GC",
     size: "205×78×25mm",
-    price: "5610",
+    price: 5610,
     url: "https://www.jikko.jp/c/scene/jikkotoishi",
     remarks: "https://www.youtube.com/watch?v=4B1R2uNjKIY&t=623s",
     remarks2: ""
@@ -7371,7 +7371,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "A",
     size: "210×75×25mm",
-    price: "6930",
+    price: 6930,
     url: "https://www.jikko.jp/c/scene/jikkotoishi",
     remarks: "",
     remarks2: ""
@@ -7384,7 +7384,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "C",
     size: "202×77×25mm",
-    price: "7810",
+    price: 7810,
     url: "https://www.jikko.jp/c/scene/jikkotoishi",
     remarks: "",
     remarks2: ""
@@ -7397,7 +7397,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "WA",
     size: "210×75×30mm",
-    price: "8360",
+    price: 8360,
     url: "https://www.jikko.jp/c/scene/jikkotoishi",
     remarks: "",
     remarks2: ""
@@ -7410,7 +7410,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "WA",
     size: "210×75×25mm",
-    price: "10780",
+    price: 10780,
     url: "https://www.jikko.jp/c/scene/jikkotoishi",
     remarks: "",
     remarks2: ""
@@ -7423,7 +7423,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "WA",
     size: "210×75×25mm",
-    price: "13200",
+    price: 13200,
     url: "https://www.jikko.jp/c/scene/jikkotoishi",
     remarks: "",
     remarks2: ""
@@ -7436,7 +7436,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "WA",
     size: "210×75×25mm",
-    price: "14850",
+    price: 14850,
     url: "https://www.jikko.jp/c/scene/jikkotoishi",
     remarks: "",
     remarks2: ""
@@ -7449,7 +7449,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×50×25mm",
-    price: "3256",
+    price: 3256,
     url: "https://www.jikko.jp/c/scene/jikkotoishi",
     remarks: "セラミック砥石との違いは不明",
     remarks2: ""
@@ -7462,7 +7462,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "207×66×34mm",
-    price: "2739",
+    price: 2739,
     url: "https://www.jikko.jp/c/scene/jikkotoishi",
     remarks: "",
     remarks2: ""
@@ -7475,7 +7475,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "207×66×34mm",
-    price: "6919",
+    price: 6919,
     url: "https://www.jikko.jp/c/scene/jikkotoishi",
     remarks: "",
     remarks2: ""
@@ -7488,7 +7488,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×73×22mm",
-    price: "5676",
+    price: 5676,
     url: "https://www.jikko.jp/c/scene/jikkotoishi",
     remarks: "",
     remarks2: ""
@@ -7501,7 +7501,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "185×63×25mm",
-    price: "4169",
+    price: 4169,
     url: "https://www.jikko.jp/c/scene/jikkotoishi",
     remarks: "",
     remarks2: ""
@@ -7514,7 +7514,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205 x 75 x 25 mm",
-    price: "3100",
+    price: 3100,
     url: "https://home.etown.ne.jp/imanishi/gst/god/gst_god_each.php?in_id=92",
     remarks: "公式ページっぽいのが見当たらない？？製品カタログないんですか…",
     remarks2: ""
@@ -7527,7 +7527,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205 x 75 x 25 mm",
-    price: "3100",
+    price: 3100,
     url: "https://home.etown.ne.jp/imanishi/gst/god/gst_god_each.php?in_id=92",
     remarks: "",
     remarks2: ""
@@ -7540,7 +7540,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205 x 75 x 25 mm",
-    price: "3100",
+    price: 3100,
     url: "https://home.etown.ne.jp/imanishi/gst/god/gst_god_each.php?in_id=92",
     remarks: "",
     remarks2: ""
@@ -7553,7 +7553,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205 x 75 x 25 mm",
-    price: "4950",
+    price: 4950,
     url: "https://home.etown.ne.jp/imanishi/gst/god/gst_god_each.php?in_id=93",
     remarks: "",
     remarks2: ""
@@ -7566,7 +7566,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "PA",
     size: "205 x 65 x 34",
-    price: "",
+    price: undefined,
     url: "",
     remarks: "",
     remarks2: ""
@@ -7579,7 +7579,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "PA",
     size: "205 x 75 x 50 mm",
-    price: "3900",
+    price: 3900,
     url: "https://home.etown.ne.jp/imanishi/gst/god/gst_god_each.php?in_id=90",
     remarks: "",
     remarks2: ""
@@ -7592,7 +7592,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "207×72×50ｍｍ",
-    price: "3400",
+    price: 3400,
     url: "https://hamono.ocnk.net/product/1479",
     remarks: "公式ページ見つからないので川口金物店さんのリンク、それぞれのラインナップ毎の違い不明",
     remarks2: ""
@@ -7605,7 +7605,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×75×25ｍｍ",
-    price: "4889",
+    price: 4889,
     url: "https://hamono.ocnk.net/product/1941",
     remarks: "",
     remarks2: ""
@@ -7618,7 +7618,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×75×26ｍｍ",
-    price: "5250",
+    price: 5250,
     url: "https://hamono.ocnk.net/product/1484",
     remarks: "台付きのみ？",
     remarks2: ""
@@ -7631,7 +7631,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "213×74×25ｍｍ",
-    price: "2543",
+    price: 2543,
     url: "https://hamono.ocnk.net/product/1482",
     remarks: "",
     remarks2: ""
@@ -7644,7 +7644,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "天然仕上砥石の粉末配合とのこと",
     size: "210×72×25ｍｍ",
-    price: "4500",
+    price: 4500,
     url: "https://hamono.ocnk.net/product/1480",
     remarks: "台付きのみ？",
     remarks2: ""
@@ -7657,7 +7657,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "208×68×34ｍｍ",
-    price: "3038",
+    price: 3038,
     url: "https://hamono.ocnk.net/product/1483",
     remarks: "",
     remarks2: ""
@@ -7670,7 +7670,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "アルミナ配合（それ以外も入っている？）",
     size: "205×75×25ｍｍ",
-    price: "4227",
+    price: 4227,
     url: "https://hamono.ocnk.net/product/1942",
     remarks: "",
     remarks2: ""
@@ -7683,7 +7683,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "",
+    price: undefined,
     url: "",
     remarks: "公式ページっぽいのが見当たらない？？製品カタログないんですか…",
     remarks2: ""
@@ -7696,7 +7696,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "",
+    price: undefined,
     url: "",
     remarks: "",
     remarks2: ""
@@ -7709,7 +7709,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205mm×65mm×30mm",
-    price: "2900",
+    price: 2900,
     url: "https://www.honmamon.jp/c/gr13/gr29/gr488/4580149744424",
     remarks: "公式ページっぽいのが見当たらないので、ほんまもんHPから取得",
     remarks2: ""
@@ -7722,7 +7722,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205mm×75mm×25mm",
-    price: "4350",
+    price: 4350,
     url: "https://www.honmamon.jp/c/gr13/gr29/gr488/4573200705052",
     remarks: "",
     remarks2: ""
@@ -7735,7 +7735,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210mm×75mm×25mm",
-    price: "4800",
+    price: 4800,
     url: "https://www.honmamon.jp/c/gr13/gr29/gr488/4573200711145",
     remarks: "",
     remarks2: ""
@@ -7748,7 +7748,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "",
     size: "205mm×65mm×25mm",
-    price: "3950",
+    price: 3950,
     url: "https://www.honmamon.jp/c/gr13/gr29/gr488/4573200711046",
     remarks: "",
     remarks2: ""
@@ -7761,7 +7761,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205mm×75mm×25mm",
-    price: "5300",
+    price: 5300,
     url: "https://www.honmamon.jp/c/gr13/gr29/gr488/4582243658799",
     remarks: "",
     remarks2: ""
@@ -7774,7 +7774,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "215mm×75mm×25mm",
-    price: "4300",
+    price: 4300,
     url: "https://www.honmamon.jp/c/gr13/gr29/gr489/4573200711152",
     remarks: "",
     remarks2: ""
@@ -7787,7 +7787,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "215mm×75mm×25mm",
-    price: "3700",
+    price: 3700,
     url: "https://www.honmamon.jp/c/gr13/gr29/gr489/4580149744448",
     remarks: "",
     remarks2: ""
@@ -7800,7 +7800,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "",
     size: "205mm×65mm×25mm",
-    price: "4950",
+    price: 4950,
     url: "https://www.honmamon.jp/c/gr13/gr29/gr489/4573200711039",
     remarks: "",
     remarks2: ""
@@ -7813,7 +7813,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "215mm×75mm×25mm",
-    price: "4200",
+    price: 4200,
     url: "https://www.honmamon.jp/c/gr13/gr29/gr489/4573200711169",
     remarks: "",
     remarks2: ""
@@ -7826,7 +7826,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "215mm×75mm×25mm",
-    price: "5000",
+    price: 5000,
     url: "https://www.honmamon.jp/c/gr13/gr29/gr489/4580149747883",
     remarks: "",
     remarks2: ""
@@ -7839,7 +7839,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "200mm×75mm×30mm",
-    price: "5950",
+    price: 5950,
     url: "https://www.honmamon.jp/c/gr13/gr29/gr489/4582243651776",
     remarks: "",
     remarks2: ""
@@ -7852,7 +7852,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210mm×75mm×25mm",
-    price: "6800",
+    price: 6800,
     url: "https://www.honmamon.jp/c/gr13/gr29/gr489/4573200711176",
     remarks: "",
     remarks2: ""
@@ -7865,7 +7865,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "215mm×75mm×50mm",
-    price: "7200",
+    price: 7200,
     url: "https://www.honmamon.jp/c/gr13/gr29/gr489/4580149747913",
     remarks: "",
     remarks2: ""
@@ -7878,7 +7878,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210mm×75mm×30mm",
-    price: "6350",
+    price: 6350,
     url: "https://www.honmamon.jp/c/gr13/gr29/gr490/4582243651783",
     remarks: "",
     remarks2: ""
@@ -7891,7 +7891,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205mm×75mm×25mm",
-    price: "3800",
+    price: 3800,
     url: "https://www.honmamon.jp/c/gr13/gr29/gr490/4580149744431",
     remarks: "",
     remarks2: ""
@@ -7904,7 +7904,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210mm×70mm×25mm",
-    price: "5000",
+    price: 5000,
     url: "https://www.honmamon.jp/c/gr13/gr29/gr491/4580149747906",
     remarks: "",
     remarks2: ""
@@ -7917,7 +7917,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210mm×75mm×25mm",
-    price: "8100",
+    price: 8100,
     url: "https://www.honmamon.jp/c/gr13/gr29/gr491/4582243658805",
     remarks: "",
     remarks2: ""
@@ -7930,7 +7930,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205mm×75mm×25mm",
-    price: "6500",
+    price: 6500,
     url: "https://www.honmamon.jp/c/gr13/gr29/gr491/4573200711138",
     remarks: "",
     remarks2: ""
@@ -7943,7 +7943,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205mm×75mm×25mm",
-    price: "6900",
+    price: 6900,
     url: "https://www.honmamon.jp/c/gr13/gr29/gr491/4580149747876",
     remarks: "",
     remarks2: ""
@@ -7956,7 +7956,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205mm×75mm×25mm",
-    price: "9300",
+    price: 9300,
     url: "https://www.honmamon.jp/c/gr13/gr29/gr491/4580149743670",
     remarks: "",
     remarks2: ""
@@ -7969,7 +7969,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205mm×75mm×35mm",
-    price: "3900",
+    price: 3900,
     url: "https://www.honmamon.jp/c/gr13/gr493/4580149747890",
     remarks: "",
     remarks2: ""
@@ -7982,7 +7982,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205mm×75mm×35mm",
-    price: "5850",
+    price: 5850,
     url: "https://www.honmamon.jp/c/gr13/gr493/4573200708046",
     remarks: "",
     remarks2: ""
@@ -7995,7 +7995,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205mm×65mm×30mm",
-    price: "10000",
+    price: 10000,
     url: "https://www.honmamon.jp/c/gr13/gr185/1115900",
     remarks: "",
     remarks2: ""
@@ -8008,7 +8008,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205mm×65mm×30mm",
-    price: "11800",
+    price: 11800,
     url: "https://www.honmamon.jp/c/gr13/gr185/1110008",
     remarks: "",
     remarks2: ""
@@ -8021,7 +8021,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "200mm×75mm×30mm",
-    price: "11900",
+    price: 11900,
     url: "https://www.honmamon.jp/c/gr13/gr185/1113259",
     remarks: "",
     remarks2: ""
@@ -8034,7 +8034,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "200mm×75mm×30mm",
-    price: "8200",
+    price: 8200,
     url: "https://www.honmamon.jp/c/gr13/gr185/1115708",
     remarks: "",
     remarks2: ""
@@ -8047,7 +8047,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "200mm×75mm×30mm",
-    price: "8200",
+    price: 8200,
     url: "https://www.honmamon.jp/c/gr13/gr185/1115709",
     remarks: "",
     remarks2: ""
@@ -8060,7 +8060,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "200mm×75mm×30mm",
-    price: "8200",
+    price: 8200,
     url: "https://www.honmamon.jp/c/gr13/gr185/1115710",
     remarks: "",
     remarks2: ""
@@ -8073,7 +8073,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "200mm×75mm×30mm",
-    price: "8200",
+    price: 8200,
     url: "https://www.honmamon.jp/c/gr13/gr185/1115711",
     remarks: "",
     remarks2: ""
@@ -8086,7 +8086,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "77000",
+    price: 77000,
     url: "https://nskdiatoishi.jp/ca17/472/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8099,7 +8099,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "66000",
+    price: 66000,
     url: "https://nskdiatoishi.jp/ca17/471/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8112,7 +8112,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "55000",
+    price: 55000,
     url: "https://nskdiatoishi.jp/ca17/470/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8125,7 +8125,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "70400",
+    price: 70400,
     url: "https://nskdiatoishi.jp/ca17/468/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8138,7 +8138,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "59400",
+    price: 59400,
     url: "https://nskdiatoishi.jp/ca17/467/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8151,7 +8151,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "48400",
+    price: 48400,
     url: "https://nskdiatoishi.jp/ca17/466/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8164,7 +8164,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "70400",
+    price: 70400,
     url: "https://nskdiatoishi.jp/ca17/465/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8177,7 +8177,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "59400",
+    price: 59400,
     url: "https://nskdiatoishi.jp/ca17/464/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8190,7 +8190,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "48400",
+    price: 48400,
     url: "https://nskdiatoishi.jp/ca17/463/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8203,7 +8203,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "68200",
+    price: 68200,
     url: "https://nskdiatoishi.jp/ca17/462/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8216,7 +8216,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "57200",
+    price: 57200,
     url: "https://nskdiatoishi.jp/ca17/461/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8229,7 +8229,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "46200",
+    price: 46200,
     url: "https://nskdiatoishi.jp/ca17/460/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8242,7 +8242,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "70400",
+    price: 70400,
     url: "https://nskdiatoishi.jp/ca17/459/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8255,7 +8255,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "59400",
+    price: 59400,
     url: "https://nskdiatoishi.jp/ca17/458/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8268,7 +8268,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "48400",
+    price: 48400,
     url: "https://nskdiatoishi.jp/ca17/457/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8281,7 +8281,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "68200",
+    price: 68200,
     url: "https://nskdiatoishi.jp/ca17/456/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8294,7 +8294,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "57200",
+    price: 57200,
     url: "https://nskdiatoishi.jp/ca17/455/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8307,7 +8307,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "46200",
+    price: 46200,
     url: "https://nskdiatoishi.jp/ca17/454/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8320,7 +8320,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "66000",
+    price: 66000,
     url: "https://nskdiatoishi.jp/ca17/453/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8333,7 +8333,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "55000",
+    price: 55000,
     url: "https://nskdiatoishi.jp/ca17/452/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8346,7 +8346,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "44000",
+    price: 44000,
     url: "https://nskdiatoishi.jp/ca17/451/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8359,7 +8359,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "66000",
+    price: 66000,
     url: "https://nskdiatoishi.jp/ca17/449/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8372,7 +8372,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "59400",
+    price: 59400,
     url: "https://nskdiatoishi.jp/ca17/448/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8385,7 +8385,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "48400",
+    price: 48400,
     url: "https://nskdiatoishi.jp/ca17/447/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8398,7 +8398,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "66000",
+    price: 66000,
     url: "https://nskdiatoishi.jp/ca17/446/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8411,7 +8411,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "55000",
+    price: 55000,
     url: "https://nskdiatoishi.jp/ca17/445/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8424,7 +8424,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "44000",
+    price: 44000,
     url: "https://nskdiatoishi.jp/ca17/444/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8437,7 +8437,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "70400",
+    price: 70400,
     url: "https://nskdiatoishi.jp/ca17/443/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8450,7 +8450,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "59400",
+    price: 59400,
     url: "https://nskdiatoishi.jp/ca17/442/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8463,7 +8463,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "48400",
+    price: 48400,
     url: "https://nskdiatoishi.jp/ca17/441/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8476,7 +8476,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "66000",
+    price: 66000,
     url: "https://nskdiatoishi.jp/ca17/440/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8489,7 +8489,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "55000",
+    price: 55000,
     url: "https://nskdiatoishi.jp/ca17/439/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8502,7 +8502,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "48400",
+    price: 48400,
     url: "https://nskdiatoishi.jp/ca17/438/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8515,7 +8515,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "70400",
+    price: 70400,
     url: "https://nskdiatoishi.jp/ca17/437/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8528,7 +8528,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "59400",
+    price: 59400,
     url: "https://nskdiatoishi.jp/ca17/436/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8541,7 +8541,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "48400",
+    price: 48400,
     url: "https://nskdiatoishi.jp/ca17/435/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8554,7 +8554,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "66000",
+    price: 66000,
     url: "https://nskdiatoishi.jp/ca17/434/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8567,7 +8567,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "55000",
+    price: 55000,
     url: "https://nskdiatoishi.jp/ca17/433/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8580,7 +8580,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "44000",
+    price: 44000,
     url: "https://nskdiatoishi.jp/ca17/432/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8593,7 +8593,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "70400",
+    price: 70400,
     url: "https://nskdiatoishi.jp/ca17/431/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8606,7 +8606,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "59400",
+    price: 59400,
     url: "https://nskdiatoishi.jp/ca17/430/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8619,7 +8619,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "48400",
+    price: 48400,
     url: "https://nskdiatoishi.jp/ca17/429/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8632,7 +8632,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "30000",
+    price: 30000,
     url: "https://nskdiatoishi.jp/ca17/147/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8645,7 +8645,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "30000",
+    price: 30000,
     url: "https://nskdiatoishi.jp/ca17/8/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8658,7 +8658,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "28000",
+    price: 28000,
     url: "https://nskdiatoishi.jp/ca17/7/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8671,7 +8671,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "28000",
+    price: 28000,
     url: "https://nskdiatoishi.jp/ca17/6/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8684,7 +8684,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "26000",
+    price: 26000,
     url: "https://nskdiatoishi.jp/ca17/5/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8697,7 +8697,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "26000",
+    price: 26000,
     url: "https://nskdiatoishi.jp/ca17/4/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8710,7 +8710,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "26000",
+    price: 26000,
     url: "https://nskdiatoishi.jp/ca17/3/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8723,7 +8723,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "",
-    price: "26000",
+    price: 26000,
     url: "https://nskdiatoishi.jp/ca17/2/p-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8736,7 +8736,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "CBN",
     size: "",
-    price: "32000",
+    price: 32000,
     url: "https://nskdiatoishi.jp/ca17/170/p1-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8749,7 +8749,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "CBN",
     size: "",
-    price: "32000",
+    price: 32000,
     url: "https://nskdiatoishi.jp/ca17/169/p1-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8762,7 +8762,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "CBN",
     size: "",
-    price: "32000",
+    price: 32000,
     url: "https://nskdiatoishi.jp/ca17/168/p1-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8775,7 +8775,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "CBN",
     size: "",
-    price: "32000",
+    price: 32000,
     url: "https://nskdiatoishi.jp/ca17/167/p1-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8788,7 +8788,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "CBN",
     size: "",
-    price: "32000",
+    price: 32000,
     url: "https://nskdiatoishi.jp/ca17/166/p1-r17-s/",
     remarks: "",
     remarks2: ""
@@ -8801,7 +8801,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "CBN",
     size: "200*75*23ミリ",
-    price: "32000",
+    price: 32000,
     url: "https://nskdiatoishi.jp/ca47/170/p-r47-s/",
     remarks: "",
     remarks2: ""
@@ -8814,7 +8814,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "CBN",
     size: "200*75*23ミリ",
-    price: "32000",
+    price: 32000,
     url: "https://nskdiatoishi.jp/ca47/169/p-r47-s/",
     remarks: "",
     remarks2: ""
@@ -8827,7 +8827,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "CBN",
     size: "200*75*23ミリ",
-    price: "32000",
+    price: 32000,
     url: "https://nskdiatoishi.jp/ca47/168/p-r47-s/",
     remarks: "",
     remarks2: ""
@@ -8840,7 +8840,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "CBN",
     size: "200*75*23ミリ",
-    price: "32000",
+    price: 32000,
     url: "https://nskdiatoishi.jp/ca47/166/p-r47-s/",
     remarks: "",
     remarks2: ""
@@ -8853,7 +8853,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "200ｍｍ×75mm×19mm",
-    price: "16500",
+    price: 16500,
     url: "https://nskdiatoishi.jp/ca67/583/p-r67-s/",
     remarks: "",
     remarks2: ""
@@ -8866,7 +8866,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "200ｍｍ×75mm×19mm",
-    price: "16500",
+    price: 16500,
     url: "https://nskdiatoishi.jp/ca67/582/p-r67-s/",
     remarks: "",
     remarks2: ""
@@ -8879,7 +8879,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "200ｍｍ×75mm×19mm",
-    price: "15400",
+    price: 15400,
     url: "https://nskdiatoishi.jp/ca67/581/p-r67-s/",
     remarks: "",
     remarks2: ""
@@ -8892,7 +8892,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "200ｍｍ×75mm×19mm",
-    price: "15400",
+    price: 15400,
     url: "https://nskdiatoishi.jp/ca67/580/p-r67-s/",
     remarks: "",
     remarks2: ""
@@ -8905,7 +8905,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "200ｍｍ×75mm×19mm",
-    price: "15400",
+    price: 15400,
     url: "https://nskdiatoishi.jp/ca67/579/p-r67-s/",
     remarks: "",
     remarks2: ""
@@ -8918,7 +8918,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×65×32",
-    price: "2671",
+    price: 2671,
     url: "https://hamono.ocnk.net/product/1995",
     remarks: "",
     remarks2: ""
@@ -8931,7 +8931,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×75×50",
-    price: "4085",
+    price: 4085,
     url: "https://hamono.ocnk.net/product/1994",
     remarks: "",
     remarks2: ""
@@ -8944,7 +8944,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×75×25",
-    price: "3614",
+    price: 3614,
     url: "https://hamono.ocnk.net/product/1993",
     remarks: "",
     remarks2: ""
@@ -8957,7 +8957,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×75×25",
-    price: "3850",
+    price: 3850,
     url: "https://hamono.ocnk.net/product/1992",
     remarks: "",
     remarks2: ""
@@ -8970,7 +8970,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×75×25",
-    price: "7857",
+    price: 7857,
     url: "https://hamono.ocnk.net/product/2114",
     remarks: "",
     remarks2: ""
@@ -8983,7 +8983,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "PA",
     size: "205×65×32",
-    price: "3457",
+    price: 3457,
     url: "https://hamono.ocnk.net/product/1997",
     remarks: "",
     remarks2: ""
@@ -8996,7 +8996,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "PA",
     size: "240×100×40",
-    price: "6757",
+    price: 6757,
     url: "https://hamono.ocnk.net/product/1996",
     remarks: "",
     remarks2: ""
@@ -9009,7 +9009,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "70×190×30",
-    price: "",
+    price: undefined,
     url: "https://www.makuake.com/project/iyokogyosho/",
     remarks: "カオリン質の陶石メインの天然素材などを原料に高温焼成",
     remarks2: ""
@@ -9022,7 +9022,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "",
+    price: undefined,
     url: "",
     remarks: "詳細不明",
     remarks2: ""
@@ -9035,7 +9035,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "天然石、珪石、他",
     size: "210×75×25mm",
-    price: "7150",
+    price: 7150,
     url: "https://sankeishop.jp/items/a3468",
     remarks: "「低温で焼成した人造砥石」とあるからレジノイドなのかなあ？",
     remarks2: ""
@@ -9048,7 +9048,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "天然石、珪石、他",
     size: "210×75×25mm",
-    price: "7480",
+    price: 7480,
     url: "https://sankeishop.jp/items/a3027",
     remarks: "",
     remarks2: ""
@@ -9061,7 +9061,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "天然石、珪石、他",
     size: "210×75×25mm",
-    price: "8360",
+    price: 8360,
     url: "https://sankeishop.jp/items/a3469",
     remarks: "",
     remarks2: ""
@@ -9074,7 +9074,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "天然石、珪石、他",
     size: "210×75×25mm",
-    price: "10340",
+    price: 10340,
     url: "https://sankeishop.jp/items/a3470",
     remarks: "",
     remarks2: ""
@@ -9087,7 +9087,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "天然石、珪石、他",
     size: "210×75×25mm",
-    price: "13750",
+    price: 13750,
     url: "https://sankeishop.jp/items/a3471",
     remarks: "",
     remarks2: ""
@@ -9100,7 +9100,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "天然石、珪石、他",
     size: "210×75×25mm",
-    price: "15840",
+    price: 15840,
     url: "https://sankeishop.jp/items/a3472",
     remarks: "",
     remarks2: ""
@@ -9113,7 +9113,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "PA",
     size: "205×65×32mm",
-    price: "2860",
+    price: 2860,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/16",
     remarks: "https://toishiya-miyagoshi.com/choice",
     remarks2: ""
@@ -9126,7 +9126,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "PA",
     size: "205×75×50mm",
-    price: "2860",
+    price: 2860,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/16",
     remarks: "",
     remarks2: ""
@@ -9139,7 +9139,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "PA",
     size: "180×60×25mm",
-    price: "2860",
+    price: 2860,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/16",
     remarks: "",
     remarks2: ""
@@ -9152,7 +9152,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA",
     size: "180 × 60 × 25mm",
-    price: "3190",
+    price: 3190,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/36",
     remarks: "",
     remarks2: ""
@@ -9165,7 +9165,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "",
     size: "",
-    price: "2035",
+    price: 2035,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/24",
     remarks: "詳細不明",
     remarks2: ""
@@ -9178,7 +9178,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WAにコバルト添加+ジルコン",
     size: "205×75×25mm",
-    price: "4070",
+    price: 4070,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/27",
     remarks: "",
     remarks2: ""
@@ -9191,7 +9191,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WAにコバルト添加+ジルコン",
     size: "180×60×25mm",
-    price: "4070",
+    price: 4070,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/27",
     remarks: "",
     remarks2: ""
@@ -9204,7 +9204,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "205×75×25mm",
-    price: "3300",
+    price: 3300,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/8",
     remarks: "コルビージャックチーズみたいな柄",
     remarks2: ""
@@ -9217,7 +9217,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "240×100×40mm",
-    price: "3300",
+    price: 3300,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/8",
     remarks: "",
     remarks2: ""
@@ -9230,7 +9230,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "180×60×25mm",
-    price: "3300",
+    price: 3300,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/8",
     remarks: "",
     remarks2: ""
@@ -9243,7 +9243,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "205×75×25mm",
-    price: "2860",
+    price: 2860,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/18",
     remarks: "",
     remarks2: ""
@@ -9256,7 +9256,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "180×60×25mm",
-    price: "2860",
+    price: 2860,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/18",
     remarks: "",
     remarks2: ""
@@ -9269,7 +9269,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA?",
     size: "205×75×25mm",
-    price: "3190",
+    price: 3190,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/20",
     remarks: "",
     remarks2: ""
@@ -9282,7 +9282,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA?",
     size: "180×60×25mm",
-    price: "3190",
+    price: 3190,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/20",
     remarks: "",
     remarks2: ""
@@ -9295,7 +9295,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "205×75×25mm",
-    price: "3300",
+    price: 3300,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/10",
     remarks: "https://toishiya-miyagoshi.com/choice　このページによると、硬口と軟口があるらしい",
     remarks2: ""
@@ -9308,7 +9308,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "180×60×25mm",
-    price: "3300",
+    price: 3300,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/10",
     remarks: "",
     remarks2: ""
@@ -9321,7 +9321,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WAにコバルト添加",
     size: "205×75×25mm",
-    price: "3630",
+    price: 3630,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/4",
     remarks: "",
     remarks2: ""
@@ -9334,7 +9334,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WAにコバルト添加",
     size: "180×60×25mm",
-    price: "3630",
+    price: 3630,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/4",
     remarks: "",
     remarks2: ""
@@ -9347,7 +9347,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WAにコバルト添加",
     size: "205×65×32mm",
-    price: "3740",
+    price: 3740,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/31",
     remarks: "",
     remarks2: ""
@@ -9360,7 +9360,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WAにコバルト添加",
     size: "180×60×25mm",
-    price: "3740",
+    price: 3740,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/31",
     remarks: "",
     remarks2: ""
@@ -9373,7 +9373,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WAにコバルト添加",
     size: "205×65×32mm",
-    price: "3850",
+    price: 3850,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/40",
     remarks: "白色アルミナにコバルトを添加することで靭性が高くなり砥面の平面保持力と遊離砥粒のバランスが絶妙",
     remarks2: ""
@@ -9386,7 +9386,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WAにコバルト添加",
     size: "180×60×25mm",
-    price: "3850",
+    price: 3850,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/40",
     remarks: "",
     remarks2: ""
@@ -9399,7 +9399,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WAにコバルト添加",
     size: "205×65×32mm",
-    price: "5280",
+    price: 5280,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/34",
     remarks: "",
     remarks2: ""
@@ -9412,7 +9412,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WAにコバルト添加",
     size: "180×60×25mm",
-    price: "5280",
+    price: 5280,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/34",
     remarks: "",
     remarks2: ""
@@ -9425,7 +9425,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "GC",
     size: "205×75×50mm",
-    price: "3080",
+    price: 3080,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/25",
     remarks: "",
     remarks2: ""
@@ -9438,7 +9438,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "GC",
     size: "180×60×25mm",
-    price: "3080",
+    price: 3080,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/25",
     remarks: "",
     remarks2: ""
@@ -9451,7 +9451,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "180 × 60 × 25mm",
-    price: "3630",
+    price: 3630,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/35",
     remarks: "",
     remarks2: ""
@@ -9464,7 +9464,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "205×75×25mm",
-    price: "4950",
+    price: 4950,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/26",
     remarks: "",
     remarks2: ""
@@ -9477,7 +9477,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "180×60×25mm",
-    price: "4950",
+    price: 4950,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/26",
     remarks: "",
     remarks2: ""
@@ -9490,7 +9490,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "205×75×25mm",
-    price: "4510",
+    price: 4510,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/12",
     remarks: "",
     remarks2: ""
@@ -9503,7 +9503,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "180×60×25mm",
-    price: "4510",
+    price: 4510,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/12",
     remarks: "",
     remarks2: ""
@@ -9516,7 +9516,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA",
     size: "205×75×25mm",
-    price: "6160",
+    price: 6160,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/6",
     remarks: "",
     remarks2: ""
@@ -9529,7 +9529,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA",
     size: "180×60×25mm",
-    price: "6160",
+    price: 6160,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/6",
     remarks: "",
     remarks2: ""
@@ -9542,7 +9542,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "205×75×25mm",
-    price: "6600",
+    price: 6600,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/14",
     remarks: "",
     remarks2: ""
@@ -9555,7 +9555,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "180×60×25mm",
-    price: "6600",
+    price: 6600,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/14",
     remarks: "",
     remarks2: ""
@@ -9568,7 +9568,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "",
     size: "205×65×32mm",
-    price: "3080",
+    price: 3080,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/22",
     remarks: "",
     remarks2: ""
@@ -9581,7 +9581,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "",
     size: "240×100×40mm",
-    price: "3080",
+    price: 3080,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/22",
     remarks: "",
     remarks2: ""
@@ -9594,7 +9594,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "",
     size: "",
-    price: "3080",
+    price: 3080,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/22",
     remarks: "",
     remarks2: ""
@@ -9607,7 +9607,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "205×70×8mm",
-    price: "",
+    price: undefined,
     url: "http://www.iwood.jp/seihin03.html",
     remarks: "",
     remarks2: ""
@@ -9620,7 +9620,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "205×50×8mm",
-    price: "",
+    price: undefined,
     url: "http://www.iwood.jp/seihin03.html",
     remarks: "",
     remarks2: ""
@@ -9633,7 +9633,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "205×70×8mm",
-    price: "",
+    price: undefined,
     url: "http://www.iwood.jp/seihin03.html",
     remarks: "",
     remarks2: ""
@@ -9646,7 +9646,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "205×70×8mm",
-    price: "",
+    price: undefined,
     url: "http://www.iwood.jp/seihin03.html",
     remarks: "",
     remarks2: ""
@@ -9659,7 +9659,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "200*75*16",
-    price: "",
+    price: undefined,
     url: "https://www.monotaro.com/g/01140929/",
     remarks: "公式見つからなかった",
     remarks2: ""
@@ -9672,7 +9672,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "200*75*16",
-    price: "",
+    price: undefined,
     url: "",
     remarks: "",
     remarks2: ""
@@ -9685,7 +9685,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "200*75*16",
-    price: "",
+    price: undefined,
     url: "https://www.monotaro.com/g/01140929/",
     remarks: "",
     remarks2: ""
@@ -9698,7 +9698,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "ダイヤ",
     size: "200*75*16",
-    price: "",
+    price: undefined,
     url: "https://www.monotaro.com/g/01140929/",
     remarks: "",
     remarks2: ""
@@ -9711,7 +9711,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "A?",
     size: "100*25*13",
-    price: "",
+    price: undefined,
     url: "http://www.yamatoseito.co.jp/02-goods1SAKURA.html",
     remarks: "",
     remarks2: ""
@@ -9724,7 +9724,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "A?",
     size: "115*38*16",
-    price: "",
+    price: undefined,
     url: "http://www.yamatoseito.co.jp/02-goods1SAKURA.html",
     remarks: "",
     remarks2: ""
@@ -9737,7 +9737,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "A?",
     size: "150*50*25",
-    price: "",
+    price: undefined,
     url: "http://www.yamatoseito.co.jp/02-goods1SAKURA.html",
     remarks: "",
     remarks2: ""
@@ -9750,7 +9750,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "A?",
     size: "205*50*25",
-    price: "",
+    price: undefined,
     url: "http://www.yamatoseito.co.jp/02-goods1SAKURA.html",
     remarks: "",
     remarks2: ""
@@ -9763,7 +9763,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "A?",
     size: "100*25*13",
-    price: "",
+    price: undefined,
     url: "http://www.yamatoseito.co.jp/02-goods1SAKURA.html",
     remarks: "",
     remarks2: ""
@@ -9776,7 +9776,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "A?",
     size: "115*38*16",
-    price: "",
+    price: undefined,
     url: "http://www.yamatoseito.co.jp/02-goods1SAKURA.html",
     remarks: "",
     remarks2: ""
@@ -9789,7 +9789,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "A?",
     size: "150*50*25",
-    price: "",
+    price: undefined,
     url: "http://www.yamatoseito.co.jp/02-goods1SAKURA.html",
     remarks: "",
     remarks2: ""
@@ -9802,7 +9802,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "A?",
     size: "205*50*25",
-    price: "",
+    price: undefined,
     url: "http://www.yamatoseito.co.jp/02-goods1SAKURA.html",
     remarks: "",
     remarks2: ""
@@ -9815,7 +9815,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "A?",
     size: "100*25*13",
-    price: "",
+    price: undefined,
     url: "http://www.yamatoseito.co.jp/02-goods1SAKURA.html",
     remarks: "",
     remarks2: ""
@@ -9828,7 +9828,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "A?",
     size: "115*38*16",
-    price: "",
+    price: undefined,
     url: "http://www.yamatoseito.co.jp/02-goods1SAKURA.html",
     remarks: "",
     remarks2: ""
@@ -9841,7 +9841,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "A?",
     size: "150*50*25",
-    price: "",
+    price: undefined,
     url: "http://www.yamatoseito.co.jp/02-goods1SAKURA.html",
     remarks: "",
     remarks2: ""
@@ -9854,7 +9854,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "A?",
     size: "205*50*25",
-    price: "",
+    price: undefined,
     url: "http://www.yamatoseito.co.jp/02-goods1SAKURA.html",
     remarks: "",
     remarks2: ""
@@ -9867,7 +9867,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "23×59×5mm",
-    price: "",
+    price: undefined,
     url: "http://www.fujiwarasangyo-markeweb2.com/DispDetail.do?volumeName=00017&itemID=t000100006046",
     remarks: "",
     remarks2: ""
@@ -9880,7 +9880,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "23×59×5mm",
-    price: "",
+    price: undefined,
     url: "http://www.fujiwarasangyo-markeweb2.com/DispDetail.do?volumeName=00017&itemID=t000100006047",
     remarks: "",
     remarks2: ""
@@ -9893,7 +9893,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "25×100×5mm",
-    price: "",
+    price: undefined,
     url: "http://www.fujiwarasangyo-markeweb2.com/DispDetail.do?volumeName=00017&itemID=t000100097372",
     remarks: "",
     remarks2: ""
@@ -9906,7 +9906,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "25×100×5mm",
-    price: "",
+    price: undefined,
     url: "http://www.fujiwarasangyo-markeweb2.com/DispDetail.do?volumeName=00017&itemID=t000100097373",
     remarks: "",
     remarks2: ""
@@ -9919,7 +9919,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "ダイヤ",
     size: "20×70×10mm",
-    price: "",
+    price: undefined,
     url: "http://www.fujiwarasangyo-markeweb2.com/DispDetail.do?volumeName=00017&itemID=t000100097374",
     remarks: "",
     remarks2: ""
@@ -9932,7 +9932,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "ダイヤ",
     size: "20×70×10mm",
-    price: "",
+    price: undefined,
     url: "http://www.fujiwarasangyo-markeweb2.com/DispDetail.do?volumeName=00017&itemID=t000100097375",
     remarks: "",
     remarks2: ""
@@ -9945,7 +9945,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド",
     abrasiveGrains: "ダイヤ",
     size: "20×70×10mm",
-    price: "",
+    price: undefined,
     url: "http://www.fujiwarasangyo-markeweb2.com/DispDetail.do?volumeName=00017&itemID=t000100097376",
     remarks: "",
     remarks2: ""
@@ -9958,7 +9958,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "ダイヤ",
     size: "70×200×1mm",
-    price: "",
+    price: undefined,
     url: "https://www.sankyo-diamond.co.jp/products/polish/kentaro/kentaro.html",
     remarks: "サイズは、ダイヤの層",
     remarks2: ""
@@ -9971,7 +9971,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "ダイヤ",
     size: "70×200×1mm",
-    price: "",
+    price: undefined,
     url: "https://www.sankyo-diamond.co.jp/products/polish/kentaro/kentaro.html",
     remarks: "",
     remarks2: ""
@@ -9984,7 +9984,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "ダイヤ",
     size: "70×200×1mm",
-    price: "",
+    price: undefined,
     url: "https://www.sankyo-diamond.co.jp/products/polish/kentaro/kentaro.html",
     remarks: "",
     remarks2: ""
@@ -9997,7 +9997,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "ダイヤ",
     size: "70×200×1mm",
-    price: "",
+    price: undefined,
     url: "https://www.sankyo-diamond.co.jp/products/polish/kentaro/kentaro.html",
     remarks: "",
     remarks2: ""
@@ -10010,7 +10010,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド？",
     abrasiveGrains: "ダイヤ",
     size: "70×200×1mm",
-    price: "",
+    price: undefined,
     url: "https://www.sankyo-diamond.co.jp/products/polish/kentaro/kentaro.html",
     remarks: "",
     remarks2: ""
@@ -10023,7 +10023,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "100*25*13",
-    price: "2210",
+    price: 2210,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "",
     remarks2: ""
@@ -10036,7 +10036,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "100*25*13",
-    price: "2210",
+    price: 2210,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "",
     remarks2: ""
@@ -10049,7 +10049,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "100*25*13",
-    price: "2210",
+    price: 2210,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "",
     remarks2: ""
@@ -10062,7 +10062,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "100*25*13",
-    price: "2210",
+    price: 2210,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "",
     remarks2: ""
@@ -10075,7 +10075,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "150*50*25",
-    price: "6020",
+    price: 6020,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "",
     remarks2: ""
@@ -10088,7 +10088,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "150*50*25",
-    price: "6020",
+    price: 6020,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "",
     remarks2: ""
@@ -10101,7 +10101,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "150*50*25",
-    price: "6020",
+    price: 6020,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "",
     remarks2: ""
@@ -10114,7 +10114,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "150*50*25",
-    price: "6020",
+    price: 6020,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "",
     remarks2: ""
@@ -10127,7 +10127,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "61000",
+    price: 61000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10140,7 +10140,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "40000",
+    price: 40000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10153,7 +10153,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "36000",
+    price: 36000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10166,7 +10166,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "26000",
+    price: 26000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10179,7 +10179,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "26000",
+    price: 26000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10192,7 +10192,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "40000",
+    price: 40000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10205,7 +10205,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "28000",
+    price: 28000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10218,7 +10218,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "26000",
+    price: 26000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10231,7 +10231,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "20000",
+    price: 20000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10244,7 +10244,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "20000",
+    price: 20000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10257,7 +10257,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "40000",
+    price: 40000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10270,7 +10270,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "28000",
+    price: 28000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10283,7 +10283,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "26000",
+    price: 26000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10296,7 +10296,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "20000",
+    price: 20000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10309,7 +10309,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "20000",
+    price: 20000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10322,7 +10322,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "61000",
+    price: 61000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: "マジック式とは？"
@@ -10335,7 +10335,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "40000",
+    price: 40000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10348,7 +10348,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "36000",
+    price: 36000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10361,7 +10361,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "26000",
+    price: 26000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10374,7 +10374,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "26000",
+    price: 26000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10387,7 +10387,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "40000",
+    price: 40000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10400,7 +10400,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "28000",
+    price: 28000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10413,7 +10413,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "26000",
+    price: 26000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10426,7 +10426,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "20000",
+    price: 20000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10439,7 +10439,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "20000",
+    price: 20000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10452,7 +10452,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "40000",
+    price: 40000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10465,7 +10465,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "28000",
+    price: 28000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10478,7 +10478,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "26000",
+    price: 26000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10491,7 +10491,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "20000",
+    price: 20000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10504,7 +10504,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*230",
-    price: "20000",
+    price: 20000,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10517,7 +10517,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "41500",
+    price: 41500,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10530,7 +10530,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "27200",
+    price: 27200,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10543,7 +10543,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "24500",
+    price: 24500,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10556,7 +10556,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "17700",
+    price: 17700,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10569,7 +10569,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "17700",
+    price: 17700,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10582,7 +10582,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "27200",
+    price: 27200,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10595,7 +10595,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "19100",
+    price: 19100,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10608,7 +10608,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "17700",
+    price: 17700,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10621,7 +10621,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "13600",
+    price: 13600,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10634,7 +10634,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "13600",
+    price: 13600,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10647,7 +10647,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "27200",
+    price: 27200,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10660,7 +10660,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "19100",
+    price: 19100,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10673,7 +10673,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "17700",
+    price: 17700,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10686,7 +10686,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "13600",
+    price: 13600,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10699,7 +10699,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "13600",
+    price: 13600,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "両面テープ式",
     remarks2: ""
@@ -10712,7 +10712,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "41500",
+    price: 41500,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10725,7 +10725,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "27200",
+    price: 27200,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10738,7 +10738,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "24500",
+    price: 24500,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10751,7 +10751,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "17700",
+    price: 17700,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10764,7 +10764,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "17700",
+    price: 17700,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10777,7 +10777,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "27200",
+    price: 27200,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10790,7 +10790,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "19100",
+    price: 19100,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10803,7 +10803,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "17700",
+    price: 17700,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10816,7 +10816,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "13600",
+    price: 13600,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10829,7 +10829,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "13600",
+    price: 13600,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10842,7 +10842,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "27200",
+    price: 27200,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10855,7 +10855,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "19100",
+    price: 19100,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10868,7 +10868,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "17700",
+    price: 17700,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10881,7 +10881,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "13600",
+    price: 13600,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10894,7 +10894,7 @@ export const products: Product[] = [
     manufacturingMethod: "電着",
     abrasiveGrains: "ダイヤ",
     size: "150*150",
-    price: "13600",
+    price: 13600,
     url: "https://yanase-saving.com/webcatalog/12/html5.html#page=163",
     remarks: "マジック式",
     remarks2: ""
@@ -10907,7 +10907,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "50Ｘ17Ｘ180",
-    price: "",
+    price: undefined,
     url: "http://www.echigo-douraku.com/104_711.html",
     remarks: "ずいぶん昔の砥石らしい",
     remarks2: ""
@@ -10920,7 +10920,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "65Ｘ210Ｘ24",
-    price: "",
+    price: undefined,
     url: "http://www.echigo-douraku.com/104_712.html",
     remarks: "1300番や1300/5000のコンビも見かける",
     remarks2: ""
@@ -10933,7 +10933,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "天然砥石の砥粒含む",
     size: "210×75×25mm",
-    price: "",
+    price: undefined,
     url: "https://www.ehamono.com/shopdetail/000000001086/ct327/recommend/",
     remarks: "",
     remarks2: ""
@@ -10946,7 +10946,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "天然砥石の砥粒含む",
     size: "210×75×25mm",
-    price: "",
+    price: undefined,
     url: "https://www.ehamono.com/shopdetail/000000001085/ct327/page1/recommend/",
     remarks: "",
     remarks2: ""
@@ -10959,7 +10959,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "天然砥石の砥粒含む",
     size: "215mm×75mm×50mm",
-    price: "",
+    price: undefined,
     url: "https://www.ehamono.com/shopdetail/000000001081/",
     remarks: "",
     remarks2: ""
@@ -10972,7 +10972,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビドリファイド製法",
     abrasiveGrains: "",
     size: "80×205×35",
-    price: "2900",
+    price: 2900,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=697",
     remarks: "",
     remarks2: ""
@@ -10985,7 +10985,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド製法",
     abrasiveGrains: "",
     size: "",
-    price: "5400",
+    price: 5400,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=452",
     remarks: "",
     remarks2: ""
@@ -10998,7 +10998,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド製法",
     abrasiveGrains: "",
     size: "",
-    price: "6500",
+    price: 6500,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=453",
     remarks: "",
     remarks2: ""
@@ -11011,7 +11011,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビドリファイド製法",
     abrasiveGrains: "",
     size: "65×210×35",
-    price: "2300",
+    price: 2300,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=696",
     remarks: "",
     remarks2: ""
@@ -11024,7 +11024,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビドリファイド製法",
     abrasiveGrains: "",
     size: "80×210×50",
-    price: "4500",
+    price: 4500,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=695",
     remarks: "",
     remarks2: ""
@@ -11037,7 +11037,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビドリファイド製法",
     abrasiveGrains: "",
     size: "65×205×30",
-    price: "2700",
+    price: 2700,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=495",
     remarks: "",
     remarks2: ""
@@ -11050,7 +11050,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビドリファイド製法",
     abrasiveGrains: "",
     size: "75×205×50",
-    price: "4400",
+    price: 4400,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=494",
     remarks: "",
     remarks2: ""
@@ -11063,7 +11063,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビドリファイド製法",
     abrasiveGrains: "",
     size: "60×205×32",
-    price: "2100",
+    price: 2100,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=496",
     remarks: "",
     remarks2: ""
@@ -11076,7 +11076,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビドリファイド製法",
     abrasiveGrains: "",
     size: "70×210×50",
-    price: "3400",
+    price: 3400,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=497",
     remarks: "",
     remarks2: ""
@@ -11089,7 +11089,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビドリファイド製法",
     abrasiveGrains: "",
     size: "102×245×67",
-    price: "5000",
+    price: 5000,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=498",
     remarks: "",
     remarks2: ""
@@ -11102,7 +11102,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド製法",
     abrasiveGrains: "",
     size: "75×210×30",
-    price: "4500",
+    price: 4500,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=456",
     remarks: "",
     remarks2: ""
@@ -11115,7 +11115,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド製法",
     abrasiveGrains: "",
     size: "75×210×30",
-    price: "5000",
+    price: 5000,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=502",
     remarks: "",
     remarks2: ""
@@ -11128,7 +11128,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド製法",
     abrasiveGrains: "",
     size: "75×210×30",
-    price: "5500",
+    price: 5500,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=457",
     remarks: "",
     remarks2: ""
@@ -11141,7 +11141,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド製法",
     abrasiveGrains: "",
     size: "75×210×30",
-    price: "6000",
+    price: 6000,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=503",
     remarks: "",
     remarks2: ""
@@ -11154,7 +11154,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド製法",
     abrasiveGrains: "",
     size: "75×210×30",
-    price: "5500",
+    price: 5500,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=458",
     remarks: "",
     remarks2: ""
@@ -11167,7 +11167,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド製法",
     abrasiveGrains: "",
     size: "75×210×30",
-    price: "6000",
+    price: 6000,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=504",
     remarks: "",
     remarks2: ""
@@ -11180,7 +11180,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド製法",
     abrasiveGrains: "",
     size: "75×210×30",
-    price: "4800",
+    price: 4800,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=672",
     remarks: "",
     remarks2: ""
@@ -11193,7 +11193,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド製法",
     abrasiveGrains: "",
     size: "75×210×30",
-    price: "5300",
+    price: 5300,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=673",
     remarks: "",
     remarks2: ""
@@ -11206,7 +11206,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビドリファイド製法",
     abrasiveGrains: "",
     size: "75×205×20",
-    price: "5500",
+    price: 5500,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=459",
     remarks: "",
     remarks2: ""
@@ -11219,7 +11219,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビドリファイド製法",
     abrasiveGrains: "",
     size: "75×205×20",
-    price: "6000",
+    price: 6000,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=505",
     remarks: "",
     remarks2: ""
@@ -11232,7 +11232,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド製法",
     abrasiveGrains: "",
     size: "75×205×25",
-    price: "5700",
+    price: 5700,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=460",
     remarks: "",
     remarks2: ""
@@ -11245,7 +11245,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド製法",
     abrasiveGrains: "",
     size: "75×205×25",
-    price: "6200",
+    price: 6200,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=506",
     remarks: "",
     remarks2: ""
@@ -11258,7 +11258,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド製法",
     abrasiveGrains: "",
     size: "75×205×25",
-    price: "5900",
+    price: 5900,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=461",
     remarks: "",
     remarks2: ""
@@ -11271,7 +11271,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド製法",
     abrasiveGrains: "",
     size: "75×205×25",
-    price: "6400",
+    price: 6400,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=507",
     remarks: "",
     remarks2: ""
@@ -11284,7 +11284,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド製法",
     abrasiveGrains: "",
     size: "70×210×20",
-    price: "6100",
+    price: 6100,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=462",
     remarks: "",
     remarks2: ""
@@ -11297,7 +11297,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド製法",
     abrasiveGrains: "",
     size: "70×210×20",
-    price: "6600",
+    price: 6600,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=508",
     remarks: "",
     remarks2: ""
@@ -11310,7 +11310,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド製法",
     abrasiveGrains: "",
     size: "70×205×25",
-    price: "7600",
+    price: 7600,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=463",
     remarks: "",
     remarks2: ""
@@ -11323,7 +11323,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド製法",
     abrasiveGrains: "",
     size: "70×205×25",
-    price: "8100",
+    price: 8100,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=509",
     remarks: "",
     remarks2: ""
@@ -11336,7 +11336,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "3500",
+    price: 3500,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=501",
     remarks: "",
     remarks2: ""
@@ -11349,7 +11349,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "7500",
+    price: 7500,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=500",
     remarks: "",
     remarks2: ""
@@ -11362,7 +11362,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド製法",
     abrasiveGrains: "",
     size: "75×205×25",
-    price: "10500",
+    price: 10500,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=464",
     remarks: "",
     remarks2: ""
@@ -11375,7 +11375,7 @@ export const products: Product[] = [
     manufacturingMethod: "レジノイド製法",
     abrasiveGrains: "",
     size: "75×205×25",
-    price: "11000",
+    price: 11000,
     url: "https://www.ichimonji.co.jp/products/detail.php?product_id=510",
     remarks: "",
     remarks2: ""
@@ -11388,7 +11388,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×75×25mm",
-    price: "5090",
+    price: 5090,
     url: "http://www.e-toishi.com/products/detail.php?product_id=97",
     remarks: "被ってる",
     remarks2: ""
@@ -11401,7 +11401,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "",
-    price: "3660",
+    price: 3660,
     url: "http://www.e-toishi.com/products/detail.php?product_id=17",
     remarks: "",
     remarks2: ""
@@ -11414,7 +11414,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×65×32mm",
-    price: "5700",
+    price: 5700,
     url: "http://www.e-toishi.com/products/detail.php?product_id=37",
     remarks: "",
     remarks2: ""
@@ -11427,7 +11427,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "WA",
     size: "202×73×24mm",
-    price: "8900",
+    price: 8900,
     url: "http://www.e-toishi.com/products/detail.php?product_id=36",
     remarks: "",
     remarks2: ""
@@ -11440,7 +11440,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "WA",
     size: "202×76×24mm",
-    price: "9450",
+    price: 9450,
     url: "http://www.e-toishi.com/products/detail.php?product_id=34",
     remarks: "",
     remarks2: ""
@@ -11453,7 +11453,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド？",
     abrasiveGrains: "",
     size: "205×74×25mm",
-    price: "31500",
+    price: 31500,
     url: "http://www.e-toishi.com/products/detail.php?product_id=33",
     remarks: "高温焼成したとあるのでビトリファイド？",
     remarks2: ""
@@ -11466,7 +11466,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア？",
     abrasiveGrains: "アルミナ系",
     size: "205×65×32(mm)",
-    price: "4740",
+    price: 4740,
     url: "http://www.e-toishi.com/products/detail.php?product_id=31",
     remarks: "番手不明、焼成法されていないとあるのでマグネシア？",
     remarks2: ""
@@ -11479,7 +11479,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×75×50mm",
-    price: "5500",
+    price: 5500,
     url: "http://www.e-toishi.com/products/detail.php?product_id=30",
     remarks: "",
     remarks2: ""
@@ -11492,7 +11492,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×75×25mm",
-    price: "5090",
+    price: 5090,
     url: "http://www.e-toishi.com/products/detail.php?product_id=29",
     remarks: "被ってる",
     remarks2: ""
@@ -11505,7 +11505,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "225×95×30mm",
-    price: "6600",
+    price: 6600,
     url: "http://www.e-toishi.com/products/detail.php?product_id=28",
     remarks: "被ってる？",
     remarks2: ""
@@ -11518,7 +11518,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア？",
     abrasiveGrains: "アルミナ系",
     size: "205×65×32(mm)",
-    price: "3940",
+    price: 3940,
     url: "http://www.e-toishi.com/products/detail.php?product_id=22",
     remarks: "",
     remarks2: ""
@@ -11531,7 +11531,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×75×50mm",
-    price: "4780",
+    price: 4780,
     url: "http://www.e-toishi.com/products/detail.php?product_id=21",
     remarks: "",
     remarks2: ""
@@ -11544,7 +11544,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "225×95×60mm",
-    price: "6600",
+    price: 6600,
     url: "http://www.e-toishi.com/products/detail.php?product_id=20",
     remarks: "",
     remarks2: ""
@@ -11557,7 +11557,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×75×30mm",
-    price: "4580",
+    price: 4580,
     url: "http://www.e-toishi.com/products/detail.php?product_id=19",
     remarks: "",
     remarks2: ""
@@ -11570,7 +11570,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "205×65×34mm",
-    price: "3030",
+    price: 3030,
     url: "http://www.e-toishi.com/products/detail.php?product_id=18",
     remarks: "",
     remarks2: ""
@@ -11583,7 +11583,7 @@ export const products: Product[] = [
     manufacturingMethod: "マグネシア？",
     abrasiveGrains: "アルミナ系",
     size: "",
-    price: "3940",
+    price: 3940,
     url: "http://www.e-toishi.com/products/detail.php?product_id=15",
     remarks: "",
     remarks2: ""
@@ -11596,7 +11596,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "PA",
     size: "205×65×34mm",
-    price: "2800",
+    price: 2800,
     url: "http://www.e-toishi.com/products/detail.php?product_id=14",
     remarks: "被ってる？",
     remarks2: ""
@@ -11609,7 +11609,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "PA",
     size: "205×75×50mm",
-    price: "4880",
+    price: 4880,
     url: "http://www.e-toishi.com/products/detail.php?product_id=13",
     remarks: "被ってる？",
     remarks2: ""
@@ -11622,7 +11622,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "208×62×34(mm)",
-    price: "3150",
+    price: 3150,
     url: "http://www.e-toishi.com/products/detail.php?product_id=12",
     remarks: "",
     remarks2: ""
@@ -11635,7 +11635,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "GC",
     size: "209×78×51(mm)",
-    price: "5500",
+    price: 5500,
     url: "http://www.e-toishi.com/products/detail.php?product_id=11",
     remarks: "",
     remarks2: ""
@@ -11648,7 +11648,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×80×50(mm)",
-    price: "3460",
+    price: 3460,
     url: "http://www.e-toishi.com/products/detail.php?product_id=10",
     remarks: "",
     remarks2: ""
@@ -11661,7 +11661,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×73×27mm",
-    price: "5500",
+    price: 5500,
     url: "http://www.e-toishi.com/products/detail.php?product_id=9",
     remarks: "",
     remarks2: ""
@@ -11674,7 +11674,7 @@ export const products: Product[] = [
     manufacturingMethod: "",
     abrasiveGrains: "",
     size: "210×73×27mm",
-    price: "5090",
+    price: 5090,
     url: "http://www.e-toishi.com/products/detail.php?product_id=8",
     remarks: "",
     remarks2: ""
