@@ -175,7 +175,7 @@ const Row = React.memo(({item}: { item: Product }) => {
         </Tooltip2>
       </StyledTd>
       <StyledTd>{item.size}</StyledTd>
-      <StyledTd>{`${volume.toLocaleString()}mm³`}</StyledTd>
+      <StyledTd>{volume ? `${volume.toLocaleString()}mm³` : ""}</StyledTd>
       <StyledTd>{item.price && `￥${item.price.toLocaleString()}`}</StyledTd>
       <StyledTd>
         <Tooltip2 content={item.url}>
