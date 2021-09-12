@@ -1,9 +1,11 @@
-import React, {useMemo, useState} from 'react';
+import React, {ChangeEvent, useMemo} from 'react';
 import {HTMLTable, InputGroup, NumberRange, RangeSlider} from "@blueprintjs/core";
 import styled from "styled-components";
 import {Product, products} from "./data/products";
 import {companies, Company} from "./data/companies";
 import {Tooltip2} from "@blueprintjs/popover2";
+import {useHistory, useLocation} from "react-router-dom";
+import queryString from "querystring";
 
 type State = {
   freeWord: string;
@@ -41,9 +43,22 @@ const companiesMap: Record<string, Company> = companies.reduce((acc, cur) => ({
 }), {});
 
 export const MainPage = () => {
-  const [state, update] = useState<State>(initialState);
+  const history = useHistory();
+  const location = useLocation();
 
-  const selectedGridRangesValues: [number, number] = useMemo(() => [gridValues[state.gridRange[0]], gridValues[state.gridRange[1]]], [state.gridRange]);
+  const query: State = useMemo(() => {
+    // 先頭の?を取り除く
+    const parsedQuery = queryString.parse(location.search.slice(1));
+    return {
+      freeWord: (parsedQuery.freeword as string) || initialState.freeWord,
+      gridRange: (parsedQuery.gridrange as string)?.split("-").map(x => Number(x)) as NumberRange || initialState.gridRange,
+    };
+  }, [location.search]);
+  const updateQuery = (q: State) => {
+    history.replace(`/?freeword=${q.freeWord}&gridrange=${q.gridRange.join("-")}&`)
+  };
+
+  const selectedGridRangesValues: [number, number] = useMemo(() => [gridValues[query.gridRange[0]], gridValues[query.gridRange[1]]], [query.gridRange]);
   const filteredProductId = useMemo(() => products.filter(product => {
     const isTargetGird = (value: Product["grid"]) => {
       // TODO: 番手情報が無いものは、とりあえず無条件に出しておく
@@ -57,9 +72,16 @@ export const MainPage = () => {
         }
       }
     }
-    return (!state.freeWord || product.freeWords.search(state.freeWord) !== -1)
+    return (!query.freeWord || product.freeWords.search(query.freeWord) !== -1)
       && isTargetGird(product.grid);
-  }).map(x => x.id), [state, selectedGridRangesValues])
+  }).map(x => x.id), [query, selectedGridRangesValues])
+
+  const handleChangeFreeWord = (e: ChangeEvent<HTMLInputElement>) => {
+    updateQuery({...query, freeWord: e.target.value});
+  };
+  const handleChangeGridRange = (e: NumberRange) => {
+    updateQuery({...query, gridRange: e});
+  };
 
   return (
     <Main>
@@ -67,17 +89,17 @@ export const MainPage = () => {
         <InputGroup
           asyncControl={true}
           leftIcon="filter"
-          onChange={(e) => update(prev => ({...prev, freeWord: e.target.value}))}
+          onChange={handleChangeFreeWord}
           placeholder="フリーワード"
-          value={state.freeWord}
+          value={query.freeWord}
         />
         <StyledRangeSlider
           min={0}
           max={grids.length - 1}
           stepSize={1}
           labelRenderer={(value, opts) => <StyledRangeSliderLabel>{gridLabels[value]}</StyledRangeSliderLabel>}
-          onChange={(e) => update(prev => ({...prev, gridRange: e}))}
-          value={state.gridRange}
+          onChange={handleChangeGridRange}
+          value={query.gridRange}
         />
       </StyledControls>
       <DataTables items={products} filterIds={filteredProductId}/>
