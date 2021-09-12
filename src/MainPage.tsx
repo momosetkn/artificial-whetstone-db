@@ -22,7 +22,7 @@ const grids = [
   {label: "#600", value: 600},
   {label: "#800", value: 800},
   {label: "#1,000", value: 1_000},
-  {label: "#3,000", value: 2_000},
+  {label: "#2,000", value: 2_000},
   {label: "#3,000", value: 3_000},
   {label: "#6,000", value: 6_000},
   {label: "#8,000", value: 8_000},
@@ -55,11 +55,11 @@ export const MainPage = () => {
     };
   }, [location.search]);
   const updateQuery = (q: State) => {
-    history.replace(`/?freeword=${q.freeWord}&gridrange=${q.gridRange.join("-")}&`)
+    history.replace(`/?freeword=${q.freeWord}&gridrange=${q.gridRange.join("-")}`)
   };
 
   const selectedGridRangesValues: [number, number] = useMemo(() => [gridValues[query.gridRange[0]], gridValues[query.gridRange[1]]], [query.gridRange]);
-  const filteredProductId = useMemo(() => products.filter(product => {
+  const filteredProducts = useMemo(() => products.filter(product => {
     const isTargetGird = (value: Product["grid"]) => {
       // TODO: 番手情報が無いものは、とりあえず無条件に出しておく
       if (!value) return true;
@@ -74,7 +74,7 @@ export const MainPage = () => {
     }
     return (!query.freeWord || product.freeWords.search(query.freeWord) !== -1)
       && isTargetGird(product.grid);
-  }).map(x => x.id), [query, selectedGridRangesValues])
+  }), [query, selectedGridRangesValues])
 
   const handleChangeFreeWord = (e: ChangeEvent<HTMLInputElement>) => {
     updateQuery({...query, freeWord: e.target.value});
@@ -102,13 +102,12 @@ export const MainPage = () => {
           value={query.gridRange}
         />
       </StyledControls>
-      <DataTables items={products} filterIds={filteredProductId}/>
+      <DataTables items={filteredProducts} />
     </Main>
   );
 };
 
-const DataTables = ({items, filterIds}: { items: Product[]; filterIds: number[]}) => {
-  const filterIdsSet = useMemo(() => new Set(filterIds), [filterIds]);
+const DataTables = ({items}: { items: Product[]}) => {
   return (
     <StyledTableContainer>
       <StyledHTMLTable striped>
@@ -123,28 +122,37 @@ const DataTables = ({items, filterIds}: { items: Product[]; filterIds: number[]}
           <th>サイズ</th>
           <th>容積</th>
           <th>金額</th>
-          <th>URL</th>
+          <th>製品URL</th>
           <th>備考</th>
         </StyledStickyTr>
         </thead>
         <tbody>
-          {items.map(item => <Row key={item.id} item={item} hidden={!filterIdsSet.has(item.id)}/>)}
+          {items.map(item => <Row key={item.id} item={item} />)}
         </tbody>
       </StyledHTMLTable>
     </StyledTableContainer>
   )
 };
 
-const Row = ({item, hidden}: { item: Product, hidden: boolean }) => {
+const Row = React.memo(({item}: { item: Product }) => {
   const remarks = useMemo(() => [item.remarks, item.remarks2].filter(x => x).join("\n"), [item.remarks, item.remarks2]);
   const volume = useMemo(() => {
     const [x1, x2, x3] = item.size.split(/\D+/);
     return (Number(x1) || 0) * (Number(x2) || 0) * (Number(x3) || 0);
   }, [item.size]);
   return (
-    <tr hidden={hidden}>
-      <StyledTd><a href={companiesMap[item.company].url} target="_blank"
-                   rel="noreferrer"> {item.company}</a></StyledTd>
+    <tr>
+      <StyledTd>
+        <Tooltip2 content={item.company}>
+          <a
+            href={companiesMap[item.company].url}
+            target="_blank"
+           rel="noreferrer"
+          >
+            {item.company}
+          </a>
+        </Tooltip2>
+      </StyledTd>
       <StyledTd>{item.productNumber}</StyledTd>
       <StyledTd>
         <Tooltip2 content={item.productName}>
@@ -181,7 +189,7 @@ const Row = ({item, hidden}: { item: Product, hidden: boolean }) => {
       </StyledTd>
     </tr>
   );
-};
+});
 
 const controlsHeight = 40;
 const mainPadding = 24;
