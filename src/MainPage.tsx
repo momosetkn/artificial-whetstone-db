@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useMemo} from 'react';
+import React, {ChangeEvent, useMemo, useState} from 'react';
 import {Card, HTMLTable, InputGroup, NumberRange, RangeSlider} from "@blueprintjs/core";
 import styled from "styled-components";
 import {Product, products} from "./data/products";
@@ -127,7 +127,15 @@ const DataTables = ({items}: { items: Product[]}) => {
 };
 
 const Row = React.memo(({item}: { item: Product }) => {
-  const remarks = useMemo(() => [item.remarks, item.remarks2].filter(x => x).join("\n"), [item.remarks, item.remarks2]);
+  const cardContent = useMemo(() => ({
+    mainRecords: [
+      [item.productNumber, item.productName].join(" "),
+      item.manufacturingMethod,
+      (item.price && `￥${item.price.toLocaleString()}`),
+      item.abrasiveGrains,
+    ],
+    remarks: [item.remarks, item.remarks2].filter(x => x).join("\n"),
+  }), [item]);
   const volume = useMemo(() => {
     const [x1, x2, x3] = item.size.split(/\D+/);
     return (Number(x1) || 0) * (Number(x2) || 0) * (Number(x3) || 0);
@@ -146,16 +154,9 @@ const Row = React.memo(({item}: { item: Product }) => {
       <StyledTd>
         <Popover2 interactionKind="hover" hoverOpenDelay={0} content={
           <Card>
-            {
-              [
-                [item.productNumber, item.productName].join(" "),
-                item.manufacturingMethod,
-                (item.price && `￥${item.price.toLocaleString()}`),
-                item.abrasiveGrains,
-              ].map(x => <div>{x}</div>)
-            }
+            {cardContent.mainRecords.map(x => <div>{x}</div>)}
             <div>
-              <pre><code>{remarks}</code></pre>
+              <pre><code>{cardContent.remarks}</code></pre>
             </div>
           </Card>
         }>
