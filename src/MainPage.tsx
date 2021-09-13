@@ -12,13 +12,11 @@ type State = {
   gridRange: NumberRange;
 };
 
+const maxGrid = 99_999;
 const grids = [
   {label: "#0", value: 0},
-  {label: "#100", value: 100},
   {label: "#200", value: 200},
-  {label: "#300", value: 300},
   {label: "#400", value: 400},
-  {label: "#500", value: 500},
   {label: "#600", value: 600},
   {label: "#800", value: 800},
   {label: "#1,000", value: 1_000},
@@ -27,7 +25,7 @@ const grids = [
   {label: "#3,000", value: 3_000},
   {label: "#6,000", value: 6_000},
   {label: "#8,000", value: 8_000},
-  {label: "もっと！", value: Number.MAX_VALUE},
+  {label: "もっと！", value: maxGrid},
 ] as const;
 
 const gridLabels: string[] = grids.map(x => x.label);
@@ -64,9 +62,9 @@ export const MainPage = () => {
     const isTargetGird = (value: Product["grid"][number]) => {
       // TODO: 番手情報が無いものは、とりあえず無条件に出しておく
       if (!value) return true;
-      if (selectedGridRangesValues[0] === Number.MAX_VALUE && selectedGridRangesValues[1] === Number.MAX_VALUE) {
+      if (selectedGridRangesValues[0] === maxGrid && selectedGridRangesValues[1] === maxGrid) {
         // from-toどっちもMAXの場合、最後から2番目よりも上を条件とする
-        if (grids.slice(-2)[0].value < value && value <= Number.MAX_VALUE) return true;
+        if (grids.slice(-2)[0].value < value && value <= maxGrid) return true;
       }
       return selectedGridRangesValues[0] <= value && value <= selectedGridRangesValues[1];
 
@@ -196,6 +194,7 @@ const StyledRangeSlider = styled(RangeSlider)`
 
 const StyledRangeSliderLabel = styled.span`
   white-space: nowrap;
+  transform: rotate(-45deg);
 `;
 
 const StyledTableContainer = styled.div`
