@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useMemo} from 'react';
+import React, {ChangeEvent, RefObject, useMemo, useRef, useState} from 'react';
 import {Card, HTMLTable, InputGroup, NumberRange, RangeSlider} from "@blueprintjs/core";
 import styled from "styled-components";
 import {Product, products} from "./data/products";
@@ -6,6 +6,7 @@ import {companies, Company} from "./data/companies";
 import {Popover2} from "@blueprintjs/popover2";
 import {useHistory, useLocation} from "react-router-dom";
 import queryString from "querystring";
+import {Parameter} from "./types";
 
 type State = {
   freeWord: string;
@@ -105,69 +106,100 @@ export const MainPage = () => {
     </Main>
   );
 };
+type DataTablesState = {
+  remarks: string,
+  cardContents: string[],
+  isPopoverOpen?: boolean,
+  ref?: RefObject<HTMLTableRowElement>,
+};
 
 const DataTables = ({items}: { items: Product[]}) => {
+  const [state, update] = useState<DataTablesState>({
+    remarks: '',
+    cardContents: [],
+  });
+  const divRef = useRef<HTMLDivElement>(null);
+  const handleClick: Parameter<typeof Row>["onClick"] = ({id, ref}) => {
+    const item = items.find(x => x.id === id);
+    if (!item) throw Error();
+    update({
+      isPopoverOpen: true,
+      remarks: [item.remarks, item.remarks2].filter(x => x).join("\n"),
+      cardContents: [
+        [item.productNumber, item.productName].join(" "),
+        item.manufacturingMethod,
+        ((item.price && `￥${item.price.toLocaleString()}`) || ""),
+        item.abrasiveGrains,
+      ]
+    });
+    divRef.current?.click();
+  };
   return (
-    <StyledTableContainer>
-      <StyledHTMLTable striped>
-        <thead>
-        <StyledStickyTr>
-          <th>会社名</th>
-          <th>商品</th>
-          <th>番手</th>
-          <th>寸法(容積)</th>
-        </StyledStickyTr>
-        </thead>
-        <tbody>
-          {items.map(item => <Row key={item.id} item={item} />)}
-        </tbody>
-      </StyledHTMLTable>
-    </StyledTableContainer>
+    <>
+      <StyledTableContainer>
+        <StyledHTMLTable striped>
+          <thead>
+          <StyledStickyTr>
+            <th>会社名</th>
+            <th>商品</th>
+            <th>番手</th>
+            <th>寸法(容積)</th>
+          </StyledStickyTr>
+          </thead>
+          <tbody>
+          {items.map(item => <Row key={item.id} item={item} onClick={handleClick}/>)}
+          </tbody>
+        </StyledHTMLTable>
+      </StyledTableContainer>
+      <StyledAbsolutePopover2
+        renderTarget={state.ref?.current}
+        modifiers={{arrow: {enabled: false}}}
+        isOpen={state.isPopoverOpen} popoverRef={state.ref} interactionKind={"hover-target"} hoverOpenDelay={0}
+        content={
+          <Card>
+            {state.cardContents.map(x => <div>{x}</div>)}
+            <div>
+              <pre><code>{state.remarks}</code></pre>
+            </div>
+          </Card>
+        }/>
+    </>
   )
 };
 
-const Row = React.memo(({item}: { item: Product }) => {
-  const remarks = useMemo(() => [item.remarks, item.remarks2].filter(x => x).join("\n"), [item.remarks, item.remarks2]);
+const Row = React.memo(({
+  item,
+  onClick
+}: {
+  item: Product,
+  onClick: (value: { id: Product["id"], ref: RefObject<HTMLTableRowElement> }) => void
+}) => {
   const volume = useMemo(() => {
     const [x1, x2, x3] = item.size.split(/\D+/);
     return (Number(x1) || 0) * (Number(x2) || 0) * (Number(x3) || 0);
   }, [item.size]);
+
+  const trRef = useRef<HTMLTableRowElement>(null);
   return (
-    <tr>
-      <StyledTd>
-        <a
-          href={companiesMap[item.company].url}
-          target="_blank"
-          rel="noreferrer"
-        >
-          {item.company}
-        </a>
-      </StyledTd>
-      <StyledTd>
-        <Popover2 interactionKind="hover" hoverOpenDelay={0} content={
-          <Card>
-            {
-              [
-                [item.productNumber, item.productName].join(" "),
-                item.manufacturingMethod,
-                (item.price && `￥${item.price.toLocaleString()}`),
-                item.abrasiveGrains,
-              ].map(x => <div>{x}</div>)
-            }
-            <div>
-              <pre><code>{remarks}</code></pre>
-            </div>
-          </Card>
-        }>
+        <tr ref={trRef} onClick={(e) => {console.log(e);onClick({id: item.id, ref: trRef});}}>
+        <StyledTd>
+          <a
+            href={companiesMap[item.company].url}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {item.company}
+          </a>
+        </StyledTd>
+        <StyledTd>
           <a href={item.url} target="_blank" rel="noreferrer">
             {item.productName}
           </a>
-        </Popover2>
-      </StyledTd>
-      <StyledTd>{item.grid.map(x => `#${x.toLocaleString()}`).join("/")}</StyledTd>
-      <StyledTd>
-        {volume ? `${item.size} (${volume.toLocaleString()}mm³)` : ""}
-      </StyledTd>
+        </StyledTd>
+        <StyledTd>{item.grid.map(x => `#${x.toLocaleString()}`).join("/")}</StyledTd>
+        <StyledTd>
+          {volume ? `${item.size} (${volume.toLocaleString()}mm³)` : ""}
+        </StyledTd>
     </tr>
   );
 });
@@ -201,6 +233,10 @@ const StyledTableContainer = styled.div`
   height: calc(100vh - ${mainPadding*2 + controlsHeight + dataTablesMarginTop}px);
   overflow-y: scroll;
   margin-top: ${dataTablesMarginTop}px;
+`;
+
+const StyledAbsolutePopover2 = styled(Popover2)`
+  position: absolute;
 `;
 
 const StyledHTMLTable = styled(HTMLTable)`
