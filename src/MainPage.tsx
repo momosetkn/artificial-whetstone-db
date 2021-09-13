@@ -35,7 +35,7 @@ const gridValues: number[] = grids.map(x => x.value);
 
 const initialState: State = {
   freeWord: '',
-  gridRange: [0, grids.length - 1],
+  gridRange: [0, maxGrid],// gridsのインデックス
 };
 
 const companiesMap: Record<string, Company> = companies.reduce((acc, cur) => ({
@@ -50,9 +50,14 @@ export const MainPage = () => {
   const query: State = useMemo(() => {
     // 先頭の?を取り除く
     const parsedQuery = queryString.parse(location.search.slice(1));
+    const gridRange = (() => {
+      const [from, to] = ((parsedQuery.gridrange || "") as string)?.split("-").map(x => gridValues.indexOf(Number(x)));
+      const fallback = (value: number, fallbackValue: number) => !value || value === -1 ? fallbackValue : value;
+      return [fallback(from, 0), fallback(to, grids.length - 1)] as NumberRange;
+    })() || initialState.gridRange;
     return {
       freeWord: (parsedQuery.freeword as string) || initialState.freeWord,
-      gridRange: (parsedQuery.gridrange as string)?.split("-").map(x => gridValues.indexOf(Number(x))) as NumberRange || initialState.gridRange,
+      gridRange,
     };
   }, [location.search]);
   const updateQuery = (q: State) => {
