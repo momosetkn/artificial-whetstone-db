@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useMemo} from 'react';
+import React, {ChangeEvent, useMemo, useRef} from 'react';
 import {Card, HTMLTable, InputGroup, NumberRange, RangeSlider} from "@blueprintjs/core";
 import styled from "styled-components";
 import {Product, products} from "./data/products";
@@ -143,8 +143,10 @@ const Row = React.memo(({item}: { item: Product }) => {
     const [x1, x2, x3] = item.size.split(/\D+/);
     return (Number(x1) || 0) * (Number(x2) || 0) * (Number(x3) || 0);
   }, [item.size]);
+
+  const ref = useRef<HTMLSpanElement>(null);
   return (
-    <tr>
+    <tr className="clickable" onClick={() => ref.current?.click()}>
       <StyledTd>
         <a
           href={companiesMap[item.company].url}
@@ -155,18 +157,24 @@ const Row = React.memo(({item}: { item: Product }) => {
         </a>
       </StyledTd>
       <StyledTd>
-        <Popover2 interactionKind="hover" hoverOpenDelay={0} content={
-          <Card>
-            {cardContent.mainRecords.map(x => <div>{x}</div>)}
-            <div>
-              <pre><code>{cardContent.remarks}</code></pre>
-            </div>
-          </Card>
-        }>
-          <a href={item.url} target="_blank" rel="noreferrer">
-            {item.productName}
-          </a>
+        <Popover2
+          interactionKind="click"
+          position={"bottom-left"}
+          hoverOpenDelay={0}
+          modifiers={{arrow: {enabled: false}}}
+          content={
+            <Card>
+              {cardContent.mainRecords.map(x => <div>{x}</div>)}
+              <div>
+                <pre><code>{cardContent.remarks}</code></pre>
+              </div>
+            </Card>
+          }>
+          <span ref={ref} hidden/>
         </Popover2>
+        <a href={item.url} target="_blank" rel="noreferrer">
+          {item.productName}
+        </a>
       </StyledTd>
       <StyledTd>{item.grid.map(x => `#${x.toLocaleString()}`).join("/")}</StyledTd>
       <StyledTd>
