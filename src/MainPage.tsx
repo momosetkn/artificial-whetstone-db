@@ -14,7 +14,7 @@ type State = {
 
 const maxGrid = 99_999;
 const grids = [
-  {label: "", value: 0, hidden: false},
+  {label: "#0", value: 0, hidden: true},
   {label: "#200", value: 200, hidden: false},
   {label: "#400", value: 400, hidden: true},
   {label: "#500", value: 500, hidden: true},
