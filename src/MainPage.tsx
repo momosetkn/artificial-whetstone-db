@@ -14,18 +14,20 @@ type State = {
 
 const maxGrid = 99_999;
 const grids = [
-  {label: "#0", value: 0},
-  {label: "#200", value: 200},
-  {label: "#400", value: 400},
-  {label: "#600", value: 600},
-  {label: "#800", value: 800},
-  {label: "#1,000", value: 1_000},
-  {label: "#1,500", value: 1_500},
-  {label: "#2,000", value: 2_000},
-  {label: "#3,000", value: 3_000},
-  {label: "#6,000", value: 6_000},
-  {label: "#8,000", value: 8_000},
-  {label: "もっと！", value: maxGrid},
+  {label: "", value: 0, hidden: false},
+  {label: "#200", value: 200, hidden: false},
+  {label: "#400", value: 400, hidden: true},
+  {label: "#500", value: 500, hidden: true},
+  {label: "#600", value: 600, hidden: false},
+  {label: "#800", value: 800, hidden: true},
+  {label: "#1,000", value: 1_000, hidden: false},
+  {label: "#1,500", value: 1_500, hidden: true},
+  {label: "#2,000", value: 2_000, hidden: true},
+  {label: "#3,000", value: 3_000, hidden: false},
+  {label: "#6,000", value: 6_000, hidden: true},
+  {label: "#8,000", value: 8_000, hidden: false},
+  {label: "#10,000", value: 10_000, hidden: true},
+  {label: "もっと！", value: maxGrid, hidden: false},
 ] as const;
 
 const gridLabels: string[] = grids.map(x => x.label);
@@ -94,7 +96,8 @@ export const MainPage = () => {
           min={0}
           max={grids.length - 1}
           stepSize={1}
-          labelRenderer={(value, opts) => <StyledRangeSliderLabel>{gridLabels[value]}</StyledRangeSliderLabel>}
+          labelRenderer={(value, opts) => !grids[value].hidden || query.gridRange.includes(value) ?
+            <StyledRangeSliderLabel>{gridLabels[value]}</StyledRangeSliderLabel> : ""}
           onChange={handleChangeGridRange}
           value={query.gridRange}
         />
