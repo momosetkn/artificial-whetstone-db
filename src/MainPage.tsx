@@ -27,7 +27,7 @@ const grids = [
   {label: "#6,000", value: 6_000, hidden: true},
   {label: "#8,000", value: 8_000, hidden: false},
   {label: "#10,000", value: 10_000, hidden: true},
-  {label: "もっと！", value: maxGrid, hidden: false},
+  {label: "もっと！", value: maxGrid, hidden: true},
 ] as const;
 
 const gridLabels: string[] = grids.map(x => x.label);
@@ -92,15 +92,17 @@ export const MainPage = () => {
           placeholder="フリーワード検索"
           value={query.freeWord}
         />
-        <StyledRangeSlider
-          min={0}
-          max={grids.length - 1}
-          stepSize={1}
-          labelRenderer={(value, opts) => !grids[value].hidden || query.gridRange.includes(value) ?
-            <StyledRangeSliderLabel>{gridLabels[value]}</StyledRangeSliderLabel> : ""}
-          onChange={handleChangeGridRange}
-          value={query.gridRange}
-        />
+        <StyledRangeSliderContainer>
+          <RangeSlider
+            min={0}
+            max={grids.length - 1}
+            stepSize={1}
+            labelRenderer={(value, opts) => !grids[value].hidden || query.gridRange.includes(value) ?
+              <StyledRangeSliderLabel>{gridLabels[value]}</StyledRangeSliderLabel> : ""}
+            onChange={handleChangeGridRange}
+            value={query.gridRange}
+          />
+        </StyledRangeSliderContainer>
       </StyledControls>
       <DataTables items={filteredProducts} />
     </Main>
@@ -187,12 +189,21 @@ const StyledControls = styled.div`
   width: 100%;
 
   & > * + * {
-    margin-left: 24px;
+    margin-left: 16px;
+  }
+  @media (max-width:640px) { 
+    display: block;
+  
+    & > * + * {
+      margin-left: 0px;
+      margin-top: 16px;
+    }
   }
 `;
 
-const StyledRangeSlider = styled(RangeSlider)`
-  margin-right: 16px;
+const StyledRangeSliderContainer = styled.div`
+  width: 100%;
+  padding: 0 8px;
 `;
 
 const StyledRangeSliderLabel = styled.span`
