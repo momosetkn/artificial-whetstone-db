@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useMemo, useState} from 'react';
+import React, {ChangeEvent, useMemo} from 'react';
 import {Card, HTMLTable, InputGroup, NumberRange, RangeSlider} from "@blueprintjs/core";
 import styled from "styled-components";
 import {Product, products} from "./data/products";
@@ -52,11 +52,11 @@ export const MainPage = () => {
     const parsedQuery = queryString.parse(location.search.slice(1));
     return {
       freeWord: (parsedQuery.freeword as string) || initialState.freeWord,
-      gridRange: (parsedQuery.gridrange as string)?.split("-").map(x => Number(x)) as NumberRange || initialState.gridRange,
+      gridRange: (parsedQuery.gridrange as string)?.split("-").map(x => gridValues.indexOf(Number(x))) as NumberRange || initialState.gridRange,
     };
   }, [location.search]);
   const updateQuery = (q: State) => {
-    history.replace(`/?freeword=${q.freeWord}&gridrange=${q.gridRange.join("-")}`)
+    history.replace(`/?freeword=${q.freeWord}&gridrange=${q.gridRange.map(x => gridValues[x]).join("-")}`)
   };
 
   const selectedGridRangesValues: [number, number] = useMemo(() => [gridValues[query.gridRange[0]], gridValues[query.gridRange[1]]], [query.gridRange]);
