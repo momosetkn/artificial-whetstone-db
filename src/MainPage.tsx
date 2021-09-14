@@ -15,6 +15,7 @@ type State = {
 const maxGrid = 99_999;
 const grids = [
   {label: "#0", value: 0, hidden: true},
+  {label: "#150", value: 150, hidden: true},
   {label: "#200", value: 200, hidden: false},
   {label: "#400", value: 400, hidden: true},
   {label: "#500", value: 500, hidden: true},
@@ -24,6 +25,8 @@ const grids = [
   {label: "#1,500", value: 1_500, hidden: true},
   {label: "#2,000", value: 2_000, hidden: true},
   {label: "#3,000", value: 3_000, hidden: false},
+  {label: "#4,000", value: 4_000, hidden: true},
+  {label: "#5,000", value: 5_000, hidden: false},
   {label: "#6,000", value: 6_000, hidden: true},
   {label: "#8,000", value: 8_000, hidden: false},
   {label: "#10,000", value: 10_000, hidden: true},
