@@ -9,7 +9,7 @@ import queryString from "querystring";
 
 type State = {
   freeWord: string;
-  gridRange: NumberRange;
+  gridRange: [number, number];
 };
 
 const maxGrid = 99_999;
@@ -31,11 +31,11 @@ const grids = [
 ] as const;
 
 const gridLabels: string[] = grids.map(x => x.label);
-const gridValues: number[] = grids.map(x => x.value);
+// const gridValues: number[] = grids.map(x => x.value);
 
 const initialState: State = {
   freeWord: '',
-  gridRange: [0, maxGrid],// gridsのインデックス
+  gridRange: [0, maxGrid],
 };
 
 const companiesMap: Record<string, Company> = companies.reduce((acc, cur) => ({
@@ -51,41 +51,48 @@ export const MainPage = () => {
     // 先頭の?を取り除く
     const parsedQuery = queryString.parse(location.search.slice(1));
     const gridRange = (() => {
-      const [from, to] = ((parsedQuery.gridrange || "") as string)?.split("-").map(x => gridValues.indexOf(Number(x)));
-      const fallback = (value: number, fallbackValue: number) => !value || value === -1 ? fallbackValue : value;
-      return [fallback(from, 0), fallback(to, grids.length - 1)] as NumberRange;
-    })() || initialState.gridRange;
+      const [from, to] = ((parsedQuery.gridrange || "") as string)?.split("-").map(x => Number(x));
+      return [from || initialState.gridRange[0], to || initialState.gridRange[1]] as [number, number];
+    })();
     return {
       freeWord: (parsedQuery.freeword as string) || initialState.freeWord,
       gridRange,
     };
   }, [location.search]);
   const updateQuery = (q: State) => {
-    history.replace(`/?freeword=${q.freeWord}&gridrange=${q.gridRange.map(x => gridValues[x]).join("-")}`)
+    history.replace(`/?freeword=${q.freeWord}&gridrange=${q.gridRange.join("-")}`)
   };
 
-  const selectedGridRangesValues: [number, number] = useMemo(() => [gridValues[query.gridRange[0]], gridValues[query.gridRange[1]]], [query.gridRange]);
   const filteredProducts = useMemo(() => products.filter(product => {
     const isTargetGird = (value: Product["grid"][number]) => {
       // TODO: 番手情報が無いものは、とりあえず無条件に出しておく
       if (!value) return true;
-      if (selectedGridRangesValues[0] === maxGrid && selectedGridRangesValues[1] === maxGrid) {
-        // from-toどっちもMAXの場合、最後から2番目よりも上を条件とする
-        if (grids.slice(-2)[0].value < value && value <= maxGrid) return true;
-      }
-      return selectedGridRangesValues[0] <= value && value <= selectedGridRangesValues[1];
-
+      return query.gridRange[0] <= value && value <= query.gridRange[1];
     }
     return (!query.freeWord || product.freeWords.search(query.freeWord) !== -1)
       && product.grid.some(isTargetGird);
-  }), [query, selectedGridRangesValues])
+  }), [query]);
 
   const handleChangeFreeWord = (e: ChangeEvent<HTMLInputElement>) => {
     updateQuery({...query, freeWord: e.target.value});
   };
-  const handleChangeGridRange = (e: NumberRange) => {
-    updateQuery({...query, gridRange: e});
+  const handleChangeGridRange = (range: NumberRange) => {
+    console.log(range);
+    updateQuery({...query, gridRange: [grids[range[0]].value, grids[range[1]].value]});
   };
+
+  const gridRangeSliderIndexValue = (() => {
+    // 1-1001 => 0-1500へ丸める
+    const from = grids.findIndex(x => x.value > query.gridRange[0]) - 1;// 見つからなかったら0になる
+    let to = grids.findIndex(x => x.value > query.gridRange[1]);
+    if (to === -1) {
+      to = grids.length - 1;
+    }
+    return [from, to] as NumberRange;
+  })();
+
+  console.log('gridRangeSliderValue');
+  console.log(gridRangeSliderIndexValue);
 
   return (
     <Main>
@@ -102,10 +109,13 @@ export const MainPage = () => {
             min={0}
             max={grids.length - 1}
             stepSize={1}
-            labelRenderer={(value, opts) => !grids[value].hidden || query.gridRange.includes(value) ?
-              <StyledRangeSliderLabel>{gridLabels[value]}</StyledRangeSliderLabel> : ""}
+            labelRenderer={(indexValue, opts) =>
+              opts?.isHandleTooltip ?
+                <StyledRangeSliderLabel>{query.gridRange[gridRangeSliderIndexValue.indexOf(indexValue)]}</StyledRangeSliderLabel>
+                : <StyledRangeSliderLabel hidden={grids[indexValue].hidden}>{gridLabels[indexValue]}</StyledRangeSliderLabel>
+            }
             onChange={handleChangeGridRange}
-            value={query.gridRange}
+            value={gridRangeSliderIndexValue}
           />
         </StyledRangeSliderContainer>
       </StyledControls>
