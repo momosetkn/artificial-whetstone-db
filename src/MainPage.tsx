@@ -1,11 +1,23 @@
-import React, {ChangeEvent, useMemo, useRef} from 'react';
-import {Card, HTMLTable, InputGroup, NumberRange, RangeSlider} from "@blueprintjs/core";
+import React, {ChangeEvent, useMemo, useRef, useState} from 'react';
+import {
+  Alignment,
+  Button,
+  Card, Classes,
+  HTMLTable,
+  InputGroup,
+  Navbar, NavbarDivider,
+  NavbarGroup,
+  NavbarHeading,
+  NumberRange,
+  RangeSlider
+} from "@blueprintjs/core";
 import styled from "styled-components";
 import {Product, products} from "./data/products";
 import {companies, Company} from "./data/companies";
 import {Popover2} from "@blueprintjs/popover2";
 import {useHistory, useLocation} from "react-router-dom";
 import queryString from "querystring";
+import {ReportOverlay} from "./components/ReportOverlay";
 
 type State = {
   freeWord: string;
@@ -67,6 +79,8 @@ export const MainPage = () => {
     history.replace(`/?freeword=${q.freeWord}&gridrange=${q.gridRange.map(x => gridValues[x]).join("-")}`)
   };
 
+  const [reportOverlayOpen, setReportOverlayOpen] = useState(false);
+
   const selectedGridRangesValues: [number, number] = useMemo(() => [gridValues[query.gridRange[0]], gridValues[query.gridRange[1]]], [query.gridRange]);
   const filteredProducts = useMemo(() => products.filter(product => {
     const isTargetGird = (value: Product["grid"][number]) => {
@@ -92,6 +106,16 @@ export const MainPage = () => {
 
   return (
     <Main>
+      <StyledNavbar>
+        <NavbarGroup align={Alignment.LEFT}>
+          <NavbarHeading>人造砥石データベース</NavbarHeading>
+        </NavbarGroup>
+        <NavbarGroup align={Alignment.RIGHT}>
+          <NavbarDivider />
+          <Button className={Classes.MINIMAL} icon="flag" onClick={() => setReportOverlayOpen(true)}>報告・要望</Button>
+          <Button className={Classes.MINIMAL} icon="settings" >設定</Button>
+        </NavbarGroup>
+      </StyledNavbar>
       <StyledControls>
         <InputGroup
           asyncControl={true}
@@ -113,6 +137,7 @@ export const MainPage = () => {
         </StyledRangeSliderContainer>
       </StyledControls>
       <DataTables items={filteredProducts} />
+      <ReportOverlay isOpen={reportOverlayOpen} onClose={() => setReportOverlayOpen(false)} onSubmit={a => console.log(a)}/>
     </Main>
   );
 };
@@ -192,12 +217,21 @@ const Row = React.memo(({item}: { item: Product }) => {
   );
 });
 
+const mainSidePadding = 24;
+const navbarHeight = 50;
+const navbarMarginBottom = 8;
 const controlsHeight = 40;
-const mainPadding = 24;
 const dataTablesMarginTop = 16;
 
 const Main = styled.div`
-  padding: 24px;
+  padding: 0 ${mainSidePadding}px;
+`;
+
+const StyledNavbar = styled(Navbar)`
+  margin-bottom: ${navbarMarginBottom}px;
+  & button + button {
+    margin-left: 8px;
+  }
 `;
 
 const StyledControls = styled.div`
@@ -228,7 +262,8 @@ const StyledRangeSliderLabel = styled.span`
 `;
 
 const StyledTableContainer = styled.div`
-  height: calc(100vh - ${mainPadding*2 + controlsHeight + dataTablesMarginTop}px);
+  // 見た目的な観点で、下に8px余白あけておく
+  height: calc(100vh - ${navbarHeight + navbarMarginBottom + controlsHeight + dataTablesMarginTop + 8}px);
   overflow-y: scroll;
   margin-top: ${dataTablesMarginTop}px;
 `;
@@ -243,7 +278,7 @@ const StyledStickyTr = styled.tr`
   top: 0;
   background: white;
   & th {
-    width: calc(9% - ${mainPadding*2}px);
+    width: calc(9% - ${mainSidePadding*2}px);
   }
 `;
 
