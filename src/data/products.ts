@@ -9206,7 +9206,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "PA",
     size: "205×65×32mm",
-    price: 2860,
+    price: 3410,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/16",
     remarks: "https://toishiya-miyagoshi.com/choice",
     remarks2: ""
@@ -9219,7 +9219,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "PA",
     size: "205×75×50mm",
-    price: 2860,
+    price: 5280,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/16",
     remarks: "",
     remarks2: ""
@@ -9271,7 +9271,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WAにコバルト添加+ジルコン",
     size: "205×75×25mm",
-    price: 4070,
+    price: 4950,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/27",
     remarks: "",
     remarks2: ""
@@ -9297,7 +9297,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "205×75×25mm",
-    price: 3300,
+    price: 3960,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/8",
     remarks: "コルビージャックチーズみたいな柄",
     remarks2: ""
@@ -9310,7 +9310,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "240×100×40mm",
-    price: 3300,
+    price: 9680,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/8",
     remarks: "",
     remarks2: ""
@@ -9336,7 +9336,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "205×75×25mm",
-    price: 2860,
+    price: 3520,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/18",
     remarks: "",
     remarks2: ""
@@ -9362,7 +9362,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA?",
     size: "205×75×25mm",
-    price: 3190,
+    price: 3850,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/20",
     remarks: "",
     remarks2: ""
@@ -9388,7 +9388,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "205×75×25mm",
-    price: 3300,
+    price: 3960,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/10",
     remarks: "https://toishiya-miyagoshi.com/choice　このページによると、硬口と軟口があるらしい",
     remarks2: ""
@@ -9414,7 +9414,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WAにコバルト添加",
     size: "205×75×25mm",
-    price: 3630,
+    price: 4290,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/4",
     remarks: "",
     remarks2: ""
@@ -9440,7 +9440,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WAにコバルト添加",
     size: "205×65×32mm",
-    price: 3740,
+    price: 4510,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/31",
     remarks: "",
     remarks2: ""
@@ -9466,7 +9466,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WAにコバルト添加",
     size: "205×65×32mm",
-    price: 3850,
+    price: 4620,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/40",
     remarks: "白色アルミナにコバルトを添加することで靭性が高くなり砥面の平面保持力と遊離砥粒のバランスが絶妙",
     remarks2: ""
@@ -9492,7 +9492,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WAにコバルト添加",
     size: "205×65×32mm",
-    price: 5280,
+    price: 6380,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/34",
     remarks: "",
     remarks2: ""
@@ -9518,7 +9518,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "GC",
     size: "205×75×50mm",
-    price: 3080,
+    price: 7480,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/25",
     remarks: "",
     remarks2: ""
@@ -9557,7 +9557,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "205×75×25mm",
-    price: 4950,
+    price: 5940,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/26",
     remarks: "",
     remarks2: ""
@@ -9583,7 +9583,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "205×75×25mm",
-    price: 4510,
+    price: 5500,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/12",
     remarks: "",
     remarks2: ""
@@ -9609,7 +9609,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA",
     size: "205×75×25mm",
-    price: 6160,
+    price: 7480,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/6",
     remarks: "",
     remarks2: ""
@@ -9635,7 +9635,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "WA+ジルコニア系",
     size: "205×75×25mm",
-    price: 6600,
+    price: 7920,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/14",
     remarks: "",
     remarks2: ""
@@ -9661,7 +9661,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "",
     size: "205×65×32mm",
-    price: 3080,
+    price: 3520,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/22",
     remarks: "",
     remarks2: ""
@@ -9674,7 +9674,7 @@ export const products: Product[] = [
     manufacturingMethod: "ビトリファイド",
     abrasiveGrains: "",
     size: "240×100×40mm",
-    price: 3080,
+    price: 6600,
     url: "https://shop.toishiya-miyagoshi.com/products/detail/22",
     remarks: "",
     remarks2: ""
