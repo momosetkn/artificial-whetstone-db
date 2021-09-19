@@ -18,6 +18,7 @@ import {Popover2} from "@blueprintjs/popover2";
 import {useHistory, useLocation} from "react-router-dom";
 import queryString from "querystring";
 import {ReportOverlay} from "./components/ReportOverlay";
+import {sendMail} from "./utils/sendMail";
 
 type State = {
   freeWord: string;
@@ -129,7 +130,7 @@ export const MainPage = () => {
             min={0}
             max={grids.length - 1}
             stepSize={1}
-            labelRenderer={(value, opts) => !grids[value].hidden || query.gridRange.includes(value) ?
+            labelRenderer={(value) => !grids[value].hidden || query.gridRange.includes(value) ?
               <StyledRangeSliderLabel>{gridLabels[value]}</StyledRangeSliderLabel> : ""}
             onChange={handleChangeGridRange}
             value={query.gridRange}
@@ -137,7 +138,11 @@ export const MainPage = () => {
         </StyledRangeSliderContainer>
       </StyledControls>
       <DataTables items={filteredProducts} />
-      <ReportOverlay isOpen={reportOverlayOpen} onClose={() => setReportOverlayOpen(false)} onSubmit={a => console.log(a)}/>
+      <ReportOverlay
+        isOpen={reportOverlayOpen}
+        onClose={() => setReportOverlayOpen(false)}
+        onSubmit={message => sendMail({title: "人造砥石データベースのバグ報告・追加要望", message})}
+      />
     </Main>
   );
 };
