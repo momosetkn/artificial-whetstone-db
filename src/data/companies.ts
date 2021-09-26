@@ -136,4 +136,7 @@ export const companies =  [
     name: "砥石どっとこむ",
     url: "http://www.e-toishi.com/"
   },
+  {name: "高儀", url: ""},
+  {name: "GOKEI", url: ""},
+  {name: "三共コーポレーション", url: ""},
 ];
