@@ -213,9 +213,11 @@ const Row = React.memo(({item}: { item: Product }) => {
           }>
           <span ref={ref} hidden/>
         </Popover2>
-        <a href={item.url} target="_blank" rel="noreferrer">
-          {item.productName}
-        </a>
+        {item.url ?
+          <a href={item.url} target="_blank" rel="noreferrer">
+            {item.productName}
+          </a>
+          : item.productName}
       </StyledTd>
       <StyledTd>{item.grid.map(x => `#${x.toLocaleString()}`).join("/")}</StyledTd>
       <StyledTd>
