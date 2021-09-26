@@ -11772,4 +11772,4 @@ export const products: Product[] = [
     remarks: "",
     remarks2: ""
   },
-].map(x => ({...x, freeWords: JSON.stringify(x), id: index++}));
+].map(x => ({...x, freeWords: JSON.stringify(x).toLowerCase(), id: index++}));

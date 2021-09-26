@@ -94,8 +94,11 @@ export const MainPage = () => {
       return selectedGridRangesValues[0] <= value && value <= selectedGridRangesValues[1];
 
     }
-    return (!query.freeWord || product.freeWords.search(query.freeWord) !== -1)
-      && product.grid.some(isTargetGird);
+    const isFreeWordMatch = () => {
+      const splitFreeWord = query.freeWord.toLowerCase().split(/\s/);
+      return splitFreeWord.every(x => product.freeWords.search(x) !== -1);
+    };
+    return (!query.freeWord || isFreeWordMatch()) && product.grid.some(isTargetGird);
   }), [query, selectedGridRangesValues])
 
   const handleChangeFreeWord = (e: ChangeEvent<HTMLInputElement>) => {
