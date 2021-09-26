@@ -2333,6 +2333,19 @@ export const products: Product[] = [
     remarks2: ""
   },
   {
+    productNumber: "FF400",
+    company: "ナニワ",
+    productName: "赤エビ印 GC角 三丁掛",
+    grid: [440],
+    manufacturingMethod: "",
+    abrasiveGrains: "GC",
+    size: "205×75×50",
+    price: undefined,
+    url: "",
+    remarks: "公式サイトでは見当たりませんでした",
+    remarks2: ""
+  },
+  {
     productNumber: "HI-0430",
     company: "ナニワ",
     productName: "青エビ印 GC角 一丁掛",
@@ -2460,6 +2473,19 @@ export const products: Product[] = [
     price: undefined,
     url: "https://www.naniwa-kenma.co.jp/sharpening_stone/combination-gc_c/",
     remarks: "",
+    remarks2: ""
+  },
+  {
+    productNumber: "ATI10",
+    company: "ナニワ",
+    productName: "ATI10 [中砥石 C-3F(No.1000)",
+    grid: [1000],
+    manufacturingMethod: "",
+    abrasiveGrains: "C",
+    size: "205×65×32",
+    price: undefined,
+    url: "",
+    remarks: "公式サイトでは見当たりませんでした",
     remarks2: ""
   },
   {
