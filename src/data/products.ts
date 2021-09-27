@@ -1,4 +1,6 @@
 // TODO stringおじさん状態なので、そのうち直す
+import {companiesMap} from "./companies";
+
 export type Product = {
   id: number,
   productNumber: string,
@@ -7,11 +9,11 @@ export type Product = {
   grid: number[],
   manufacturingMethod: string,
   abrasiveGrains: string,
-  size: string,
+  size?: number[],
+  volume?: number,
   price?: number,
   url: string,
   remarks?: string,
-  remarks2?: string,
   freeWords: string,
 };
 
@@ -12071,4 +12073,14 @@ export const products: Product[] = [
     remarks: "公式ショップに見当たらない",
     remarks2: ""
   },
-].map(x => ({...x, freeWords: JSON.stringify(x).toLowerCase(), id: index++}));
+].map(x => {
+  const size = x.size ? x.size.split(/\D+/).slice(0, 3).map(Number) : undefined;
+  return {
+    ...x,
+    size,
+    freeWords: JSON.stringify({...x, company: companiesMap[x.company]}).toLowerCase(),
+    volume: size?.reduce((acc, cur) => acc * cur),
+    remarks: [x.remarks, x.remarks2].filter(x => x).join("\n"),
+    id: index++
+  }
+});

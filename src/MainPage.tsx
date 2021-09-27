@@ -13,7 +13,7 @@ import {
 } from "@blueprintjs/core";
 import styled from "styled-components";
 import {Product, products} from "./data/products";
-import {companies, Company} from "./data/companies";
+import {companiesMap} from "./data/companies";
 import {Popover2, Tooltip2} from "@blueprintjs/popover2";
 import {useHistory, useLocation} from "react-router-dom";
 import queryString from "querystring";
@@ -54,10 +54,6 @@ const initialState: Query = {
   gridRange: [0, maxGrid],// gridsのインデックス
 };
 
-const companiesMap: Record<string, Company> = companies.reduce((acc, cur) => ({
-  ...acc,
-  [cur.name]: cur
-}), {});
 export const columns = [
   {
     label: "品番",
@@ -293,10 +289,6 @@ const Row = React.memo(({item, displayColumns}: { item: Product, displayColumns:
 });
 
 const VariableCell = ({columnValue, item}: { columnValue: columnValues, item: Product }) => {
-  const volume = useMemo(() => {
-    const [x1, x2, x3] = item.size.split(/\D+/);
-    return (Number(x1) || 0) * (Number(x2) || 0) * (Number(x3) || 0);
-  }, [item.size]);
   if (columnValue === "grid") {
     return (
       <StyledTd>{item.grid.map(x => `#${x.toLocaleString()}`).join("/")}</StyledTd>
@@ -305,14 +297,7 @@ const VariableCell = ({columnValue, item}: { columnValue: columnValues, item: Pr
   if (columnValue === "volume") {
     return (
       <StyledTd>
-        {volume ? `${volume.toLocaleString()}mm³` : ""}
-      </StyledTd>
-    );
-  }
-  if (columnValue === "remarks") {
-    return (
-      <StyledTd>
-        {[item.remarks, item.remarks2].filter(x => x).join("\n")}
+        {item.volume ? `${item.volume.toLocaleString()}mm³` : ""}
       </StyledTd>
     );
   }
@@ -325,8 +310,8 @@ const VariableCell = ({columnValue, item}: { columnValue: columnValues, item: Pr
   }
   if (columnValue === "volume-cost") {
     const volumeCost = (() => {
-      if(!volume || !item.price)return ""
-      return `${(volume / item.price).toFixed(0)} mm³/円`;
+      if(!item.volume || !item.price)return ""
+      return `${(item.volume / item.price).toFixed(0)} mm³/円`;
     })();
     return (
       <StyledTd>
