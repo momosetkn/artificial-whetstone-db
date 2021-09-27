@@ -139,4 +139,5 @@ export const companies =  [
   {name: "高儀", url: ""},
   {name: "GOKEI", url: ""},
   {name: "三共コーポレーション", url: ""},
+  {name: "貝印", url: "https://www.kai-group.com/"},
 ];
