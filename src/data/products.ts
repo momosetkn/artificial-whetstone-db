@@ -12073,6 +12073,71 @@ export const products: Product[] = [
     remarks: "公式ショップに見当たらない",
     remarks2: ""
   },
+  {
+    productNumber: "",
+    company: "グレステン",
+    productName: "●600番",
+    grid: [600],
+    manufacturingMethod: "",
+    abrasiveGrains: "",
+    size: "",
+    price: 16940,
+    url: "http://www.glestain.jp/knife/cav.aku/akusesari.html",
+    remarks: "台付",
+    remarks2: ""
+  },
+  {
+    productNumber: "",
+    company: "グレステン",
+    productName: "●1,000番",
+    grid: [1000],
+    manufacturingMethod: "",
+    abrasiveGrains: "",
+    size: "",
+    price: 16940,
+    url: "http://www.glestain.jp/knife/cav.aku/akusesari.html",
+    remarks: "台付",
+    remarks2: ""
+  },
+  {
+    productNumber: "",
+    company: "グレステン",
+    productName: "●2,000番",
+    grid: [2000],
+    manufacturingMethod: "",
+    abrasiveGrains: "",
+    size: "",
+    price: 18150,
+    url: "http://www.glestain.jp/knife/cav.aku/akusesari.html",
+    remarks: "すり合わせ砥石付",
+    remarks2: ""
+  },
+  {
+    productNumber: "",
+    company: "グレステン",
+    productName: "●4,000番",
+    grid: [4000],
+    manufacturingMethod: "",
+    abrasiveGrains: "",
+    size: "",
+    price: 20570,
+    url: "http://www.glestain.jp/knife/cav.aku/akusesari.html",
+    remarks: "すり合わせ砥石付",
+    remarks2: ""
+  },
+  {
+    productNumber: "",
+    company: "グレステン",
+    productName: "●8,000番",
+    grid: [8000],
+    manufacturingMethod: "",
+    abrasiveGrains: "",
+    size: "",
+    price: 24200.,
+    url: "http://www.glestain.jp/knife/cav.aku/akusesari.html",
+    remarks: "すり合わせ砥石付",
+    remarks2: ""
+  },
 ].map(x => {
   const size = x.size ? x.size.split(/\D+/).slice(0, 3).map(Number) : undefined;
   return {

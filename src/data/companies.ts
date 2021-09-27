@@ -140,6 +140,7 @@ export const companies =  [
   {name: "GOKEI", url: ""},
   {name: "三共コーポレーション", url: ""},
   {name: "貝印", url: "https://www.kai-group.com/"},
+  {name: "グレステン", url: "http://www.glestain.jp/"},
 ];
 
 export const companiesMap: Record<string, Company> = companies.reduce((acc, cur) => ({
