@@ -14,7 +14,7 @@ import {
 import styled from "styled-components";
 import {Product, products} from "./data/products";
 import {companies, Company} from "./data/companies";
-import {Popover2} from "@blueprintjs/popover2";
+import {Popover2, Tooltip2} from "@blueprintjs/popover2";
 import {useHistory, useLocation} from "react-router-dom";
 import queryString from "querystring";
 import {ReportOverlay} from "./components/ReportOverlay";
@@ -176,8 +176,12 @@ export const MainPage = () => {
         </NavbarGroup>
         <NavbarGroup align={Alignment.RIGHT}>
           <NavbarDivider />
-          <Button className={Classes.MINIMAL} icon="flag" onClick={() => update(prev => ({...prev, reportOverlayOpen: true}))}>報告・要望</Button>
-          <Button className={Classes.MINIMAL} icon="settings" onClick={() => update(prev => ({...prev, settingsOverlayOpen: true}))} >設定</Button>
+          <Tooltip2 content="バグ報告・追加要望">
+            <Button className={Classes.MINIMAL} icon="flag" onClick={() => update(prev => ({...prev, reportOverlayOpen: true}))} />
+          </Tooltip2>
+          <Tooltip2 content="表示列設定">
+            <Button className={Classes.MINIMAL} icon="settings" onClick={() => update(prev => ({...prev, settingsOverlayOpen: true}))} />
+          </Tooltip2>
         </NavbarGroup>
       </StyledNavbar>
       <StyledControls>
@@ -350,7 +354,7 @@ const Main = styled.div`
 
 const StyledNavbar = styled(Navbar)`
   margin-bottom: ${navbarMarginBottom}px;
-  & button + button {
+  .bp3-navbar-group > * + * {
     margin-left: 8px;
   }
 `;
