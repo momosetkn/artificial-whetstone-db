@@ -277,9 +277,11 @@ const Row = React.memo(({item, displayColumns}: { item: Product, displayColumns:
           }>
           <span ref={ref} hidden/>
         </Popover2>
-        <a href={item.url} target="_blank" rel="noreferrer">
-          {item.productName}
-        </a>
+        {item.url ?
+          <a href={item.url} target="_blank" rel="noreferrer">
+            {item.productName}
+          </a>
+          : item.productName}
       </StyledTd>
       {displayColumns.map(column => (
         <VariableCell key={column.value} columnValue={column.value} item={item} />
