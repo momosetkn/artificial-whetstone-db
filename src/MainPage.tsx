@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useMemo, useRef, useState} from 'react';
+import React, {ChangeEvent, useMemo, useState, MouseEvent, useEffect} from 'react';
 import {
   Alignment,
   Button,
@@ -14,7 +14,7 @@ import {
 import styled from "styled-components";
 import {Product, products} from "./data/products";
 import {companiesMap} from "./data/companies";
-import {Popover2, Tooltip2} from "@blueprintjs/popover2";
+import {Tooltip2} from "@blueprintjs/popover2";
 import {useHistory, useLocation} from "react-router-dom";
 import queryString from "querystring";
 import {ReportOverlay} from "./components/ReportOverlay";
@@ -218,6 +218,25 @@ export const MainPage = () => {
 
 const DataTables = ({items, displayColumnValues}: { items: Product[], displayColumnValues: string[]}) => {
   const displayColumns =  columns.filter(x => displayColumnValues.includes(x.value));
+
+  const [state, update] = useState<{ item: Product, x: number, y: number } | undefined>();
+
+  const handleClick = (e: MouseEvent<HTMLTableRowElement>, id: number) => {
+    const item = items.find(x => x.id === id);
+    if(!item) return;
+    update({item, x: e.clientX,  y: e.clientY });
+  };
+
+  useEffect(() => {
+    const handleClickDocument = () => {
+      update(undefined);
+    };
+
+    document.addEventListener("click", handleClickDocument);
+    return () => document.removeEventListener("click", handleClickDocument);
+  }, [])
+
+  // @ts-ignore
   return (
     <StyledTableContainer>
       <StyledHTMLTable striped>
@@ -231,27 +250,84 @@ const DataTables = ({items, displayColumnValues}: { items: Product[], displayCol
         </StyledStickyTr>
         </thead>
         <tbody>
-        {items.map(item => <Row key={item.id} item={item} displayColumns={displayColumns} />)}
+        {items.map(item => <Row key={item.id} item={item} displayColumns={displayColumns} onClick={handleClick}/>)}
         </tbody>
       </StyledHTMLTable>
+      <ItemDetailCard {...(
+        state ?
+          {...state, hidden: false}
+          : {
+            item: undefined,
+            x: undefined,
+            y: undefined,
+            hidden: true
+          }
+        )}
+        onClose={() => update(undefined)}
+      />
     </StyledTableContainer>
   )
 };
 
-const Row = React.memo(({item, displayColumns}: { item: Product, displayColumns: Column[] }) => {
-  const cardContent = useMemo(() => ({
-    mainRecords: [
-      [item.productNumber, item.productName].join(" "),
-      item.manufacturingMethod,
-      (item.price && `￥${item.price.toLocaleString()}`),
-      item.abrasiveGrains,
-    ],
-    remarks: item.remarks,
-  }), [item]);
+type ItemDetailCardProps =
+  (
+    { item: Product, x: number, y: number, hidden: false }
+    | { item: undefined, x: undefined, y: undefined, hidden: true }
+    )
+  & { onClose: () => void };
 
-  const ref = useRef<HTMLSpanElement>(null);
+const ItemDetailCard = (props: ItemDetailCardProps) => {
+  const cardContent = useMemo(() => {
+    if (props.hidden) return undefined;
+    return {
+      mainRecords: [
+        props.item.manufacturingMethod,
+        (props.item.price && `￥${props.item.price.toLocaleString()}`),
+        props.item.abrasiveGrains,
+      ],
+      remarks: props.item.remarks,
+    }
+  }, [props.item, props.hidden]);
+
+  const title = useMemo(() => {
+    if (props.hidden) return undefined;
+
+    return [props.item.productNumber, props.item.productName].join(" ");
+  }, [props.item, props.hidden]);
+
   return (
-    <tr className="clickable" onClick={() => ref.current?.click()}>
+    <StyledAbsoluteCardContainer hidden={props.hidden} top={props.y} left={props.x} onClick={e => e.stopPropagation()}>
+      <Card>
+        <StyledCardHeader>
+          <div>
+            {title}
+          </div>
+          <Button className={Classes.MINIMAL} icon="cross" onClick={props.onClose}/>
+        </StyledCardHeader>
+        {cardContent?.mainRecords.map((x, i) => <div key={i}>{x}</div>)}
+        <div>
+          <pre><code>{cardContent?.remarks}</code></pre>
+        </div>
+      </Card>
+    </StyledAbsoluteCardContainer>
+  );
+};
+
+const Row = React.memo(({
+  item,
+  displayColumns,
+  onClick
+}: {
+  item: Product,
+  displayColumns: Column[],
+  onClick: (e: MouseEvent<HTMLTableRowElement>, id: number) => void
+}) => {
+  const handleClick = (e: MouseEvent<HTMLTableRowElement>) => {
+    e.stopPropagation();
+    onClick(e, item.id);
+  };
+  return (
+    <tr className="clickable" onClick={handleClick}>
       <StyledTd>
         <a
           href={companiesMap[item.company].url}
@@ -262,21 +338,6 @@ const Row = React.memo(({item, displayColumns}: { item: Product, displayColumns:
         </a>
       </StyledTd>
       <StyledTd>
-        <Popover2
-          interactionKind="click"
-          position={"bottom-left"}
-          hoverOpenDelay={0}
-          modifiers={{arrow: {enabled: false}}}
-          content={
-            <Card>
-              {cardContent.mainRecords.map(x => <div>{x}</div>)}
-              <div>
-                <pre><code>{cardContent.remarks}</code></pre>
-              </div>
-            </Card>
-          }>
-          <span ref={ref} hidden/>
-        </Popover2>
         {item.url ?
           <a href={item.url} target="_blank" rel="noreferrer">
             {item.productName}
@@ -383,6 +444,17 @@ const StyledTableContainer = styled.div`
 const StyledHTMLTable = styled(HTMLTable)`
   table-layout: fixed;
   width: 100%;
+`;
+
+const StyledAbsoluteCardContainer = styled.div<{ top?: number, left?: number }>`
+  position: absolute;
+  ${x => x.top ? `top: ${x.top}px;` : ""}
+  ${x => x.left ? `left: ${x.left}px;` : ""}
+`;
+
+const StyledCardHeader = styled.div`
+  display: flex;
+  justify-content: space-between;;
 `;
 
 const StyledStickyTr = styled.tr`
