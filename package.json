@@ -30,8 +30,9 @@
   "homepage": "./",
   "scripts": {
     "template": "node scripts/build.template.js",
-    "start": "yarn template; webpack-dev-server --open",
-    "build": "yarn template; webpack --progress --color --watch"
+    "start": "yarn reset; yarn template; webpack-dev-server --open",
+    "build": "yarn reset; yarn template; webpack --progress --color --watch",
+    "reset": "rm -rf dist; mkdir dist"
   },
   "eslintConfig": {
     "extends": [
