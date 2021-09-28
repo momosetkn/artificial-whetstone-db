@@ -161,6 +161,7 @@ export const companies =  [
   },
   {name: "並川平兵衛商店", url: "https://www.namikawa-ltd.co.jp/"},
   {name: "Brieto", url: "http://kataoka-ss.shop-pro.jp/?pid=86302740"},
+  {name: "正広", url: "http://masahiro-hamono.com/product/1142"},
 ];
 
 export const companiesMap: Record<string, Company> = companies.reduce((acc, cur) => ({
