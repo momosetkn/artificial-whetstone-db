@@ -143,6 +143,22 @@ export const companies =  [
   {name: "グレステン", url: "http://www.glestain.jp/"},
   {name: "郷右馬允義弘", url: "https://www.houchoumasa.com/"},
   {name: "ツヴィリング", url: "https://jp.zwilling-shop.com/"},
+  {name: "酔心", url: "https://www.suisin-shop.com/"},
+  {name: "ヤマグチ", url: "http://www.kk-yamaguchi.co.jp/"},
+  {name: "つば屋", url: "https://tsubaya.co.jp/"},
+  {name: "有次", url: "https://www.aritsugu.jp/"},
+  {
+    name: "子の日",
+    url: "https://www.nenohi.jp/"
+  },
+  {name: "フチオカ", url: "https://www.fuchioka.co.jp//"},
+  {name: "常真", url: "https://shop.tsuneshin.net/"},
+  {name: "菊一文字", url: "https://www.kikuichimonji.co.jp/"},
+  {name: "スミカマ", url: "http://sumikama.co.jp/"},
+  {
+    name: "迫田刃物",
+    url: "https://www.sakodahamono.online/"
+  },
 ];
 
 export const companiesMap: Record<string, Company> = companies.reduce((acc, cur) => ({
