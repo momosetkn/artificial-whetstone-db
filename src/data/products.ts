@@ -4051,6 +4051,32 @@ export const products: Product[] = [
     remarks2: ""
   },
   {
+    productNumber: "",
+    company: "ナニワ",
+    productName: "エビ印 細名倉砥石",
+    grid: [1000],
+    manufacturingMethod: "",
+    abrasiveGrains: "",
+    size: "210×70×55mm",
+    price: 20900,
+    url: "https://www.naniwa-kenma.co.jp/order/",
+    remarks: "",
+    remarks2: ""
+  },
+  {
+    productNumber: "",
+    company: "ナニワ",
+    productName: "エビ印 細名倉砥石",
+    grid: [2000],
+    manufacturingMethod: "",
+    abrasiveGrains: "",
+    size: "210×70×55mm",
+    price: 22000,
+    url: "https://www.naniwa-kenma.co.jp/order/",
+    remarks: "",
+    remarks2: ""
+  },
+  {
     productNumber: "ATM75-1.4E",
     company: "ツボ万",
     productName: "アトマエコノミー",
