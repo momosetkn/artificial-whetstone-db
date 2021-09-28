@@ -159,6 +159,7 @@ export const companies =  [
     name: "迫田刃物",
     url: "https://www.sakodahamono.online/"
   },
+  {name: "並川平兵衛商店", url: "https://www.namikawa-ltd.co.jp/"},
 ];
 
 export const companiesMap: Record<string, Company> = companies.reduce((acc, cur) => ({
