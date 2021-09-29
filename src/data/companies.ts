@@ -184,6 +184,7 @@ export const companies =  [
     url: "https://www.noritake.co.jp/"
   },
   {name: "エコー金属", url: "http://www.echo-k.co.jp/"},
+  {name: "堺菊守", url: "http://www.kikumori.co.jp/"},
 ];
 
 export const companiesMap: Record<string, Company> = companies.reduce((acc, cur) => ({
