@@ -162,6 +162,28 @@ export const companies =  [
   {name: "並川平兵衛商店", url: "https://www.namikawa-ltd.co.jp/"},
   {name: "Brieto", url: "http://kataoka-ss.shop-pro.jp/?pid=86302740"},
   {name: "正広", url: "http://masahiro-hamono.com/product/1142"},
+  {name: "ＳＫ１１", url: "http://www.fujiwarasangyo.co.jp//"},
+  {
+    name: "青龍馬",
+    url: "http://www.fujiwarasangyo.co.jp/"
+  },
+  {
+    name: "金龍馬",
+    url: "http://www.fujiwarasangyo.co.jp/"
+  },
+  {
+    name: "Ｅ－Ｖａｌｕｅ",
+    url: "http://www.fujiwarasangyo.co.jp/"
+  },
+  {
+    name: "ＢＳ",
+    url: "http://www.ichiguchi-diy.jp/"
+  },
+  {
+    name: "ＮＣＡ",
+    url: "https://www.noritake.co.jp/"
+  },
+  {name: "エコー金属", url: "http://www.echo-k.co.jp/"},
 ];
 
 export const companiesMap: Record<string, Company> = companies.reduce((acc, cur) => ({
