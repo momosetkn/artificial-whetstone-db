@@ -13,7 +13,7 @@ import {
 } from "@blueprintjs/core";
 import styled from "styled-components";
 import {Product, products} from "./data/products";
-import {companiesMap} from "./data/companies";
+import {companiesMap, Company} from "./data/companies";
 import {Tooltip2} from "@blueprintjs/popover2";
 import {useHistory, useLocation} from "react-router-dom";
 import queryString from "querystring";
@@ -326,16 +326,19 @@ const Row = React.memo(({
     e.stopPropagation();
     onClick(e, item.id);
   };
+  const company: Company | undefined = companiesMap[item.company];
   return (
     <tr className="clickable" onClick={handleClick}>
       <StyledTd>
-        <a
-          href={companiesMap[item.company].url}
-          target="_blank"
-          rel="noreferrer"
-        >
-          {item.company}
-        </a>
+        {company ?
+          <a
+            href={company.url}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {company.name}
+          </a>
+          : "不明"}
       </StyledTd>
       <StyledTd>
         {item.url ?

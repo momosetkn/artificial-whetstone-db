@@ -185,6 +185,10 @@ export const companies =  [
   },
   {name: "エコー金属", url: "http://www.echo-k.co.jp/"},
   {name: "堺菊守", url: "http://www.kikumori.co.jp/"},
+  {name: "堺孝行", url: "https://tsumotoshiki.com/?product=toishi"},
+  {name: "越後の大工刃物・大工道具", url: "http://www.daikuhamono.sakura.ne.jp/toisi.htm"},
+  {name: "堺刀司", url: "https://www.sakai-tohji.co.jp/products/detail.php?product_id=77"},
+  {name: "関兼常", url: "https://www.kanetsune.jp/view/item/000000000105"},
 ];
 
 export const companiesMap: Record<string, Company> = companies.reduce((acc, cur) => ({

@@ -25,6 +25,7 @@ export const products: Product[] = productsSrc.map(x => {
   const volume: number | undefined = size?.reduce((acc, cur) => acc * cur) as number | undefined;
   const remarks: string | undefined = [x.remarks, x.remarks2].filter(x => x).join("\n") || undefined;
   const freeWords: string | undefined = JSON.stringify({...x, company: companiesMap[x.company]}).toLowerCase();
+  const price: number | undefined = x.price ? Number(x.price) : undefined;
   return {
     ...x,
     size,
@@ -32,6 +33,7 @@ export const products: Product[] = productsSrc.map(x => {
     freeWords,
     volume,
     remarks,
+    price,
     id: index++
   }
 });
