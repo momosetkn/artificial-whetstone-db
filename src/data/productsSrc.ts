@@ -11,7 +11,6 @@ export const productsSrc: {
   remarks: string,
   remarks2: string,
 }[] = [
-
   {
     productNumber: "",
     company: "シャプトン",
@@ -15115,7 +15114,7 @@ export const productsSrc: {
     size: "210×70×20mm",
     price: "7700",
     url: "https://www.kanetsune.jp/view/item/000000000103",
-    remarks: "",
+    remarks: "剛研 輝のOEM?",
     remarks2: ""
   },
   {
@@ -15128,7 +15127,7 @@ export const productsSrc: {
     size: "210×70×20mm",
     price: "10340",
     url: "https://www.kanetsune.jp/view/item/000000000104",
-    remarks: "",
+    remarks: "剛研 輝のOEM?",
     remarks2: ""
   },
   {
@@ -15141,7 +15140,7 @@ export const productsSrc: {
     size: "210×70×20mm",
     price: "13200",
     url: "https://www.kanetsune.jp/view/item/000000000105",
-    remarks: "",
+    remarks: "剛研 輝のOEM?",
     remarks2: ""
   },
 ];
