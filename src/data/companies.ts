@@ -14,7 +14,7 @@ export const companies =  [
   },
   {
     name: "ツボ万",
-    url: ""
+    url: "https://tsuboman.com/"
   },
   {
     name: "研承",
@@ -66,11 +66,11 @@ export const companies =  [
   },
   {
     name: "今西製砥",
-    url: "https://home.etown.ne.jp/"
+    url: ""
   },
   {
     name: "大谷砥石",
-    url: "https://hamono.ocnk.net/"
+    url: ""
   },
   {
     name: "田中砥石 ",
@@ -94,15 +94,15 @@ export const companies =  [
   },
   {
     name: "森平",
-    url: "https://sankeishop.jp/"
+    url: "https://www.morihei.co.jp//"
   },
   {
     name: "宮越製砥",
-    url: "https://shop.toishiya-miyagoshi.com/"
+    url: "https://toishiya-miyagoshi.com/"
   },
   {
     name: "アイウッド",
-    url: "https://www.monotaro.com/"
+    url: "http://www.iwood.jp/iwood/index.html/"
   },
   {
     name: "大和製砥所",
@@ -126,7 +126,7 @@ export const companies =  [
   },
   {
     name: "ノーブランド？",
-    url: "https://www.ehamono.com/"
+    url: ""
   },
   {
     name: "堺一文字光秀",
@@ -136,9 +136,9 @@ export const companies =  [
     name: "砥石どっとこむ",
     url: "http://www.e-toishi.com/"
   },
-  {name: "高儀", url: ""},
+  {name: "高儀", url: "https://www.takagi-plc.co.jp/"},
   {name: "GOKEI", url: ""},
-  {name: "三共コーポレーション", url: ""},
+  {name: "三共コーポレーション", url: "http://www.sankyo-tools.co.jp/"},
   {name: "貝印", url: "https://www.kai-group.com/"},
   {name: "グレステン", url: "http://www.glestain.jp/"},
   {name: "郷右馬允義弘", url: "https://www.houchoumasa.com/"},
