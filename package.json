@@ -20,8 +20,9 @@
   "homepage": "./",
   "scripts": {
     "template": "node scripts/build.template.js",
-    "start": "yarn reset; yarn template; webpack-dev-server --open",
+    "start": "yarn reset; yarn template; webpack-dev-server --open --config webpack.dev.config.js",
     "build": "yarn reset; yarn template; webpack --progress --color --config webpack.prd.config.js",
+    "analyze": "yarn reset; yarn template; webpack --config webpack.prd-analyze.config.js",
     "reset": "rm -rf dist; mkdir dist"
   },
   "eslintConfig": {
@@ -51,6 +52,7 @@
     "webpack-merge": "^5.8.0",
     "css-loader": "^6.2.0",
     "mustache": "^4.2.0",
-    "raw-loader": "^4.0.2"
+    "raw-loader": "^4.0.2",
+    "webpack-bundle-analyzer": "^4.4.2"
   }
 }

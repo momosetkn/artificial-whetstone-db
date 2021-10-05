@@ -417,9 +417,9 @@ const StyledControls = styled.div`
   & > * + * {
     margin-left: 16px;
   }
-  @media (max-width:640px) { 
+  @media (max-width:640px) {
     display: block;
-  
+
     & > * + * {
       margin-left: 0px;
       margin-top: 16px;

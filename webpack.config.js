@@ -19,19 +19,15 @@ module.exports = {
       },
       {
         test: /\.css?$/,
-        use: ["style-loader", "css-loader"],
+        use: [
+          { loader: "style-loader", options: {} },
+          { loader: "css-loader", options: { sourceMap: false } },
+        ],
       },
     ],
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
-  },
-  devtool: "inline-source-map",
-  devServer: {
-    // contentBase: "./dist",
-    static: {
-      directory: path.join(__dirname, "dist"),
-    },
   },
   output: {
     filename: "bundle.js",
