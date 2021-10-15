@@ -284,7 +284,7 @@ const ItemDetailCard = (props: ItemDetailCardProps) => {
         props.item.manufacturingMethod,
         (props.item.price && `￥${props.item.price.toLocaleString()}`),
         props.item.abrasiveGrains,
-        props.item.size && `${props.item.size.join("☓")}(${props.item.volume}mm³)`,
+        (props.item.size && props.item.volume) && `${props.item.size.join("☓")}(${props.item.volume.toLocaleString()}mm³)`,
       ].filter(x => x),
       remarks: props.item.remarks,
     }
