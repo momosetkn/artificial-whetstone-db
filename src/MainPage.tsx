@@ -367,6 +367,13 @@ const VariableCell = ({columnValue, item}: { columnValue: columnValues, item: Pr
       </StyledTd>
     );
   }
+  if (columnValue === "size") {
+    return (
+      <StyledTd>
+        {item.size?.join("☓")}
+      </StyledTd>
+    );
+  }
   if (columnValue === "price") {
     return (
       <StyledTd>
