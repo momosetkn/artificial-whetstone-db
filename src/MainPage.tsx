@@ -14,7 +14,6 @@ import {
 import styled from "styled-components";
 import {Product, products} from "./data/products";
 import {companiesMap, Company} from "./data/companies";
-import {Tooltip2} from "@blueprintjs/popover2";
 import {useHistory, useLocation} from "react-router-dom";
 import queryString from "querystring";
 import {ReportOverlay} from "./components/ReportOverlay";
@@ -172,12 +171,12 @@ export const MainPage = () => {
         </NavbarGroup>
         <NavbarGroup align={Alignment.RIGHT}>
           <NavbarDivider />
-          <Tooltip2 content="バグ報告・追加要望">
-            <Button className={Classes.MINIMAL} icon="flag" onClick={() => update(prev => ({...prev, reportOverlayOpen: true}))} />
-          </Tooltip2>
-          <Tooltip2 content="表示列設定">
-            <Button className={Classes.MINIMAL} icon="settings" onClick={() => update(prev => ({...prev, settingsOverlayOpen: true}))} />
-          </Tooltip2>
+          <Button className={Classes.MINIMAL} icon="flag" onClick={() => update(prev => ({...prev, reportOverlayOpen: true}))}>
+            バグ報告・追加要望
+          </Button>
+          <Button className={Classes.MINIMAL} icon="settings" onClick={() => update(prev => ({...prev, settingsOverlayOpen: true}))}>
+            表示列設定
+          </Button>
         </NavbarGroup>
       </StyledNavbar>
       <StyledControls>
