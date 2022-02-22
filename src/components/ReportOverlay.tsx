@@ -17,6 +17,9 @@ export const ReportOverlay = ({isOpen, onClose, onSubmit}: Props) => {
     onSubmit(value);
     setValue('');
   };
+  const handleClickCancelButton = () => {
+    onClose();
+  };
 
   return (
     <Overlay
@@ -35,6 +38,7 @@ export const ReportOverlay = ({isOpen, onClose, onSubmit}: Props) => {
           <h3>バグ報告・追加要望</h3>
           <TextArea fill={true} rows={8} onChange={(e) => setValue(e.target.value)} value={value}/>
           <StyledActionContainer>
+            <Button className={Classes.MINIMAL} onClick={handleClickCancelButton}>キャンセル</Button>
             <Button className={Classes.MINIMAL} icon="send-message" onClick={handleClickSendButton}>送信</Button>
           </StyledActionContainer>
         </Card>
