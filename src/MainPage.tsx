@@ -153,7 +153,7 @@ export const MainPage = () => {
       const splitFreeWord = query.freeWord.toLowerCase().split(/\s/);
       return splitFreeWord.every(x => product.freeWords.search(x) !== -1);
     };
-    return (!query.freeWord || isFreeWordMatch()) && product.grid.some(isTargetGird);
+    return (!query.freeWord || isFreeWordMatch()) && (product.grid.length === 0 || product.grid.some(isTargetGird));
   }), [query, selectedGridRangesValues])
 
   const handleChangeFreeWord = (e: ChangeEvent<HTMLInputElement>) => {
