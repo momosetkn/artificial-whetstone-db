@@ -193,6 +193,7 @@ export const companies =  [
   {name: "SUN UP", url: undefined},
   {name: "パール金属", url: undefined},
   {name: "ヤクセル", url: undefined},
+  {name: "ノリタケカンパニー", url: "https://www.noritake.co.jp/"},
 ];
 
 export const companiesMap: Record<string, Company> = companies.reduce((acc, cur) => ({
