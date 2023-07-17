@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useMemo, useState, MouseEvent, useEffect} from 'react';
+import React, {ChangeEvent, useMemo, useState, MouseEvent, useEffect, useRef} from 'react';
 import {
   Alignment,
   Button,
@@ -162,6 +162,10 @@ export const MainPage = () => {
   const handleChangeGridRange = (e: NumberRange) => {
     updateQuery({...query, gridRange: e});
   };
+  const linkRef = useRef<HTMLAnchorElement>(null);
+  const openSourceSpreadSheet = () => {
+    linkRef.current?.click();
+  };
 
   return (
     <Main>
@@ -171,6 +175,9 @@ export const MainPage = () => {
         </NavbarGroup>
         <NavbarGroup align={Alignment.RIGHT}>
           <NavbarDivider />
+          <Button className={Classes.MINIMAL} icon="office" onClick={openSourceSpreadSheet}>
+            元データ（スプレッドシート）
+          </Button>
           <Button className={Classes.MINIMAL} icon="flag" onClick={() => update(prev => ({...prev, reportOverlayOpen: true}))}>
             バグ報告・追加要望
           </Button>
@@ -210,6 +217,13 @@ export const MainPage = () => {
         columnValues={state.displayColumnValues}
         onClose={() => update(prev => ({...prev, settingsOverlayOpen: false}))}
         onChange={(value) => update(prev => ({...prev, displayColumnValues: value}))}
+      />
+      <a
+        ref={linkRef}
+        href="https://docs.google.com/spreadsheets/d/1HKs838ISn5tqfsTjltQNCnr9bbPalvveV6sBA_LDLLc/edit#gid=0"
+        target="_blank"
+        rel="noreferrer noopener"
+        style={{display: 'none'}}
       />
     </Main>
   );
